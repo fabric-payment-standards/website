@@ -6,17 +6,17 @@
     },
     "config": "5e9f5e1a"
   },
-  "/specs/-d18": {
+  "/specs/-139": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "aba21aa0"
     }
   },
-  "/specs/-d4d": {
+  "/specs/-c49": {
     "__comp": "a7bd4aaa",
     "__props": "8ec50cce"
   },
-  "/specs/-fe0": {
+  "/specs/-bff": {
     "__comp": "a94703ab"
   },
   "/specs/cashpack/layer-1-overview-b6c": {
@@ -42,6 +42,10 @@
   "/specs/cashpack/layer-6-reference-1e2": {
     "__comp": "17896441",
     "content": "94b10c00"
+  },
+  "/specs/ssf/ssf-001-989": {
+    "__comp": "14eb3368",
+    "__props": "d7a427f8"
   },
   "/specs/ssf/ssf-001/business-model-0f6": {
     "__comp": "14eb3368",
@@ -162,6 +166,10 @@
   "/specs/ssf/ssf-001/specifications/ssf-001-ea5": {
     "__comp": "17896441",
     "content": "3ba8e832"
+  },
+  "/specs/ssf/ssf-002-95d": {
+    "__comp": "14eb3368",
+    "__props": "e07bbca8"
   },
   "/specs/ssf/ssf-002/core-concepts-2b3": {
     "__comp": "14eb3368",

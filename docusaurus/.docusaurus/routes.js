@@ -9,15 +9,15 @@ export default [
   },
   {
     path: '/specs/',
-    component: ComponentCreator('/specs/', 'd18'),
+    component: ComponentCreator('/specs/', '139'),
     routes: [
       {
         path: '/specs/',
-        component: ComponentCreator('/specs/', 'd4d'),
+        component: ComponentCreator('/specs/', 'c49'),
         routes: [
           {
             path: '/specs/',
-            component: ComponentCreator('/specs/', 'fe0'),
+            component: ComponentCreator('/specs/', 'bff'),
             routes: [
               {
                 path: '/specs/cashpack/layer-1-overview',
@@ -52,6 +52,12 @@ export default [
               {
                 path: '/specs/cashpack/layer-6-reference',
                 component: ComponentCreator('/specs/cashpack/layer-6-reference', '1e2'),
+                exact: true,
+                sidebar: "fpsfSidebar"
+              },
+              {
+                path: '/specs/ssf/ssf-001',
+                component: ComponentCreator('/specs/ssf/ssf-001', '989'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
@@ -232,6 +238,12 @@ export default [
               {
                 path: '/specs/ssf/ssf-001/specifications/ssf-001',
                 component: ComponentCreator('/specs/ssf/ssf-001/specifications/ssf-001', 'ea5'),
+                exact: true,
+                sidebar: "fpsfSidebar"
+              },
+              {
+                path: '/specs/ssf/ssf-002',
+                component: ComponentCreator('/specs/ssf/ssf-002', '95d'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
