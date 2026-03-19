@@ -1,0 +1,24 @@
+{
+  "id": "specs/ssf/ssf-002/overview/introduction",
+  "title": "Introduction",
+  "description": "The wallet-gateway is the entry point of the Stablecoin Stack for wallet client applications. It is the single interface through which a wallet retrieves balances and history, fetches the data required to construct a payment authorisation, submits that authorisation for processing, and receives real-time confirmation of the outcome.",
+  "source": "@site/docs/specs/ssf/ssf-002/overview/introduction.md",
+  "sourceDirName": "specs/ssf/ssf-002/overview",
+  "slug": "/specs/ssf/ssf-002/overview/introduction",
+  "permalink": "/specs/ssf/ssf-002/overview/introduction",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/orgs/fabric-payment-standards/docs/specs/ssf/ssf-002/overview/introduction.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "fpsfSidebar",
+  "previous": {
+    "title": "Gateway Role",
+    "permalink": "/specs/ssf/ssf-002/overview/gateway-role"
+  },
+  "next": {
+    "title": "Core Concepts",
+    "permalink": "/ssf/ssf-002/core-concepts"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "ssf/ssf-002/reference/message-type-index",
+  "title": "Message Type Index",
+  "description": "Complete reference for all message types defined in SSF-SPEC-004. For full field definitions, see the formal specification.",
+  "source": "@site/docs/ssf/ssf-002/reference/message-type-index.md",
+  "sourceDirName": "ssf/ssf-002/reference",
+  "slug": "/ssf/ssf-002/reference/message-type-index",
+  "permalink": "/specs/ssf/ssf-002/reference/message-type-index",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/orgs/fabric-payment-standards/docs/ssf/ssf-002/reference/message-type-index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "fpsfSidebar",
+  "previous": {
+    "title": "Glossary",
+    "permalink": "/specs/ssf/ssf-002/reference/glossary"
+  }
+}

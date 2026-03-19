@@ -12,7 +12,7 @@ const config: Config = {
   },
 
   url: 'https://fabricpaymentstandards.org',
-  baseUrl: '/specs/',
+  baseUrl: '/specs',
 
   organizationName: 'fabric-payment-standards',
   projectName: 'docs',
@@ -36,7 +36,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          routeBasePath: '/specs/',
+          routeBasePath: '/',
           editUrl: 'https://github.com/orgs/fabric-payment-standards/',
         },
         blog: false,

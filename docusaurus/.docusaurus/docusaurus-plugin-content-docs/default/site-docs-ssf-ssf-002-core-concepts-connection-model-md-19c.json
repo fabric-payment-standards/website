@@ -1,0 +1,24 @@
+{
+  "id": "ssf/ssf-002/core-concepts/connection-model",
+  "title": "Connection Model",
+  "description": "The wallet-gateway uses WebSocket as its sole transport. This document explains how connections are established, managed, and closed — and what wallet clients should expect at each stage.",
+  "source": "@site/docs/ssf/ssf-002/core-concepts/connection-model.md",
+  "sourceDirName": "ssf/ssf-002/core-concepts",
+  "slug": "/ssf/ssf-002/core-concepts/connection-model",
+  "permalink": "/specs/ssf/ssf-002/core-concepts/connection-model",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/orgs/fabric-payment-standards/docs/ssf/ssf-002/core-concepts/connection-model.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "fpsfSidebar",
+  "previous": {
+    "title": "Core Concepts",
+    "permalink": "/specs/ssf/ssf-002/core-concepts"
+  },
+  "next": {
+    "title": "Message Authentication",
+    "permalink": "/specs/ssf/ssf-002/core-concepts/message-authentication"
+  }
+}

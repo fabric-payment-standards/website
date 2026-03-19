@@ -1,0 +1,24 @@
+{
+  "id": "ssf/ssf-002/guides/connect-and-authenticate",
+  "title": "Connect and Authenticate",
+  "description": "Step-by-step guide for establishing a connection to the wallet-gateway and sending your first authenticated message.",
+  "source": "@site/docs/ssf/ssf-002/guides/connect-and-authenticate.md",
+  "sourceDirName": "ssf/ssf-002/guides",
+  "slug": "/ssf/ssf-002/guides/connect-and-authenticate",
+  "permalink": "/specs/ssf/ssf-002/guides/connect-and-authenticate",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/orgs/fabric-payment-standards/docs/ssf/ssf-002/guides/connect-and-authenticate.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "fpsfSidebar",
+  "previous": {
+    "title": "Guides",
+    "permalink": "/specs/ssf/ssf-002/guides"
+  },
+  "next": {
+    "title": "Submit a Payment",
+    "permalink": "/specs/ssf/ssf-002/guides/submit-a-payment"
+  }
+}
