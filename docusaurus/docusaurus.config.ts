@@ -11,8 +11,8 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://fabricpaymentstandards.org/specs',
-  baseUrl: '/',
+  url: 'https://fabricpaymentstandards.org',
+  baseUrl: '/specs',
 
   organizationName: 'fabric-payment-standards',
   projectName: 'docs',

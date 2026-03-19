@@ -1,0 +1,33 @@
+{
+  "id": "specs/ssf/ssf-001/overview/introduction",
+  "title": "Introduction",
+  "description": "The Stablecoin Stack is an open architecture for processing stablecoin payments on Ethereum-compatible networks. It is built on a single central proposition: that cryptographic signatures are a superior foundation for payment authorisation compared to identity-based delegation models, and that the tooling to make this practical for everyday users is both achievable and urgently needed.",
+  "source": "@site/docs/specs/ssf/ssf-001/overview/introduction.md",
+  "sourceDirName": "specs/ssf/ssf-001/overview",
+  "slug": "/specs/ssf/ssf-001/overview/introduction",
+  "permalink": "/specs/ssf/ssf-001/overview/introduction",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/orgs/fabric-payment-standards/docs/specs/ssf/ssf-001/overview/introduction.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "document": "SSF-SPEC-001/overview/introduction.md",
+    "spec": "SSF-001",
+    "version": "1.0.0",
+    "status": "Draft",
+    "date": "2026-03-04T00:00:00.000Z",
+    "author": "Adalton Reis <reis@stablecoinstack.org>",
+    "organization": "Stablecoin Stack Foundation",
+    "license": "Apache License 2.0"
+  },
+  "sidebar": "fpsfSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/ssf/ssf-001/overview"
+  },
+  "next": {
+    "title": "Payment Submission",
+    "permalink": "/specs/ssf/ssf-001/overview/payment-submission"
+  }
+}

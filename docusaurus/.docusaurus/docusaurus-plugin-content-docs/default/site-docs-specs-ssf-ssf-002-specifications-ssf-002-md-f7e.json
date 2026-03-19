@@ -1,0 +1,24 @@
+{
+  "id": "specs/ssf/ssf-002/specifications/ssf-002",
+  "title": "SSF-SPEC-002 — wallet-gateway Interface Specification",
+  "description": "| Field | Value |",
+  "source": "@site/docs/specs/ssf/ssf-002/specifications/ssf-002.md",
+  "sourceDirName": "specs/ssf/ssf-002/specifications",
+  "slug": "/specs/ssf/ssf-002/specifications/ssf-002",
+  "permalink": "/specs/ssf/ssf-002/specifications/ssf-002",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/orgs/fabric-payment-standards/docs/specs/ssf/ssf-002/specifications/ssf-002.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "fpsfSidebar",
+  "previous": {
+    "title": "Formal Specification",
+    "permalink": "/ssf/ssf-002/spec"
+  },
+  "next": {
+    "title": "SSF-SPEC-002 — wallet-gateway Interface Specification",
+    "permalink": "/specs/ssf/ssf-002/SPEC"
+  }
+}

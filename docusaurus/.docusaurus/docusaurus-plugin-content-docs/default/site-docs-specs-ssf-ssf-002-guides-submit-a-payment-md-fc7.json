@@ -1,0 +1,24 @@
+{
+  "id": "specs/ssf/ssf-002/guides/submit-a-payment",
+  "title": "Submit a Payment",
+  "description": "Step-by-step guide for submitting a signed payment payload to the wallet-gateway and handling the asynchronous status updates.",
+  "source": "@site/docs/specs/ssf/ssf-002/guides/submit-a-payment.md",
+  "sourceDirName": "specs/ssf/ssf-002/guides",
+  "slug": "/specs/ssf/ssf-002/guides/submit-a-payment",
+  "permalink": "/specs/ssf/ssf-002/guides/submit-a-payment",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/orgs/fabric-payment-standards/docs/specs/ssf/ssf-002/guides/submit-a-payment.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "fpsfSidebar",
+  "previous": {
+    "title": "Connect and Authenticate",
+    "permalink": "/specs/ssf/ssf-002/guides/connect-and-authenticate"
+  },
+  "next": {
+    "title": "Subscribe to Updates",
+    "permalink": "/specs/ssf/ssf-002/guides/subscribe-to-updates"
+  }
+}

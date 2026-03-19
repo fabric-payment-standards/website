@@ -1,0 +1,24 @@
+{
+  "id": "specs/ssf/ssf-001/business-model/business-model",
+  "title": "SSF-001 — Layer 7: Business Models",
+  "description": "| Field | Value |",
+  "source": "@site/docs/specs/ssf/ssf-001/business-model/business-model.md",
+  "sourceDirName": "specs/ssf/ssf-001/business-model",
+  "slug": "/specs/ssf/ssf-001/business-model/",
+  "permalink": "/specs/ssf/ssf-001/business-model/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/orgs/fabric-payment-standards/docs/specs/ssf/ssf-001/business-model/business-model.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "fpsfSidebar",
+  "previous": {
+    "title": "Business Model",
+    "permalink": "/ssf/ssf-001/business-model"
+  },
+  "next": {
+    "title": "Governance",
+    "permalink": "/ssf/ssf-001/governance"
+  }
+}

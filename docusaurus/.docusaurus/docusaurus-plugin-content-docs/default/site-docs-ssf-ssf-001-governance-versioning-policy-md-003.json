@@ -1,0 +1,33 @@
+{
+  "id": "ssf/ssf-001/governance/versioning-policy",
+  "title": "Versioning Policy",
+  "description": "The Stablecoin Stack specification (SSF-SPEC-001) follows Semantic Versioning 2.0.0.",
+  "source": "@site/docs/ssf/ssf-001/governance/versioning-policy.md",
+  "sourceDirName": "ssf/ssf-001/governance",
+  "slug": "/ssf/ssf-001/governance/versioning-policy",
+  "permalink": "/specs/ssf/ssf-001/governance/versioning-policy",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/orgs/fabric-payment-standards/docs/ssf/ssf-001/governance/versioning-policy.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "document": "SSF-SPEC-001/governance/versioning-policy.md",
+    "spec": "SSF-SPEC-001",
+    "version": "1.0.0",
+    "status": "Draft",
+    "date": "2026-03-04T00:00:00.000Z",
+    "author": "Adalton Reis <reis@stablecoinstack.org>",
+    "organization": "Stablecoin Stack Foundation",
+    "license": "Apache License 2.0"
+  },
+  "sidebar": "fpsfSidebar",
+  "previous": {
+    "title": "Changelog",
+    "permalink": "/specs/ssf/ssf-001/governance/changelog"
+  },
+  "next": {
+    "title": "Formal Specification",
+    "permalink": "/specs/ssf/ssf-001/spec"
+  }
+}

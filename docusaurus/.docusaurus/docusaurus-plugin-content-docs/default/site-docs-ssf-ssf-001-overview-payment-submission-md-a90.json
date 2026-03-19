@@ -1,0 +1,33 @@
+{
+  "id": "ssf/ssf-001/overview/payment-submission",
+  "title": "Payment Submission",
+  "description": "Payment submission is the process by which a Client Wallet constructs a signed payload and delivers it to the Payment Processor API, which validates it and broadcasts the corresponding transaction on-chain.",
+  "source": "@site/docs/ssf/ssf-001/overview/payment-submission.md",
+  "sourceDirName": "ssf/ssf-001/overview",
+  "slug": "/ssf/ssf-001/overview/payment-submission",
+  "permalink": "/specs/ssf/ssf-001/overview/payment-submission",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/orgs/fabric-payment-standards/docs/ssf/ssf-001/overview/payment-submission.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "document": "SSF-SPEC-001/overview/payment-submission.md",
+    "spec": "SSF-SPEC-001",
+    "version": "1.0.0",
+    "status": "Draft",
+    "date": "2026-03-04T00:00:00.000Z",
+    "author": "Adalton Reis <reis@stablecoinstack.org>",
+    "organization": "Stablecoin Stack Foundation",
+    "license": "Apache License 2.0"
+  },
+  "sidebar": "fpsfSidebar",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/specs/ssf/ssf-001/overview/introduction"
+  },
+  "next": {
+    "title": "The Settlement Contract",
+    "permalink": "/specs/ssf/ssf-001/overview/settlement-contract"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "ssf/ssf-002/reference/glossary",
+  "title": "Glossary",
+  "description": "Terms used in SSF-SPEC-004 and the wallet-gateway documentation. Terms carried forward from SSF-SPEC-001 are noted as such.",
+  "source": "@site/docs/ssf/ssf-002/reference/glossary.md",
+  "sourceDirName": "ssf/ssf-002/reference",
+  "slug": "/ssf/ssf-002/reference/glossary",
+  "permalink": "/specs/ssf/ssf-002/reference/glossary",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/orgs/fabric-payment-standards/docs/ssf/ssf-002/reference/glossary.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "fpsfSidebar",
+  "previous": {
+    "title": "Error Codes",
+    "permalink": "/specs/ssf/ssf-002/reference/error-codes"
+  },
+  "next": {
+    "title": "Message Type Index",
+    "permalink": "/specs/ssf/ssf-002/reference/message-type-index"
+  }
+}

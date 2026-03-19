@@ -1,0 +1,24 @@
+{
+  "id": "ssf/ssf-002/overview/gateway-role",
+  "title": "Gateway Role",
+  "description": "The wallet-gateway sits at the boundary between wallet client applications and the internal services of the Stablecoin Stack. Understanding what it does — and explicitly what it does not do — is essential for both wallet developers and processor operators.",
+  "source": "@site/docs/ssf/ssf-002/overview/gateway-role.md",
+  "sourceDirName": "ssf/ssf-002/overview",
+  "slug": "/ssf/ssf-002/overview/gateway-role",
+  "permalink": "/specs/ssf/ssf-002/overview/gateway-role",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/orgs/fabric-payment-standards/docs/ssf/ssf-002/overview/gateway-role.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "fpsfSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/specs/ssf/ssf-002/overview"
+  },
+  "next": {
+    "title": "Introduction",
+    "permalink": "/specs/ssf/ssf-002/overview/introduction"
+  }
+}

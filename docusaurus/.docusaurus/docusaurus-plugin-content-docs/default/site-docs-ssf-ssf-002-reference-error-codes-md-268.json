@@ -1,0 +1,24 @@
+{
+  "id": "ssf/ssf-002/reference/error-codes",
+  "title": "Error Codes",
+  "description": "Complete reference for all error codes returned by the wallet-gateway in ERROR messages and in the failureCategory field of SUBMISSION_STATUS failure notifications.",
+  "source": "@site/docs/ssf/ssf-002/reference/error-codes.md",
+  "sourceDirName": "ssf/ssf-002/reference",
+  "slug": "/ssf/ssf-002/reference/error-codes",
+  "permalink": "/specs/ssf/ssf-002/reference/error-codes",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/orgs/fabric-payment-standards/docs/ssf/ssf-002/reference/error-codes.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "fpsfSidebar",
+  "previous": {
+    "title": "SSF-SPEC-002 — wallet-gateway Interface Specification",
+    "permalink": "/specs/ssf/ssf-002/SPEC"
+  },
+  "next": {
+    "title": "Glossary",
+    "permalink": "/specs/ssf/ssf-002/reference/glossary"
+  }
+}

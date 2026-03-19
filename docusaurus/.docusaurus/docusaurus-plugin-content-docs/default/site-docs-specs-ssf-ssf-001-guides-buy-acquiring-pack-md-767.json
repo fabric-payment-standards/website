@@ -1,0 +1,33 @@
+{
+  "id": "specs/ssf/ssf-001/guides/buy-acquiring-pack",
+  "title": "Buy an Acquiring Pack",
+  "description": "Step-by-step guide for registering as an Acquirer via the BuyAcquiringPackRequest submission flow.",
+  "source": "@site/docs/specs/ssf/ssf-001/guides/buy-acquiring-pack.md",
+  "sourceDirName": "specs/ssf/ssf-001/guides",
+  "slug": "/specs/ssf/ssf-001/guides/buy-acquiring-pack",
+  "permalink": "/specs/ssf/ssf-001/guides/buy-acquiring-pack",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/orgs/fabric-payment-standards/docs/specs/ssf/ssf-001/guides/buy-acquiring-pack.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "document": "SSF-SPEC-001/guides/buy-acquiring-pack.md",
+    "spec": "SSF-SPEC-001",
+    "version": "1.0.0",
+    "status": "Draft",
+    "date": "2026-03-04T00:00:00.000Z",
+    "author": "Adalton Reis <reis@stablecoinstack.org>",
+    "organization": "Stablecoin Stack Foundation",
+    "license": "Apache License 2.0"
+  },
+  "sidebar": "fpsfSidebar",
+  "previous": {
+    "title": "Guides",
+    "permalink": "/ssf/ssf-001/guides"
+  },
+  "next": {
+    "title": "Integrate the Settlement Contract",
+    "permalink": "/specs/ssf/ssf-001/guides/integrate-settlement-contract"
+  }
+}
