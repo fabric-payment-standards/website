@@ -64,7 +64,7 @@ export default function Home(): JSX.Element {
         <div style={{ marginBottom: '3rem' }}>
           <Link
             className="button button--primary button--lg"
-            to="/ssf-spec-001/overview/introduction"
+            to="/ssf/ssf-001/overview/introduction"
             style={{ marginRight: '1rem' }}
           >
             Read the Specification
