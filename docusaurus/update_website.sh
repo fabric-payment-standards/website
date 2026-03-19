@@ -12,7 +12,7 @@ WORKING_DIR=$BASE_PATH/website/docusaurus
 PUBLIC_BRANCH="public"
 WORKING_BRANCH="working-dir"
 #
-WEBSITE_SPEC_SUB_FOLDER=$BASE_PATH/website/public
+WEBSITE_SPEC_SUB_FOLDER=$BASE_PATH/website/public/specs
 CASHPACK_SPEC_SLUG=cashpack
 SSF_SPEC_SLUG=ssf
 
@@ -52,6 +52,10 @@ git commit -m "chore: update specs and rebuild" || true
 # Switch to public branch
 echo "Switching to public branch..."
 git checkout "$PUBLIC_BRANCH"
+
+# Switch to public branch
+echo "Switching to public branch..."
+git merge "$WORKING_BRANCH"
 
 echo "Cleaning website spec subfolder..."
 rm -rf "$WEBSITE_SPEC_SUB_FOLDER"/*
