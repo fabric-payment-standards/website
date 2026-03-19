@@ -1,0 +1,105 @@
+{
+    "page": {
+        "title": "Fondation Fabric des Normes de Paiement"
+    },
+    "topbar": {
+        "tagline": "Fondation Fabric des Normes de Paiement · Infrastructure de paiement ouverte"
+    },
+    "nav": {
+        "brand": "Fabric Payment Standards",
+        "brand_sub": "Fondation",
+        "home": "Accueil",
+        "specifications": "Spécifications",
+        "members": "Membres",
+        "contribute": "Contribuer",
+        "implementation": "Implémentation",
+        "donate": "Faire un don",
+        "aria_open_menu": "Ouvrir le menu"
+    },
+    "hero": {
+        "kicker": "Implémentation de référence",
+        "title_regular": "Des normes ouvertes pour",
+        "title_bold": "les paiements numériques.",
+        "body": "Infrastructure de paiement neutre qui améliore l’interopérabilité entre les banques et les systèmes financiers existants, en s’appuyant sur des algorithmes cryptographiques pour permettre des flux de paiement centrés sur l’utilisateur, plus simples et plus efficaces.",
+        "badge1_value": "En direct",
+        "badge1_label": "Environnement de test",
+        "badge2_value": "Ouvert",
+        "badge2_label": "Norme et source",
+        "badge3_value": "Gratuit",
+        "badge3_label": "À utiliser et intégrer"
+    },
+    "roles": {
+        "kicker": "Choisissez votre parcours",
+        "title_regular": "Qui êtes-vous ",
+        "title_bold": "dans cette transaction ?",
+        "body": "Choisissez le rôle qui correspond à votre interaction avec les paiements. Chaque parcours présente l'expérience complète de votre côté.",
+        "path1_num": "Parcours 01",
+        "path1_title": "Commerçants",
+        "path1_sub": "Je gère une entreprise et souhaite accepter des paiements",
+        "path1_list": [
+            "Créez une demande de paiement en quelques secondes",
+            "Permettez aux clients de payer par QR code ou lien",
+            "Soyez notifié à l'arrivée des fonds",
+            "Émettez des remboursements si nécessaire"
+        ],
+        "path1_cta": "Voir le parcours commerçant",
+        "path2_num": "Parcours 02",
+        "path2_title": "Payeurs",
+        "path2_sub": "Je souhaite envoyer un paiement via des rails ouverts",
+        "path2_list": [
+            "Connectez votre portefeuille en une étape",
+            "Approuvez un paiement en quelques secondes",
+            "Payez dans la devise que vous détenez",
+            "Conservez un reçu pour chaque transaction"
+        ],
+        "path2_cta": "Voir le parcours payeur",
+        "path3_num": "Parcours 03",
+        "path3_title": "Acquéreurs",
+        "path3_sub": "Je traite ou règle des paiements pour le compte d'autres",
+        "path3_list": [
+            "Acheminez les transactions vers le bon canal",
+            "Réglez les lots selon votre calendrier",
+            "Intégrez votre couche de conformité et KYC",
+            "Exportez des rapports et réconciliez automatiquement"
+        ],
+        "path3_cta": "Voir le parcours acquéreur"
+    },
+    "about": {
+        "kicker": "À propos",
+        "title_regular": "Pas un produit. ",
+        "title_bold": "Une infrastructure.",
+        "body1": "Cette démonstration est maintenue par la Fondation Fabric des Normes de Paiement — une organisation neutre à but non lucratif qui régit la norme de paiement ouverte derrière tout ce que vous voyez ici.",
+        "body2": "Aucune entreprise ne la possède. Aucun fournisseur ne la contrôle. N'importe qui peut l'intégrer, l'auditer ou construire dessus. C'est l'objectif.",
+        "body3": "Si vous souhaitez comprendre la spécification technique, rejoindre en tant que membre, contribuer à la norme ou soutenir les travaux de la fondation, les liens ci-dessous vous y mèneront.",
+        "principles_kicker": "Notre façon de travailler",
+        "p1": "Infrastructure, pas des produits",
+        "p2": "Neutre avant d'être innovant",
+        "p3": "Clarté plutôt que persuasion",
+        "p4": "Conçu pour durer, pas pour suivre les tendances",
+        "p5": "La confiance, méritée — pas supposée"
+    },
+    "resources": {
+        "kicker": "Ressources de la fondation",
+        "title_regular": "Tout en ",
+        "title_bold": "un seul endroit",
+        "r1_name": "Fondation",
+        "r1_desc": "Qui nous sommes, ce que nous gouvernons et pourquoi.",
+        "r2_name": "Spécifications",
+        "r2_desc": "La norme technique complète. Ouverte à la lecture et à la révision.",
+        "r3_name": "Membres",
+        "r3_desc": "Qui façonne la norme et comment les rejoindre.",
+        "r4_name": "Contribuer",
+        "r4_desc": "Aidez à construire et améliorer la norme.",
+        "r5_name": "Faire un don",
+        "r5_desc": "Financez une infrastructure ouverte que personne ne possède."
+    },
+    "footer": {
+        "brand": "Fondation Fabric des Normes de Paiement",
+        "home": "Fondation",
+        "specifications": "Spécifications",
+        "members": "Membres",
+        "contribute": "Contribuer",
+        "implementation": "Implémentation",
+        "promise": "Normes ouvertes. Gouvernance neutre. Adoption concrète."
+    }
+}

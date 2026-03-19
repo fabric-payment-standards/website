@@ -1,0 +1,130 @@
+{
+    "page": {
+        "title": "Apoya a la Fundación — Stablecoin Stack"
+    },
+    "topbar": {
+        "tagline": "Stablecoin Foundation · Infraestructura de pagos abierta"
+    },
+    "nav": {
+        "home": "Inicio",
+        "specifications": "Especificaciones",
+        "members": "Miembros",
+        "contribute": "Contribuir",
+        "implementation": "Implementación",
+        "donate": "Donar",
+        "brand": "Stablecoin Stack",
+        "brand_sub": "Fundación",
+        "aria_open_menu": "Abrir menú"
+    },
+    "hero": {
+        "kicker": "Apoya a la Fundación",
+        "title_line1": "La infraestructura abierta",
+        "title_line2": "necesita financiación",
+        "title_line3": "para seguir abierta.",
+        "body": "Stablecoin Stack es un estándar sin ánimo de lucro y neutral respecto a los proveedores. Sin tarifas de licencia. Sin accionistas. Sostenido íntegramente por organizaciones e individuos que creen que la infraestructura abierta merece ser protegida."
+    },
+    "funds": {
+        "kicker": "A qué se destina el dinero",
+        "title_light": "Tu apoyo financia",
+        "title_bold": "el trabajo, no a nosotros.",
+        "body_1": "La Fundación opera con unos gastos generales mínimos. Las contribuciones van directamente al mantenimiento de la especificación, la gestión de la implementación de referencia y el apoyo a los grupos de trabajo que mantienen el estándar en marcha.",
+        "body_2": "Todos los gastos están supervisados por los miembros de la Fundación y se divulgan en los informes anuales. No existen rendimientos de inversión, participaciones en el capital ni asignaciones de tokens de ningún tipo. Se trata de financiación operativa para infraestructura pública.",
+        "items": [
+            {
+                "icon": "📐",
+                "title": "Mantenimiento de la especificación",
+                "desc": "Mantener el protocolo actualizado, revisado y documentado a medida que evolucionan los pagos."
+            },
+            {
+                "icon": "⚙️",
+                "title": "Implementación de referencia",
+                "desc": "Alojamiento, desarrollo y mantenimiento del entorno de demostración abierto."
+            },
+            {
+                "icon": "🤝",
+                "title": "Operaciones de grupos de trabajo",
+                "desc": "Coordinación de miembros, gestión de revisiones y facilitación del consenso."
+            },
+            {
+                "icon": "🔒",
+                "title": "Revisiones de seguridad",
+                "desc": "Auditorías independientes de la especificación e implementación de referencia."
+            },
+            {
+                "icon": "📖",
+                "title": "Documentación pública",
+                "desc": "Guías, recursos de integración y materiales educativos, todos de acceso gratuito."
+            }
+        ]
+    },
+    "give_card": {
+        "heading": "Formas de contribuir",
+        "subheading": "Todas las contribuciones apoyan el presupuesto operativo de la Fundación. No se ofrece ni se implica ningún rendimiento económico.",
+        "github_title": "GitHub Sponsors",
+        "github_sub": "Contribución recurrente o única a través de GitHub",
+        "divider": "o",
+        "contact_title": "Contáctanos directamente",
+        "contact_sub": "Para contribuciones mayores o apoyo institucional",
+        "membership_title": "Hazte miembro",
+        "membership_sub": "Da forma al estándar, no solo apóyalo",
+        "note": "Las contribuciones son subvenciones operativas a una organización sin ánimo de lucro. No constituyen una inversión y no conllevan ninguna expectativa de rendimiento financiero.",
+        "crypto_heading": "Donar con criptomonedas",
+        "crypto_subheading": "Envía directamente a los monederos de la Fundación. Sin intermediarios.",
+        "crypto_copy_tooltip": "Copiar dirección",
+        "crypto_copied": "¡Copiado!",
+        "crypto_networks": {
+            "bitcoin": {
+                "label": "Bitcoin",
+                "network": "BTC · SegWit nativo"
+            },
+            "ethereum": {
+                "label": "Ethereum",
+                "network": "ETH · ERC-20"
+            },
+            "solana": {
+                "label": "Solana",
+                "network": "SOL · Mainnet"
+            },
+            "tron": {
+                "label": "Tron",
+                "network": "TRX · TRC-20"
+            }
+        }
+    },
+    "contact": {
+        "kicker": "Ponte en contacto",
+        "title_light": "Contribuciones mayores",
+        "title_bold": "o asociaciones",
+        "body_1": "Si tu organización está considerando una contribución significativa, desea hablar sobre la membresía en la Fundación o tiene preguntas sobre cómo se utilizan los fondos, contáctanos directamente.",
+        "body_2": "La Fundación no ofrece paquetes de patrocinio, posicionamiento de marca ni acuerdos promocionales a cambio de apoyo financiero. Nuestra neutralidad no está en venta.",
+        "form": {
+            "fname_label": "Nombre",
+            "lname_label": "Apellidos",
+            "email_label": "Correo electrónico",
+            "org_label": "Organización (opcional)",
+            "subject_label": "Asunto",
+            "subject_placeholder": "Selecciona un tema",
+            "subject_contribution": "Contribución financiera",
+            "subject_membership": "Membresía en la Fundación",
+            "subject_partnership": "Asociación institucional",
+            "subject_other": "Otro",
+            "message_label": "Mensaje",
+            "message_placeholder": "Cuéntanos tu interés en apoyar a la Fundación.",
+            "submit": "Enviar mensaje"
+        }
+    },
+    "disclaimer": {
+        "notice_label": "Aviso importante.",
+        "para_1": " La Fabric Payment Standards Foundation es una organización sin ánimo de lucro. Las contribuciones financieras realizadas a la Fundación son subvenciones operativas y no constituyen inversiones. No otorgan a los contribuyentes ningún derecho sobre capital, participación en beneficios, derechos de gobernanza, tokens ni rendimiento financiero de ningún tipo.",
+        "para_2": "Nada en esta página constituye una solicitud de inversión, una oferta pública de valores ni asesoramiento financiero. Si tienes preguntas sobre el tratamiento fiscal de tu contribución en tu jurisdicción, consulta a un asesor cualificado."
+    },
+    "footer": {
+        "brand": "Fabric Payment Standards Foundation",
+        "home": "Fundación",
+        "specifications": "Especificaciones",
+        "members": "Miembros",
+        "contribute": "Contribuir",
+        "implementation": "Implementación",
+        "promise": "Estándares abiertos. Gobernanza neutral. Adopción real."
+    }
+}

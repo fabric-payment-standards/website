@@ -1,0 +1,130 @@
+{
+    "page": {
+        "title": "Support the Foundation — Stablecoin Stack"
+    },
+    "topbar": {
+        "tagline": "Stablecoin Foundation · Open payment infrastructure"
+    },
+    "nav": {
+        "home": "Home",
+        "specifications": "Specifications",
+        "members": "Members",
+        "contribute": "Contribute",
+        "implementation": "Implementation",
+        "donate": "Donate",
+        "brand": "Stablecoin Stack",
+        "brand_sub": "Foundation",
+        "aria_open_menu": "Open menu"
+    },
+    "hero": {
+        "kicker": "Support the Foundation",
+        "title_line1": "Open infrastructure",
+        "title_line2": "needs funding",
+        "title_line3": "to stay open.",
+        "body": "The Stablecoin Stack is a non-profit, vendor-neutral standard. No licensing fees. No shareholders. Sustained entirely by organisations and individuals who believe open infrastructure is worth protecting."
+    },
+    "funds": {
+        "kicker": "Where the money goes",
+        "title_light": "Your support funds",
+        "title_bold": "the work, not us.",
+        "body_1": "The Foundation operates with minimal overhead. Contributions go directly toward maintaining the specification, running the reference implementation, and supporting the working groups that keep the standard moving forward.",
+        "body_2": "All spending is governed by the Foundation's members and disclosed in annual reports. There are no investment returns, equity stakes, or token allocations of any kind. This is operational funding for public infrastructure.",
+        "items": [
+            {
+                "icon": "📐",
+                "title": "Specification maintenance",
+                "desc": "Keeping the protocol current, reviewed, and documented as payments evolve."
+            },
+            {
+                "icon": "⚙️",
+                "title": "Reference implementation",
+                "desc": "Hosting, development, and upkeep of the open demonstration environment."
+            },
+            {
+                "icon": "🤝",
+                "title": "Working group operations",
+                "desc": "Coordinating members, managing reviews, and facilitating consensus."
+            },
+            {
+                "icon": "🔒",
+                "title": "Security reviews",
+                "desc": "Independent audits of the specification and reference implementation."
+            },
+            {
+                "icon": "📖",
+                "title": "Public documentation",
+                "desc": "Guides, integration resources, and educational materials — all free to access."
+            }
+        ]
+    },
+    "give_card": {
+        "heading": "Ways to contribute",
+        "subheading": "All contributions support the Foundation's operating budget. No equity or financial return is offered or implied.",
+        "github_title": "GitHub Sponsors",
+        "github_sub": "Recurring or one-time via GitHub",
+        "divider": "or",
+        "contact_title": "Contact us directly",
+        "contact_sub": "For larger contributions or institutional support",
+        "membership_title": "Become a member",
+        "membership_sub": "Shape the standard, not just support it",
+        "note": "Contributions are operational grants to a non-profit organisation. They do not constitute an investment and carry no expectation of financial return.",
+        "crypto_heading": "Donate with cryptocurrency",
+        "crypto_subheading": "Send directly to the Foundation's wallets. No intermediaries.",
+        "crypto_copy_tooltip": "Copy address",
+        "crypto_copied": "Copied!",
+        "crypto_networks": {
+            "bitcoin": {
+                "label": "Bitcoin",
+                "network": "BTC · Native SegWit"
+            },
+            "ethereum": {
+                "label": "Ethereum",
+                "network": "ETH · ERC-20"
+            },
+            "solana": {
+                "label": "Solana",
+                "network": "SOL · Mainnet"
+            },
+            "tron": {
+                "label": "Tron",
+                "network": "TRX · TRC-20"
+            }
+        }
+    },
+    "contact": {
+        "kicker": "Get in touch",
+        "title_light": "Larger contributions",
+        "title_bold": "or partnerships",
+        "body_1": "If your organisation is considering a significant contribution, would like to discuss foundation membership, or has questions about how funding is used, reach out directly.",
+        "body_2": "The Foundation does not offer sponsorship packages, branded placements, or promotional arrangements in exchange for financial support. Our neutrality is not for sale.",
+        "form": {
+            "fname_label": "First name",
+            "lname_label": "Last name",
+            "email_label": "Email address",
+            "org_label": "Organisation (optional)",
+            "subject_label": "Subject",
+            "subject_placeholder": "Select a topic",
+            "subject_contribution": "Financial contribution",
+            "subject_membership": "Foundation membership",
+            "subject_partnership": "Institutional partnership",
+            "subject_other": "Other",
+            "message_label": "Message",
+            "message_placeholder": "Tell us about your interest in supporting the Foundation.",
+            "submit": "Send message"
+        }
+    },
+    "disclaimer": {
+        "notice_label": "Important notice.",
+        "para_1": "The Fabric Payment Standards Foundation is a non-profit organisation. Financial contributions made to the Foundation are operational grants and are not investments. They do not entitle contributors to any equity, ownership interest, profit share, governance rights, tokens, or financial return of any kind.",
+        "para_2": "Nothing on this page constitutes a solicitation of investment, a public offering of securities, or financial advice. If you have questions about the tax treatment of your contribution in your jurisdiction, please consult a qualified adviser."
+    },
+    "footer": {
+        "brand": "Fabric Payment Standards Foundation",
+        "home": "Foundation",
+        "specifications": "Specifications",
+        "members": "Members",
+        "contribute": "Contribute",
+        "implementation": "Implementation",
+        "promise": "Open standards. Neutral governance. Real-world adoption."
+    }
+}

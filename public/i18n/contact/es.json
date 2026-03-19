@@ -1,0 +1,53 @@
+{
+    "meta": {
+        "title": "Contacte con Nosotros | Fundación Stablecoin Stack"
+    },
+    "nav": {
+        "home": "Inicio",
+        "impact": "Impacto",
+        "community": "Comunidad",
+        "specifications": "Specs",
+        "contact": "Contacto",
+        "prototypes": "Prototipos",
+        "skip-to-content": "Saltar al contenido",
+        "toggle-menu": "Menú"
+    },
+    "footer": {
+        "tagline": "Infraestructura financiera abierta para dinero programable y liquidación global.",
+        "links_title": "Fundación",
+        "legal_title": "Técnico",
+        "github": "GitHub",
+        "rights": "Todos los derechos reservados.",
+        "note": "Una iniciativa sin fines de lucro para una infraestructura de pagos abierta."
+    },
+    "contact": {
+        "hero": {
+            "title": "Consulta Institucional",
+            "subtitle": "Para organizaciones que buscan alineación, integración técnica o detalles sobre la membresía."
+        },
+        "form": {
+            "name": {
+                "label": "Nombre Completo",
+                "placeholder": "Introduce tu nombre"
+            },
+            "email": {
+                "label": "Correo Institucional",
+                "placeholder": "Introduce tu email"
+            },
+            "subject": {
+                "label": "Asunto",
+                "options": {
+                    "general": "Consulta General",
+                    "membership": "Membresía de la Fundación",
+                    "volunteer": "Contribución Técnica",
+                    "technical": "Soporte Técnico"
+                }
+            },
+            "message": {
+                "label": "Mensaje",
+                "placeholder": "Naturaleza de la consulta"
+            },
+            "submit": "Enviar Mensaje"
+        }
+    }
+}

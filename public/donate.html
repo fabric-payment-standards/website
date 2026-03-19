@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="page.title">Support the Foundation — Fabric Payment Standards</title>
+    <link rel="icon" href="img/logo-512x512.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- @@include('./header.html') -->
+    <div data-include="./components/header.html"></div>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-kicker" data-i18n="hero.kicker">Support the Foundation</div>
+            <h1 class="hero-title">
+                <span data-i18n="hero.title_line1">Open infrastructure</span><br />
+                <strong>
+                    <span data-i18n="hero.title_line2">needs funding</span><br />
+                    <span data-i18n="hero.title_line3">to stay open.</span>
+                </strong>
+            </h1>
+            <p class="hero-body" data-i18n="hero.body">
+                The Fabric Payment Standards is a non-profit, vendor-neutral standard.
+                No licensing fees. No shareholders. Sustained entirely by organisations
+                and individuals who believe open infrastructure is worth protecting.
+            </p>
+        </div>
+    </section>
+
+    <!-- MAIN -->
+    <section class="main">
+        <div class="container">
+            <div class="main-grid">
+
+                <!-- LEFT: where the money goes -->
+                <div>
+                    <div class="section-kicker" data-i18n="funds.kicker">Where the money goes</div>
+                    <h2 class="col-title">
+                        <span data-i18n="funds.title_light">Your support funds</span><br />
+                        <strong data-i18n="funds.title_bold">the work, not us.</strong>
+                    </h2>
+                    <div class="col-body">
+                        <p data-i18n="funds.body_1">
+                            The Foundation operates with minimal overhead. Contributions go directly
+                            toward maintaining the specification, running the reference implementation,
+                            and supporting the working groups that keep the standard moving forward.
+                        </p>
+                        <p data-i18n="funds.body_2">
+                            All spending is governed by the Foundation's members and disclosed in annual reports.
+                            There are no investment returns, equity stakes, or token allocations of any kind.
+                            This is operational funding for public infrastructure.
+                        </p>
+                    </div>
+
+                    <ul class="funds-list" id="funds-list">
+                        <li>
+                            <span class="fi">📐</span>
+                            <div>
+                                <span class="ft" data-i18n="funds.items.0.title">Specification maintenance</span>
+                                <span class="fd" data-i18n="funds.items.0.desc">Keeping the protocol current, reviewed,
+                                    and documented as payments evolve.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="fi">⚙️</span>
+                            <div>
+                                <span class="ft" data-i18n="funds.items.1.title">Reference implementation</span>
+                                <span class="fd" data-i18n="funds.items.1.desc">Hosting, development, and upkeep of the
+                                    open demonstration environment.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="fi">🤝</span>
+                            <div>
+                                <span class="ft" data-i18n="funds.items.2.title">Working group operations</span>
+                                <span class="fd" data-i18n="funds.items.2.desc">Coordinating members, managing reviews,
+                                    and facilitating consensus.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="fi">🔒</span>
+                            <div>
+                                <span class="ft" data-i18n="funds.items.3.title">Security reviews</span>
+                                <span class="fd" data-i18n="funds.items.3.desc">Independent audits of the specification
+                                    and reference implementation.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="fi">📖</span>
+                            <div>
+                                <span class="ft" data-i18n="funds.items.4.title">Public documentation</span>
+                                <span class="fd" data-i18n="funds.items.4.desc">Guides, integration resources, and
+                                    educational materials — all free to access.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- RIGHT: give card -->
+                <div>
+                    <div class="give-card">
+                        <div class="give-card-head">
+                            <h3 data-i18n="give_card.heading">Ways to contribute</h3>
+                            <p data-i18n="give_card.subheading">All contributions support the Foundation's operating
+                                budget. No equity or financial return is offered or implied.</p>
+                        </div>
+                        <div class="give-card-body">
+
+                            <a href="https://github.com/sponsors/stablecoin-stack" class="give-btn primary"
+                                target="_blank" rel="noopener">
+                                <span class="give-btn-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                                    </svg>
+                                </span>
+                                <span class="give-btn-text">
+                                    <span class="gbt" data-i18n="give_card.github_title">GitHub Sponsors</span>
+                                    <span class="gbs" data-i18n="give_card.github_sub">Recurring or one-time via
+                                        GitHub</span>
+                                </span>
+                                <span class="arrow">→</span>
+                            </a>
+
+                            <div class="give-divider">
+                                <span data-i18n="give_card.divider">or</span>
+                            </div>
+
+                            <a href="#contact" class="give-btn">
+                                <span class="give-btn-icon">✉️</span>
+                                <span class="give-btn-text">
+                                    <span class="gbt" data-i18n="give_card.contact_title">Contact us directly</span>
+                                    <span class="gbs" data-i18n="give_card.contact_sub">For larger contributions or
+                                        institutional support</span>
+                                </span>
+                                <span class="arrow">→</span>
+                            </a>
+
+                            <a href="https://members.fabricpaymentstandards.org/" class="give-btn">
+                                <span class="give-btn-icon">🤝</span>
+                                <span class="give-btn-text">
+                                    <span class="gbt" data-i18n="give_card.membership_title">Become a member</span>
+                                    <span class="gbs" data-i18n="give_card.membership_sub">Shape the standard, not just
+                                        support it</span>
+                                </span>
+                                <span class="arrow">→</span>
+                            </a>
+
+                            <p class="give-note" data-i18n="give_card.note">
+                                Contributions are operational grants to a non-profit organisation.
+                                They do not constitute an investment and carry no expectation of financial return.
+                            </p>
+                            <div class="crypto-block">
+                                <p class="crypto-block-heading" data-i18n="give_card.crypto_heading">Donate with
+                                    cryptocurrency</p>
+                                <p class="crypto-block-sub" data-i18n="give_card.crypto_subheading">Send directly to the
+                                    Foundation's wallets. No intermediaries.</p>
+
+                                <div class="crypto-row">
+                                    <div class="crypto-row-left">
+                                        <span class="crypto-row-label"
+                                            data-i18n="give_card.crypto_networks.bitcoin.label">Bitcoin</span>
+                                        <span class="crypto-row-network"
+                                            data-i18n="give_card.crypto_networks.bitcoin.network">BTC · Native
+                                            SegWit</span>
+                                        <span
+                                            class="crypto-row-address">bc1qppyazydem84rjfudccpsv9kmrx2lzv8zufzzjx</span>
+                                    </div>
+                                    <button class="crypto-copy-btn" data-i18n-attr="title:give_card.crypto_copy_tooltip"
+                                        data-address="bc1qppyazydem84rjfudccpsv9kmrx2lzv8zufzzjx"
+                                        title="Copy address">Copy</button>
+                                </div>
+
+                                <div class="crypto-row">
+                                    <div class="crypto-row-left">
+                                        <span class="crypto-row-label"
+                                            data-i18n="give_card.crypto_networks.ethereum.label">Ethereum</span>
+                                        <span class="crypto-row-network"
+                                            data-i18n="give_card.crypto_networks.ethereum.network">ETH · ERC-20</span>
+                                        <span
+                                            class="crypto-row-address">0x3b90a558f85d1ece10ba65069d5192539b101e9c</span>
+                                    </div>
+                                    <button class="crypto-copy-btn" data-i18n-attr="title:give_card.crypto_copy_tooltip"
+                                        data-address="0x3b90a558f85d1ece10ba65069d5192539b101e9c"
+                                        title="Copy address">Copy</button>
+                                </div>
+
+                                <div class="crypto-row">
+                                    <div class="crypto-row-left">
+                                        <span class="crypto-row-label"
+                                            data-i18n="give_card.crypto_networks.solana.label">Solana</span>
+                                        <span class="crypto-row-network"
+                                            data-i18n="give_card.crypto_networks.solana.network">SOL · Mainnet</span>
+                                        <span
+                                            class="crypto-row-address">Pw4wz8czjifbEHgtt3GbqEbANGT9yCtKuJw4k9Bjbaz</span>
+                                    </div>
+                                    <button class="crypto-copy-btn" data-i18n-attr="title:give_card.crypto_copy_tooltip"
+                                        data-address="Pw4wz8czjifbEHgtt3GbqEbANGT9yCtKuJw4k9Bjbaz"
+                                        title="Copy address">Copy</button>
+                                </div>
+
+                                <div class="crypto-row">
+                                    <div class="crypto-row-left">
+                                        <span class="crypto-row-label"
+                                            data-i18n="give_card.crypto_networks.tron.label">Tron</span>
+                                        <span class="crypto-row-network"
+                                            data-i18n="give_card.crypto_networks.tron.network">TRX · TRC-20</span>
+                                        <span class="crypto-row-address">TJkVZLGdF2UjMoM4BBAGVLUX8eFTtS1B92</span>
+                                    </div>
+                                    <button class="crypto-copy-btn" data-i18n-attr="title:give_card.crypto_copy_tooltip"
+                                        data-address="TJkVZLGdF2UjMoM4BBAGVLUX8eFTtS1B92"
+                                        title="Copy address">Copy</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+
+                <div>
+                    <div class="section-kicker" data-i18n="contact.kicker">Get in touch</div>
+                    <h2 class="col-title">
+                        <span data-i18n="contact.title_light">Larger contributions</span><br />
+                        <strong data-i18n="contact.title_bold">or partnerships</strong>
+                    </h2>
+                    <div class="col-body">
+                        <p data-i18n="contact.body_1">
+                            If your organisation is considering a significant contribution,
+                            would like to discuss foundation membership, or has questions
+                            about how funding is used, reach out directly.
+                        </p>
+                        <p data-i18n="contact.body_2">
+                            The Foundation does not offer sponsorship packages, branded placements,
+                            or promotional arrangements in exchange for financial support.
+                            Our neutrality is not for sale.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <div class="form-row">
+                        <div class="field-group">
+                            <label for="fname" data-i18n="contact.form.fname_label">First name</label>
+                            <input type="text" id="fname" name="fname" autocomplete="given-name"
+                                data-i18n-attr="placeholder:contact.form.fname_label" />
+                        </div>
+                        <div class="field-group">
+                            <label for="lname" data-i18n="contact.form.lname_label">Last name</label>
+                            <input type="text" id="lname" name="lname" autocomplete="family-name"
+                                data-i18n-attr="placeholder:contact.form.lname_label" />
+                        </div>
+                    </div>
+                    <div class="field-group">
+                        <label for="email" data-i18n="contact.form.email_label">Email address</label>
+                        <input type="email" id="email" name="email" autocomplete="email"
+                            data-i18n-attr="placeholder:contact.form.email_label" />
+                    </div>
+                    <div class="field-group">
+                        <label for="org" data-i18n="contact.form.org_label">Organisation (optional)</label>
+                        <input type="text" id="org" name="org" autocomplete="organization"
+                            data-i18n-attr="placeholder:contact.form.org_label" />
+                    </div>
+                    <div class="field-group">
+                        <label for="subject" data-i18n="contact.form.subject_label">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="" data-i18n="contact.form.subject_placeholder">Select a topic</option>
+                            <option value="contribution" data-i18n="contact.form.subject_contribution">Financial
+                                contribution</option>
+                            <option value="membership" data-i18n="contact.form.subject_membership">Foundation membership
+                            </option>
+                            <option value="partnership" data-i18n="contact.form.subject_partnership">Institutional
+                                partnership</option>
+                            <option value="other" data-i18n="contact.form.subject_other">Other</option>
+                        </select>
+                    </div>
+                    <div class="field-group">
+                        <label for="message" data-i18n="contact.form.message_label">Message</label>
+                        <textarea id="message" name="message"
+                            data-i18n-attr="placeholder:contact.form.message_placeholder"
+                            placeholder="Tell us about your interest in supporting the Foundation."></textarea>
+                    </div>
+                    <button type="button" class="submit-btn" data-i18n="contact.form.submit">Send message</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- DISCLAIMER -->
+    <section class="disclaimer">
+        <div class="container">
+            <div class="disclaimer-inner">
+                <p>
+                    <strong data-i18n="disclaimer.notice_label">Important notice.</strong>
+                    <span data-i18n="disclaimer.para_1"> The Fabric Payment Standards Foundation is a non-profit
+                        organisation.
+                        Financial contributions made to the Foundation are operational grants and are not investments.
+                        They do not entitle contributors to any equity, ownership interest, profit share, governance
+                        rights,
+                        tokens, or financial return of any kind.</span>
+                </p>
+                <p data-i18n="disclaimer.para_2">
+                    Nothing on this page constitutes a solicitation of investment, a public offering of securities,
+                    or financial advice. If you have questions about the tax treatment of your contribution in your
+                    jurisdiction, please consult a qualified adviser.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- @@include('./footer.html') -->
+    <div data-include="./components/footer.html"></div>
+    <script src="script.js"></script>
+    <script src="i18n.js"></script>
+</body>
+
+</html>

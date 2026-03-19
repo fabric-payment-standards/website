@@ -1,0 +1,105 @@
+{
+    "page": {
+        "title": "Fundação Fabric de Padrões de Pagamento"
+    },
+    "topbar": {
+        "tagline": "Fundação Fabric de Padrões de Pagamento · Infraestrutura de pagamentos aberta"
+    },
+    "nav": {
+        "brand": "Fabric Payment Standards",
+        "brand_sub": "Fundação",
+        "home": "Início",
+        "specifications": "Especificações",
+        "members": "Membros",
+        "contribute": "Contribuir",
+        "implementation": "Implementação",
+        "donate": "Doar",
+        "aria_open_menu": "Abrir menu"
+    },
+    "hero": {
+        "kicker": "Implementação de referência",
+        "title_regular": "Padrões abertos para",
+        "title_bold": "pagamentos digitais.",
+        "body": "Infraestrutura de pagamentos neutra para melhor interoperabilidade entre bancos e sistemas financeiros existentes, utilizando algoritmos criptográficos para viabilizar fluxos de pagamento centrados no usuário, mais simples e eficientes.",
+        "badge1_value": "Ao vivo",
+        "badge1_label": "Ambiente de teste",
+        "badge2_value": "Aberto",
+        "badge2_label": "Padrão e fonte",
+        "badge3_value": "Gratuito",
+        "badge3_label": "Para usar e integrar"
+    },
+    "roles": {
+        "kicker": "Escolha o seu caminho",
+        "title_regular": "Quem é você ",
+        "title_bold": "nesta transação?",
+        "body": "Escolha o papel que corresponde à forma como você interage com os pagamentos. Cada guia mostra a experiência completa do seu lado.",
+        "path1_num": "Caminho 01",
+        "path1_title": "Comerciantes",
+        "path1_sub": "Tenho um negócio e quero aceitar pagamentos",
+        "path1_list": [
+            "Crie uma solicitação de pagamento em segundos",
+            "Deixe os clientes pagarem por QR code ou link",
+            "Receba confirmação quando o dinheiro chegar",
+            "Emita reembolsos quando necessário"
+        ],
+        "path1_cta": "Ver o guia do comerciante",
+        "path2_num": "Caminho 02",
+        "path2_title": "Pagadores",
+        "path2_sub": "Quero enviar um pagamento usando trilhos abertos",
+        "path2_list": [
+            "Conecte sua carteira em um único passo",
+            "Aprove um pagamento em segundos",
+            "Pague na moeda que você possui",
+            "Guarde um recibo para cada transação"
+        ],
+        "path2_cta": "Ver o guia do pagador",
+        "path3_num": "Caminho 03",
+        "path3_title": "Adquirentes",
+        "path3_sub": "Processo ou liquido pagamentos em nome de terceiros",
+        "path3_list": [
+            "Roteie transações para o canal correto",
+            "Liquide lotes conforme seu cronograma",
+            "Conecte sua camada de conformidade e KYC",
+            "Exporte relatórios e reconcilie automaticamente"
+        ],
+        "path3_cta": "Ver o guia do adquirente"
+    },
+    "about": {
+        "kicker": "Sobre isto",
+        "title_regular": "Não é um produto. ",
+        "title_bold": "É infraestrutura.",
+        "body1": "Esta demonstração é mantida pela Fundação Fabric de Padrões de Pagamento — uma organização neutra sem fins lucrativos que governa o padrão de pagamento aberto por trás de tudo o que você vê aqui.",
+        "body2": "Nenhuma empresa a possui. Nenhum fornecedor a controla. Qualquer um pode integrá-la, auditá-la ou construir sobre ela. Esse é o ponto.",
+        "body3": "Se você quiser entender a especificação técnica, tornar-se membro, contribuir com o padrão ou apoiar o trabalho da fundação, os links abaixo irão te direcionar.",
+        "principles_kicker": "Como trabalhamos",
+        "p1": "Infraestrutura, não produtos",
+        "p2": "Neutro antes de inovador",
+        "p3": "Clareza sobre persuasão",
+        "p4": "Construído para durar, não para seguir tendências",
+        "p5": "Confiança, conquistada — não presumida"
+    },
+    "resources": {
+        "kicker": "Recursos da fundação",
+        "title_regular": "Tudo em ",
+        "title_bold": "um só lugar",
+        "r1_name": "Fundação",
+        "r1_desc": "Quem somos, o que governamos e por quê.",
+        "r2_name": "Especificações",
+        "r2_desc": "O padrão técnico completo. Aberto para leitura e revisão.",
+        "r3_name": "Membros",
+        "r3_desc": "Quem molda o padrão e como participar.",
+        "r4_name": "Contribuir",
+        "r4_desc": "Ajude a construir e melhorar o padrão.",
+        "r5_name": "Doar",
+        "r5_desc": "Financie infraestrutura aberta que ninguém possui."
+    },
+    "footer": {
+        "brand": "Fundação Fabric de Padrões de Pagamento",
+        "home": "Fundação",
+        "specifications": "Especificações",
+        "members": "Membros",
+        "contribute": "Contribuir",
+        "implementation": "Implementação",
+        "promise": "Padrões abertos. Governança neutra. Adoção no mundo real."
+    }
+}

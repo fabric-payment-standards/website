@@ -1,0 +1,53 @@
+{
+    "meta": {
+        "title": "Contactează-ne | Fundația Stablecoin Stack"
+    },
+    "nav": {
+        "home": "Acasă",
+        "impact": "Impact",
+        "community": "Comunitate",
+        "specifications": "Specs",
+        "contact": "Contact",
+        "prototypes": "Prototipuri",
+        "skip-to-content": "Sari la conținut",
+        "toggle-menu": "Meniu"
+    },
+    "footer": {
+        "tagline": "Infrastructură financiară deschisă pentru bani programabili și decontare globală.",
+        "links_title": "Fundație",
+        "legal_title": "Tehnic",
+        "github": "GitHub",
+        "rights": "Toate drepturile rezervate.",
+        "note": "O inițiativă non-profit pentru infrastructură de plăți deschisă."
+    },
+    "contact": {
+        "hero": {
+            "title": "Solicitare Instituțională",
+            "subtitle": "Pentru organizațiile care caută aliniere, integrare tehnică sau detalii despre calitatea de membru."
+        },
+        "form": {
+            "name": {
+                "label": "Nume Complet",
+                "placeholder": "Introduceți numele"
+            },
+            "email": {
+                "label": "Email Instituțional",
+                "placeholder": "Introduceți email-ul"
+            },
+            "subject": {
+                "label": "Subiect",
+                "options": {
+                    "general": "Informații Generale",
+                    "membership": "Membru Fundație",
+                    "volunteer": "Contribuție Tehnică",
+                    "technical": "Suport Tehnic"
+                }
+            },
+            "message": {
+                "label": "Mesaj",
+                "placeholder": "Natura solicitării"
+            },
+            "submit": "Trimite Mesajul"
+        }
+    }
+}

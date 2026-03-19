@@ -1,0 +1,86 @@
+{
+    "topbar": {
+        "tagline": "Fabric Payment Standards · Open payment infrastructure"
+    },
+    "nav": {
+        "home": "Home",
+        "specifications": "Specifications",
+        "members": "Members",
+        "implementation": "Implementation",
+        "community": "Community",
+        "roadmap": "Roadmap",
+        "blog": "Blog",
+        "about": "About",
+        "donate": "Donate",
+        "brand_part1": "Fabric Payment",
+        "brand_part2": "Standards",
+        "brand_sub": "Foundation",
+        "aria_open_menu": "Open menu",
+        "aria_navigation": "Navigation"
+    },
+    "dropdown": {
+        "shared": {
+            "formal_spec": "Formal Specification",
+            "reference": "Reference"
+        },
+        "cashpack": {
+            "heading": "CashPack Protocol",
+            "overview": "Overview",
+            "concepts": "Core Concepts",
+            "guides": "Guides",
+            "governance": "Governance",
+            "business_models": "Business Models"
+        },
+        "ssf": {
+            "heading": "Stablecoin Stack",
+            "overview": "Overview",
+            "architecture": "Architecture",
+            "concepts": "Core Concepts",
+            "guides": "Guides",
+            "business_model": "Business Model",
+            "ssf002": "SSF-002 — wallet-gateway"
+        },
+        "allspecs": {
+            "heading": "All Specs",
+            "cpp": "CPP-1.0 — CashPack",
+            "ssf001": "SSF-001 — Stablecoin Stack",
+            "ssf_planned": "SSF-003…009",
+            "view_all": "View all specs →"
+        },
+        "community": {
+            "get_involved_heading": "Get Involved",
+            "hub": "Community Hub",
+            "contributing": "Contributing",
+            "rfcs": "RFCs",
+            "governance_heading": "Governance",
+            "governance": "Governance",
+            "working_groups": "Working Groups"
+        }
+    },
+    "badge": {
+        "draft": "draft",
+        "planned": "planned"
+    },
+    "mobile": {
+        "cashpack": {
+            "overview": "CashPack — Overview",
+            "guides": "CashPack — Guides",
+            "spec": "CashPack — Formal Spec"
+        },
+        "ssf": {
+            "overview": "Stablecoin Stack — Overview",
+            "guides": "Stablecoin Stack — Guides",
+            "spec": "Stablecoin Stack — Formal Spec"
+        },
+        "view_all_specs": "View all specifications"
+    },
+    "footer": {
+        "brand": "Fabric Payment Standards Foundation",
+        "home": "Foundation",
+        "specifications": "Specifications",
+        "members": "Members",
+        "contribute": "Contribute",
+        "implementation": "Implementation",
+        "promise": "Open standards. Neutral governance. Real-world adoption.Reference Implementation"
+    }
+}

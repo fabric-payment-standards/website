@@ -1,0 +1,53 @@
+{
+    "meta": {
+        "title": "Contact Us | Stablecoin Stack Foundation"
+    },
+    "nav": {
+        "home": "Home",
+        "impact": "Impact",
+        "community": "Community",
+        "specifications": "Specs",
+        "contact": "Contact",
+        "prototypes": "Prototypes",
+        "skip-to-content": "Skip to content",
+        "toggle-menu": "Toggle Menu"
+    },
+    "footer": {
+        "tagline": "Open financial infrastructure for programmable money and global settlement.",
+        "links_title": "Foundation",
+        "legal_title": "Technical",
+        "github": "GitHub",
+        "rights": "All rights reserved.",
+        "note": "A non-profit initiative for open payments infrastructure."
+    },
+    "contact": {
+        "hero": {
+            "title": "Institutional Inquiry",
+            "subtitle": "For organizations seeking alignment, technical integration, or membership details."
+        },
+        "form": {
+            "name": {
+                "label": "Full Name",
+                "placeholder": "Enter your name"
+            },
+            "email": {
+                "label": "Institutional Email",
+                "placeholder": "Enter your email"
+            },
+            "subject": {
+                "label": "Subject",
+                "options": {
+                    "general": "General Inquiry",
+                    "membership": "Foundation Membership",
+                    "volunteer": "Technical Contribution",
+                    "technical": "Technical Support"
+                }
+            },
+            "message": {
+                "label": "Message",
+                "placeholder": "Nature of inquiry"
+            },
+            "submit": "Send Message"
+        }
+    }
+}

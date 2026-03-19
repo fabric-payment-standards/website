@@ -1,0 +1,130 @@
+{
+    "page": {
+        "title": "Susține Fundația — Stablecoin Stack"
+    },
+    "topbar": {
+        "tagline": "Stablecoin Foundation · Infrastructură de plăți deschisă"
+    },
+    "nav": {
+        "home": "Acasă",
+        "specifications": "Specificații",
+        "members": "Membri",
+        "contribute": "Contribuie",
+        "implementation": "Implementare",
+        "donate": "Donează",
+        "brand": "Stablecoin Stack",
+        "brand_sub": "Fundație",
+        "aria_open_menu": "Deschide meniul"
+    },
+    "hero": {
+        "kicker": "Susține Fundația",
+        "title_line1": "Infrastructura deschisă",
+        "title_line2": "are nevoie de finanțare",
+        "title_line3": "ca să rămână deschisă.",
+        "body": "Stablecoin Stack este un standard nonprofit, neutru față de furnizori. Fără taxe de licențiere. Fără acționari. Susținut în întregime de organizații și persoane care cred că infrastructura deschisă merită protejată."
+    },
+    "funds": {
+        "kicker": "Unde merg banii",
+        "title_light": "Sprijinul tău finanțează",
+        "title_bold": "munca, nu pe noi.",
+        "body_1": "Fundația operează cu cheltuieli generale minime. Contribuțiile merg direct spre menținerea specificației, gestionarea implementării de referință și sprijinirea grupurilor de lucru care mențin standardul în mișcare.",
+        "body_2": "Toate cheltuielile sunt supervizate de membrii Fundației și comunicate în rapoartele anuale. Nu există randamente din investiții, participații la capital sau alocări de tokenuri de niciun fel. Acesta este un finanțament operațional pentru infrastructură publică.",
+        "items": [
+            {
+                "icon": "📐",
+                "title": "Menținerea specificației",
+                "desc": "Păstrarea protocolului actualizat, revizuit și documentat pe măsură ce plățile evoluează."
+            },
+            {
+                "icon": "⚙️",
+                "title": "Implementarea de referință",
+                "desc": "Găzduire, dezvoltare și întreținere a mediului de demonstrație deschis."
+            },
+            {
+                "icon": "🤝",
+                "title": "Operațiunile grupurilor de lucru",
+                "desc": "Coordonarea membrilor, gestionarea recenziilor și facilitarea consensului."
+            },
+            {
+                "icon": "🔒",
+                "title": "Revizuiri de securitate",
+                "desc": "Audituri independente ale specificației și implementării de referință."
+            },
+            {
+                "icon": "📖",
+                "title": "Documentație publică",
+                "desc": "Ghiduri, resurse de integrare și materiale educaționale — toate cu acces gratuit."
+            }
+        ]
+    },
+    "give_card": {
+        "heading": "Modalități de a contribui",
+        "subheading": "Toate contribuțiile susțin bugetul operațional al Fundației. Nu se oferă și nu se implică niciun randament financiar sau participație la capital.",
+        "github_title": "GitHub Sponsors",
+        "github_sub": "Contribuție recurentă sau unică prin GitHub",
+        "divider": "sau",
+        "contact_title": "Contactează-ne direct",
+        "contact_sub": "Pentru contribuții mai mari sau suport instituțional",
+        "membership_title": "Devino membru",
+        "membership_sub": "Modelează standardul, nu doar sprijină-l",
+        "note": "Contribuțiile sunt granturi operaționale către o organizație nonprofit. Nu constituie o investiție și nu implică nicio așteptare de randament financiar.",
+        "crypto_heading": "Donează cu criptomonede",
+        "crypto_subheading": "Trimite direct la portofelele Fundației. Fără intermediari.",
+        "crypto_copy_tooltip": "Copiază adresa",
+        "crypto_copied": "Copiat!",
+        "crypto_networks": {
+            "bitcoin": {
+                "label": "Bitcoin",
+                "network": "BTC · SegWit nativ"
+            },
+            "ethereum": {
+                "label": "Ethereum",
+                "network": "ETH · ERC-20"
+            },
+            "solana": {
+                "label": "Solana",
+                "network": "SOL · Mainnet"
+            },
+            "tron": {
+                "label": "Tron",
+                "network": "TRX · TRC-20"
+            }
+        }
+    },
+    "contact": {
+        "kicker": "Ia legătura cu noi",
+        "title_light": "Contribuții mai mari",
+        "title_bold": "sau parteneriate",
+        "body_1": "Dacă organizația ta ia în considerare o contribuție semnificativă, dorește să discute despre calitatea de membru al Fundației sau are întrebări despre modul în care sunt utilizate fondurile, contactează-ne direct.",
+        "body_2": "Fundația nu oferă pachete de sponsorizare, plasamente de marcă sau aranjamente promoționale în schimbul sprijinului financiar. Neutralitatea noastră nu este de vânzare.",
+        "form": {
+            "fname_label": "Prenume",
+            "lname_label": "Nume de familie",
+            "email_label": "Adresă de e-mail",
+            "org_label": "Organizație (opțional)",
+            "subject_label": "Subiect",
+            "subject_placeholder": "Selectează un subiect",
+            "subject_contribution": "Contribuție financiară",
+            "subject_membership": "Calitate de membru al Fundației",
+            "subject_partnership": "Parteneriat instituțional",
+            "subject_other": "Altele",
+            "message_label": "Mesaj",
+            "message_placeholder": "Spune-ne despre interesul tău de a susține Fundația.",
+            "submit": "Trimite mesajul"
+        }
+    },
+    "disclaimer": {
+        "notice_label": "Notă importantă.",
+        "para_1": " Fabric Payment Standards Foundation este o organizație nonprofit. Contribuțiile financiare făcute Fundației sunt granturi operaționale și nu constituie investiții. Ele nu conferă contribuabililor niciun drept de capital, participare la profit, drepturi de guvernanță, tokenuri sau randament financiar de niciun fel.",
+        "para_2": "Nimic de pe această pagină nu constituie o solicitare de investiție, o ofertă publică de valori mobiliare sau consiliere financiară. Dacă aveți întrebări despre tratamentul fiscal al contribuției dvs. în jurisdicția dvs., vă rugăm să consultați un consilier calificat."
+    },
+    "footer": {
+        "brand": "Fabric Payment Standards Foundation",
+        "home": "Fundație",
+        "specifications": "Specificații",
+        "members": "Membri",
+        "contribute": "Contribuie",
+        "implementation": "Implementare",
+        "promise": "Standarde deschise. Guvernanță neutră. Adoptare reală."
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "meta": {
+        "title": "Entre em Contato | Fundação Stablecoin Stack"
+    },
+    "nav": {
+        "home": "Início",
+        "impact": "Impacto",
+        "community": "Comunidade",
+        "specifications": "Specs",
+        "contact": "Contato",
+        "prototypes": "Protótipos",
+        "skip-to-content": "Pular para o conteúdo",
+        "toggle-menu": "Menu"
+    },
+    "footer": {
+        "tagline": "Infraestrutura financeira aberta para dinheiro programável e liquidação global.",
+        "links_title": "Fundação",
+        "legal_title": "Técnico",
+        "github": "GitHub",
+        "rights": "Todos os direitos reservados.",
+        "note": "Uma iniciativa sem fins lucrativos para infraestrutura de pagamentos aberta."
+    },
+    "contact": {
+        "hero": {
+            "title": "Consulta Institucional",
+            "subtitle": "Para organizações que buscam alinhamento, integração técnica ou detalhes sobre a adesão."
+        },
+        "form": {
+            "name": {
+                "label": "Nome Completo",
+                "placeholder": "Digite seu nome"
+            },
+            "email": {
+                "label": "E-mail Institucional",
+                "placeholder": "Digite seu e-mail"
+            },
+            "subject": {
+                "label": "Assunto",
+                "options": {
+                    "general": "Inquérito Geral",
+                    "membership": "Adesão à Fundação",
+                    "volunteer": "Contribuição Técnica",
+                    "technical": "Suporte Técnico"
+                }
+            },
+            "message": {
+                "label": "Mensagem",
+                "placeholder": "Natureza da consulta"
+            },
+            "submit": "Enviar Mensagem"
+        }
+    }
+}

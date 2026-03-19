@@ -1,0 +1,86 @@
+{
+    "topbar": {
+        "tagline": "Fabric Payment Standards · 开放支付基础设施"
+    },
+    "nav": {
+        "home": "首页",
+        "specifications": "规范",
+        "members": "成员",
+        "implementation": "实现方案",
+        "community": "社区",
+        "roadmap": "路线图",
+        "blog": "博客",
+        "about": "关于我们",
+        "donate": "捐赠支持",
+        "brand_part1": "Fabric Payment",
+        "brand_part2": "Standards",
+        "brand_sub": "基金会",
+        "aria_open_menu": "打开菜单",
+        "aria_navigation": "导航"
+    },
+    "dropdown": {
+        "shared": {
+            "formal_spec": "正式规范",
+            "reference": "参考文档"
+        },
+        "cashpack": {
+            "heading": "CashPack 协议",
+            "overview": "概览",
+            "concepts": "核心概念",
+            "guides": "使用指南",
+            "governance": "治理机制",
+            "business_models": "商业模式"
+        },
+        "ssf": {
+            "heading": "Stablecoin Stack",
+            "overview": "概览",
+            "architecture": "架构设计",
+            "concepts": "核心概念",
+            "guides": "使用指南",
+            "business_model": "商业模式",
+            "ssf002": "SSF-002 — wallet-gateway"
+        },
+        "allspecs": {
+            "heading": "所有规范",
+            "cpp": "CPP-1.0 — CashPack",
+            "ssf001": "SSF-001 — Stablecoin Stack",
+            "ssf_planned": "SSF-003…009",
+            "view_all": "查看全部规范 →"
+        },
+        "community": {
+            "get_involved_heading": "参与贡献",
+            "hub": "社区中心",
+            "contributing": "贡献指南",
+            "rfcs": "RFC 提案",
+            "governance_heading": "治理",
+            "governance": "治理机制",
+            "working_groups": "工作组"
+        }
+    },
+    "badge": {
+        "draft": "草稿",
+        "planned": "计划中"
+    },
+    "mobile": {
+        "cashpack": {
+            "overview": "CashPack — 概览",
+            "guides": "CashPack — 使用指南",
+            "spec": "CashPack — 正式规范"
+        },
+        "ssf": {
+            "overview": "Stablecoin Stack — 概览",
+            "guides": "Stablecoin Stack — 使用指南",
+            "spec": "Stablecoin Stack — 正式规范"
+        },
+        "view_all_specs": "查看全部规范"
+    },
+    "footer": {
+        "brand": "Fabric Payment Standards Foundation",
+        "home": "基金会",
+        "specifications": "规范",
+        "members": "成员",
+        "contribute": "参与贡献",
+        "implementation": "实现",
+        "promise": "开放标准。中立治理。真实世界采用。"
+    }
+}

@@ -1,0 +1,615 @@
+<style>
+    /* ============================================================
+   HEADER — topbar, nav, dropdowns, burger, mobile drawer
+   ============================================================ */
+
+    /* TOPBAR */
+    .topbar {
+        background: var(--blue);
+        font-size: 12px;
+        padding: 8px 0;
+    }
+
+    .topbar .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .topbar span {
+        color: rgba(255, 255, 255, 0.4);
+    }
+
+    .topbar-links {
+        display: flex;
+        gap: 28px;
+    }
+
+    .topbar-links a {
+        color: rgba(255, 255, 255, 0.5);
+        text-decoration: none;
+        transition: color 0.15s;
+    }
+
+    .topbar-links a:hover {
+        color: #fff;
+    }
+
+    /* NAV */
+    nav {
+        background: var(--white);
+        border-bottom: 1px solid var(--border);
+        position: sticky;
+        top: 0;
+        z-index: 50;
+    }
+
+    .nav-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 68px;
+    }
+
+    /* LOGO */
+    .nav-logo {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        text-decoration: none;
+    }
+
+    .logo-mark {
+        width: 32px;
+        height: 32px;
+        border-radius: 4px;
+        background: var(--blue);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    .logo-mark svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .logo-wordmark {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        color: var(--blue);
+        line-height: 1.2;
+    }
+
+    .logo-wordmark .sub {
+        font-weight: 400;
+        color: var(--gray);
+        font-size: 13px;
+        display: block;
+    }
+
+    /* NAV LINKS */
+    .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        list-style: none;
+    }
+
+    .nav-links li {
+        position: relative;
+    }
+
+    .nav-links a,
+    .nav-links .nav-dropdown-trigger {
+        font-size: 14px;
+        color: var(--sub);
+        text-decoration: none;
+        transition: color 0.15s, background 0.15s;
+        padding: 6px 12px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .nav-links a:hover,
+    .nav-links .nav-dropdown-trigger:hover {
+        color: var(--teal);
+        background: var(--light);
+    }
+
+    .nav-links .active {
+        color: var(--teal);
+        font-weight: 500;
+    }
+
+    /* CHEVRON */
+    .chevron {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-right: 1.5px solid currentColor;
+        border-bottom: 1.5px solid currentColor;
+        transform: rotate(45deg) translateY(-2px);
+        transition: transform 0.2s;
+        flex-shrink: 0;
+    }
+
+    .nav-links li.open .chevron {
+        transform: rotate(-135deg) translateY(-2px);
+    }
+
+    /* DROPDOWN */
+    .dropdown {
+        position: absolute;
+        top: calc(100% + 8px);
+        left: max(20px, 50%);
+        /* margin-left: max(70px, 70%); */
+        /* transform: translateX(min(-50%, calc(20px - 50%))); */
+        transform: translateX(calc(-50% + max(50px, 20vw)));
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        box-shadow: 0 8px 32px rgba(11, 31, 51, 0.12);
+        min-width: 680px;
+        display: none;
+        z-index: 100;
+        padding: 8px;
+
+    }
+
+    .dropdown--narrow {
+        min-width: 420px;
+    }
+
+    .nav-links li.open .dropdown {
+        display: flex;
+    }
+
+    .dropdown-cols {
+        display: flex;
+        width: 100%;
+    }
+
+    .dropdown-col {
+        flex: 1;
+        padding: 12px 16px;
+        border-right: 1px solid var(--border);
+    }
+
+    .dropdown-col:last-child {
+        border-right: none;
+    }
+
+    .dropdown-col--narrow {
+        flex: 0 0 210px;
+    }
+
+    .dropdown-col-head {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--teal);
+        padding: 4px 8px 10px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .dropdown-col-head::before {
+        content: '';
+        width: 14px;
+        height: 1px;
+        background: var(--teal);
+        flex-shrink: 0;
+    }
+
+    .dropdown-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 7px 8px;
+        border-radius: 4px;
+        font-size: 13px;
+        color: var(--sub);
+        cursor: pointer;
+        transition: background 0.12s, color 0.12s;
+        text-decoration: none;
+    }
+
+    .dropdown-item:hover {
+        background: var(--light);
+        color: var(--blue);
+    }
+
+    .dropdown-item--cta {
+        color: var(--teal);
+        font-weight: 500;
+    }
+
+    .dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        flex-shrink: 0;
+    }
+
+    .dot-blue {
+        background: #378ADD;
+    }
+
+    .dot-green {
+        background: #639922;
+    }
+
+    .dot-gray {
+        background: #B4B2A9;
+    }
+
+    .dropdown-badge {
+        font-size: 10px;
+        background: rgba(31, 163, 163, 0.1);
+        color: var(--teal);
+        border: 1px solid rgba(31, 163, 163, 0.3);
+        border-radius: 3px;
+        padding: 1px 5px;
+        margin-left: auto;
+        letter-spacing: 0.03em;
+    }
+
+    .dropdown-divider {
+        height: 1px;
+        background: var(--border);
+        margin: 6px 8px;
+    }
+
+    /* DONATE CTA */
+    .nav-cta-wrap {
+        margin-left: 8px;
+    }
+
+    .nav-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        background: var(--blue);
+        color: var(--white);
+        padding: 8px 18px;
+        border-radius: 20px;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 500;
+        transition: background 0.2s, transform 0.2s;
+        white-space: nowrap;
+    }
+
+    .nav-cta:hover {
+        background: #112b47;
+        transform: scale(1.03);
+    }
+
+    .nav-cta .heart {
+        color: var(--teal);
+        font-size: 12px;
+    }
+
+    /* BURGER */
+    .burger {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        gap: 5px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 4px;
+        border-radius: 4px;
+        transition: background 0.15s;
+    }
+
+    .burger:hover {
+        background: var(--light);
+    }
+
+    .burger span {
+        display: block;
+        width: 22px;
+        height: 1.5px;
+        background: var(--blue);
+        border-radius: 2px;
+        transition: transform 0.25s ease, opacity 0.2s ease, width 0.25s ease;
+        transform-origin: center;
+    }
+
+    .burger.open span:nth-child(1) {
+        transform: translateY(6.5px) rotate(45deg);
+    }
+
+    .burger.open span:nth-child(2) {
+        opacity: 0;
+        width: 0;
+    }
+
+    .burger.open span:nth-child(3) {
+        transform: translateY(-6.5px) rotate(-45deg);
+    }
+
+    /* MOBILE DRAWER */
+    .mobile-menu {
+        display: none;
+        background: var(--white);
+        border-top: 1px solid var(--border);
+        overflow-y: auto;
+        flex-direction: column;
+    }
+
+    .mobile-menu.open {
+        display: flex;
+    }
+
+    .mobile-section {
+        border-bottom: 1px solid var(--border);
+    }
+
+    .mobile-section-head {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--teal);
+        padding: 14px 28px 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .mobile-section-head::before {
+        content: '';
+        width: 14px;
+        height: 1px;
+        background: var(--teal);
+        flex-shrink: 0;
+    }
+
+    .mobile-menu a {
+        display: block;
+        padding: 12px 28px;
+        font-size: 15px;
+        color: var(--blue);
+        text-decoration: none;
+        border-bottom: 1px solid var(--border);
+        transition: background 0.12s, color 0.12s;
+    }
+
+    .mobile-menu a:hover {
+        background: var(--light);
+        color: var(--teal);
+    }
+
+    .mobile-menu a.sub-item {
+        padding-left: 40px;
+        font-size: 14px;
+        color: var(--sub);
+    }
+
+    .mobile-menu .mobile-cta {
+        display: block;
+        margin: 20px 28px 24px;
+        padding: 14px 20px;
+        background: var(--blue);
+        color: var(--white);
+        border-radius: 8px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 15px;
+        border: none;
+        text-decoration: none;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 960px) {
+
+        .nav-links,
+        .nav-cta-wrap {
+            display: none;
+        }
+
+        .burger {
+            display: flex;
+        }
+
+        .topbar-links {
+            display: none;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .topbar .container {
+            padding: 0 20px;
+        }
+    }
+</style>
+<!-- TOPBAR -->
+<div class="topbar">
+    <div class="container">
+        <span data-i18n="topbar.tagline">Fabric Payment Standards · Open payment infrastructure</span>
+        <div class="topbar-links">
+            <a href="https://fabricpaymentstandards.org" data-i18n="nav.home">Home</a>
+            <a href="https://specifications.fabricpaymentstandards.org"
+                data-i18n="nav.specifications">Specifications</a>
+            <a href="https://members.fabricpaymentstandards.org/" data-i18n="nav.members">Members</a>
+            <a href="https://implementation.fabricpaymentstandards.org"
+                data-i18n="nav.implementation">Implementation</a>
+        </div>
+    </div>
+</div>
+
+<!-- NAV -->
+<nav class="container">
+    <div class="nav-inner">
+        <a href="https://fabricpaymentstandards.org" class="nav-logo">
+            <img src="../img/logo-512x512.png" alt="Fabric Payment Standards" class="logo-img" width="32" height="32" />
+            <span class="logo-wordmark">
+                <span data-i18n="nav.brand_part1">Fabric Payment</span><br />
+                <span data-i18n="nav.brand_part2">Standards</span>
+                <span class="pipe">|</span>
+                <!-- <span class="sub" data-i18n="nav.brand_sub">Foundation</span> -->
+            </span>
+        </a>
+
+        <ul class="nav-links">
+            <!-- Specifications dropdown -->
+            <li id="dd-specs">
+                <button class="nav-dropdown-trigger" onclick="toggleDropdown('dd-specs')">
+                    <span data-i18n="nav.specifications">Specifications</span> <span class="chevron"></span>
+                </button>
+                <div class="dropdown">
+                    <div class="dropdown-cols">
+                        <div class="dropdown-col">
+                            <div class="dropdown-col-head" data-i18n="dropdown.cashpack.heading">CashPack Protocol</div>
+                            <a class="dropdown-item" href="/specs/cashpack"><span class="dot dot-blue"></span><span
+                                    data-i18n="dropdown.cashpack.overview">Overview</span></a>
+                            <a class="dropdown-item" href="/specs/cashpack/concepts"><span
+                                    class="dot dot-blue"></span><span data-i18n="dropdown.cashpack.concepts">Core
+                                    Concepts</span></a>
+                            <a class="dropdown-item" href="/specs/cashpack/guides"><span
+                                    class="dot dot-blue"></span><span
+                                    data-i18n="dropdown.cashpack.guides">Guides</span></a>
+                            <a class="dropdown-item" href="/specs/cashpack/governance"><span
+                                    class="dot dot-blue"></span><span
+                                    data-i18n="dropdown.cashpack.governance">Governance</span></a>
+                            <a class="dropdown-item" href="/specs/cashpack/spec"><span class="dot dot-blue"></span><span
+                                    data-i18n="dropdown.shared.formal_spec">Formal Specification</span></a>
+                            <a class="dropdown-item" href="/specs/cashpack/reference"><span
+                                    class="dot dot-blue"></span><span
+                                    data-i18n="dropdown.shared.reference">Reference</span></a>
+                            <a class="dropdown-item" href="/specs/cashpack/business-models"><span
+                                    class="dot dot-blue"></span><span
+                                    data-i18n="dropdown.cashpack.business_models">Business Models</span></a>
+                        </div>
+                        <div class="dropdown-col">
+                            <div class="dropdown-col-head" data-i18n="dropdown.ssf.heading">Stablecoin Stack</div>
+                            <a class="dropdown-item" href="/specs/ssf"><span class="dot dot-green"></span><span
+                                    data-i18n="dropdown.ssf.overview">Overview</span></a>
+                            <a class="dropdown-item" href="/specs/ssf/architecture"><span
+                                    class="dot dot-green"></span><span
+                                    data-i18n="dropdown.ssf.architecture">Architecture</span></a>
+                            <a class="dropdown-item" href="/specs/ssf/concepts"><span class="dot dot-green"></span><span
+                                    data-i18n="dropdown.ssf.concepts">Core Concepts</span></a>
+                            <a class="dropdown-item" href="/specs/ssf/guides"><span class="dot dot-green"></span><span
+                                    data-i18n="dropdown.ssf.guides">Guides</span></a>
+                            <a class="dropdown-item" href="/specs/ssf/spec"><span class="dot dot-green"></span><span
+                                    data-i18n="dropdown.shared.formal_spec">Formal Specification</span></a>
+                            <a class="dropdown-item" href="/specs/ssf/reference"><span
+                                    class="dot dot-green"></span><span
+                                    data-i18n="dropdown.shared.reference">Reference</span></a>
+                            <a class="dropdown-item" href="/specs/ssf/business-model"><span
+                                    class="dot dot-green"></span><span data-i18n="dropdown.ssf.business_model">Business
+                                    Model</span></a>
+                            <a class="dropdown-item" href="/specs/ssf/ssf-002"><span class="dot dot-gray"></span><span
+                                    data-i18n="dropdown.ssf.ssf002">SSF-002 — wallet-gateway</span> <span
+                                    class="dropdown-badge" data-i18n="badge.draft">draft</span></a>
+                        </div>
+                        <div class="dropdown-col dropdown-col--narrow">
+                            <div class="dropdown-col-head" data-i18n="dropdown.allspecs.heading">All Specs</div>
+                            <a class="dropdown-item" href="/specs/cashpack"><span class="dot dot-blue"></span><span
+                                    data-i18n="dropdown.allspecs.cpp">CPP-1.0 — CashPack</span></a>
+                            <a class="dropdown-item" href="/specs/ssf"><span class="dot dot-green"></span><span
+                                    data-i18n="dropdown.allspecs.ssf001">SSF-001 — Stablecoin Stack</span></a>
+                            <a class="dropdown-item" href="/specs/ssf/ssf-002"><span class="dot dot-gray"></span><span
+                                    data-i18n="dropdown.ssf.ssf002">SSF-002 — wallet-gateway</span> <span
+                                    class="dropdown-badge" data-i18n="badge.draft">draft</span></a>
+                            <a class="dropdown-item" href="/roadmap"><span class="dot dot-gray"></span><span
+                                    data-i18n="dropdown.allspecs.ssf_planned">SSF-003…009</span> <span
+                                    class="dropdown-badge" data-i18n="badge.planned">planned</span></a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item dropdown-item--cta" href="/specs"
+                                data-i18n="dropdown.allspecs.view_all">View all specs →</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Community dropdown -->
+            <li id="dd-community">
+                <button class="nav-dropdown-trigger" onclick="toggleDropdown('dd-community')">
+                    <span data-i18n="nav.community">Community</span> <span class="chevron"></span>
+                </button>
+                <div class="dropdown dropdown--narrow">
+                    <div class="dropdown-cols">
+                        <div class="dropdown-col">
+                            <div class="dropdown-col-head" data-i18n="dropdown.community.get_involved_heading">Get
+                                Involved</div>
+                            <a class="dropdown-item" href="/community" data-i18n="dropdown.community.hub">Community
+                                Hub</a>
+                            <a class="dropdown-item" href="/community/contributing"
+                                data-i18n="dropdown.community.contributing">Contributing</a>
+                            <a class="dropdown-item" href="/community/rfcs" data-i18n="dropdown.community.rfcs">RFCs</a>
+                        </div>
+                        <div class="dropdown-col">
+                            <div class="dropdown-col-head" data-i18n="dropdown.community.governance_heading">Governance
+                            </div>
+                            <a class="dropdown-item" href="/governance"
+                                data-i18n="dropdown.community.governance">Governance</a>
+                            <a class="dropdown-item" href="/governance"
+                                data-i18n="dropdown.community.working_groups">Working Groups</a>
+                            <a class="dropdown-item" href="https://members.fabricpaymentstandards.org/"
+                                data-i18n="nav.members">Members</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li><a href="/roadmap" data-i18n="nav.roadmap">Roadmap</a></li>
+            <li><a href="/blog" data-i18n="nav.blog">Blog</a></li>
+            <li><a href="/about" data-i18n="nav.about">About</a></li>
+        </ul>
+
+        <div class="nav-cta-wrap">
+            <a href="/donate" class="nav-cta"><span class="heart">♥</span> <span
+                    data-i18n="nav.donate">Donate</span></a>
+        </div>
+
+        <button class="burger" id="burger" data-i18n-attr="aria-label:nav.aria_open_menu" aria-label="Open menu"
+            aria-expanded="false" onclick="toggleMobile()">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- MOBILE DRAWER -->
+<div class="mobile-menu" id="mobileMenu" role="dialog" data-i18n-attr="aria-label:nav.aria_navigation"
+    aria-label="Navigation">
+    <div class="mobile-section">
+        <div class="mobile-section-head" data-i18n="nav.specifications">Specifications</div>
+        <a href="/specs/cashpack" class="sub-item" data-i18n="mobile.cashpack.overview">CashPack — Overview</a>
+        <a href="/specs/cashpack/guides" class="sub-item" data-i18n="mobile.cashpack.guides">CashPack — Guides</a>
+        <a href="/specs/cashpack/spec" class="sub-item" data-i18n="mobile.cashpack.spec">CashPack — Formal Spec</a>
+        <a href="/specs/ssf" class="sub-item" data-i18n="mobile.ssf.overview">Stablecoin Stack — Overview</a>
+        <a href="/specs/ssf/guides" class="sub-item" data-i18n="mobile.ssf.guides">Stablecoin Stack — Guides</a>
+        <a href="/specs/ssf/spec" class="sub-item" data-i18n="mobile.ssf.spec">Stablecoin Stack — Formal Spec</a>
+        <a href="/specs" data-i18n="mobile.view_all_specs">View all specifications</a>
+    </div>
+    <div class="mobile-section">
+        <div class="mobile-section-head" data-i18n="nav.community">Community</div>
+        <a href="/community" class="sub-item" data-i18n="dropdown.community.hub">Community Hub</a>
+        <a href="/community/contributing" class="sub-item" data-i18n="dropdown.community.contributing">Contributing</a>
+        <a href="/community/rfcs" class="sub-item" data-i18n="dropdown.community.rfcs">RFCs</a>
+        <a href="/governance" class="sub-item" data-i18n="dropdown.community.governance">Governance</a>
+    </div>
+    <a href="/roadmap" data-i18n="nav.roadmap">Roadmap</a>
+    <a href="/blog" data-i18n="nav.blog">Blog</a>
+    <a href="/about" data-i18n="nav.about">About</a>
+    <a href="/donate" class="mobile-cta" data-i18n="nav.donate">♥ Donate</a>
+</div>

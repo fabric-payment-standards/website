@@ -1,0 +1,53 @@
+{
+    "meta": {
+        "title": "Contactez-nous | Fondation Stablecoin Stack"
+    },
+    "nav": {
+        "home": "Accueil",
+        "impact": "Impact",
+        "community": "Communauté",
+        "specifications": "Spécifications",
+        "contact": "Contact",
+        "prototypes": "Prototypes",
+        "skip-to-content": "Passer au contenu",
+        "toggle-menu": "Menu"
+    },
+    "footer": {
+        "tagline": "Infrastructure financière ouverte pour la monnaie programmable et le règlement mondial.",
+        "links_title": "Fondation",
+        "legal_title": "Technique",
+        "github": "GitHub",
+        "rights": "Tous droits réservés.",
+        "note": "Une initiative à but non lucratif pour une infrastructure de paiement ouverte."
+    },
+    "contact": {
+        "hero": {
+            "title": "Demande Institutionnelle",
+            "subtitle": "Pour les organisations recherchant un alignement, une intégration technique ou des détails sur l'adhésion."
+        },
+        "form": {
+            "name": {
+                "label": "Nom Complet",
+                "placeholder": "Entrez votre nom"
+            },
+            "email": {
+                "label": "E-mail Institutionnel",
+                "placeholder": "Entrez votre e-mail"
+            },
+            "subject": {
+                "label": "Sujet",
+                "options": {
+                    "general": "Demande Générale",
+                    "membership": "Adhésion Fondation",
+                    "volunteer": "Contribution Technique",
+                    "technical": "Support Technique"
+                }
+            },
+            "message": {
+                "label": "Message",
+                "placeholder": "Nature de la demande"
+            },
+            "submit": "Envoyer le Message"
+        }
+    }
+}

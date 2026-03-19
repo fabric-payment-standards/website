@@ -1,0 +1,130 @@
+{
+    "page": {
+        "title": "支持基金会 — Stablecoin Stack"
+    },
+    "topbar": {
+        "tagline": "稳定币基金会 · 开放支付基础设施"
+    },
+    "nav": {
+        "home": "首页",
+        "specifications": "规范",
+        "members": "成员",
+        "contribute": "支持",
+        "implementation": "实现",
+        "donate": "捐赠",
+        "brand": "Stablecoin Stack",
+        "brand_sub": "基金会",
+        "aria_open_menu": "打开菜单"
+    },
+    "hero": {
+        "kicker": "支持基金会",
+        "title_line1": "开放基础设施",
+        "title_line2": "需要资金支持",
+        "title_line3": "才能保持开放。",
+        "body": "Stablecoin Stack 是一个非营利、供应商中立的标准。无许可费用，无股东。完全依赖于相信开放基础设施值得被保护的组织和个人的支持。"
+    },
+    "funds": {
+        "kicker": "资金用途",
+        "title_light": "您的支持用于资助",
+        "title_bold": "工作本身，而非我们。",
+        "body_1": "基金会以极低的运营成本运作。所有资金直接用于维护规范、运行参考实现，以及支持推动标准持续发展的工作组。",
+        "body_2": "所有支出由基金会成员治理，并在年度报告中公开披露。不存在任何投资回报、股权或代币分配。这是对公共基础设施的运营性资助。",
+        "items": [
+            {
+                "icon": "📐",
+                "title": "规范维护",
+                "desc": "随着支付体系的发展，持续更新、审查并完善协议文档。"
+            },
+            {
+                "icon": "⚙️",
+                "title": "参考实现",
+                "desc": "开放演示环境的托管、开发与维护。"
+            },
+            {
+                "icon": "🤝",
+                "title": "工作组运作",
+                "desc": "协调成员、组织评审并推动共识形成。"
+            },
+            {
+                "icon": "🔒",
+                "title": "安全审查",
+                "desc": "对规范及参考实现进行独立安全审计。"
+            },
+            {
+                "icon": "📖",
+                "title": "公共文档",
+                "desc": "指南、集成资源及教育材料——全部免费开放。"
+            }
+        ]
+    },
+    "give_card": {
+        "heading": "支持方式",
+        "subheading": "所有捐赠均用于基金会运营，不提供或暗示任何股权或财务回报。",
+        "github_title": "GitHub Sponsors",
+        "github_sub": "通过 GitHub 进行一次性或定期支持",
+        "divider": "或",
+        "contact_title": "直接联系我们",
+        "contact_sub": "适用于大额捐赠或机构支持",
+        "membership_title": "成为成员",
+        "membership_sub": "参与制定标准，而不仅仅是支持",
+        "note": "捐赠属于对非营利组织的运营性资助，不构成投资，也不附带任何财务回报预期。",
+        "crypto_heading": "使用加密货币捐赠",
+        "crypto_subheading": "直接发送至基金会钱包，无需中介。",
+        "crypto_copy_tooltip": "复制地址",
+        "crypto_copied": "已复制！",
+        "crypto_networks": {
+            "bitcoin": {
+                "label": "Bitcoin",
+                "network": "BTC · Native SegWit"
+            },
+            "ethereum": {
+                "label": "Ethereum",
+                "network": "ETH · ERC-20"
+            },
+            "solana": {
+                "label": "Solana",
+                "network": "SOL · 主网"
+            },
+            "tron": {
+                "label": "Tron",
+                "network": "TRX · TRC-20"
+            }
+        }
+    },
+    "contact": {
+        "kicker": "联系我们",
+        "title_light": "大额捐赠",
+        "title_bold": "或合作伙伴关系",
+        "body_1": "如果您的组织考虑进行重要捐赠、讨论会员资格，或对资金用途有疑问，请直接联系我们。",
+        "body_2": "基金会不提供任何赞助套餐、品牌曝光或推广安排来换取资金支持。我们的中立性不可出售。",
+        "form": {
+            "fname_label": "名",
+            "lname_label": "姓",
+            "email_label": "电子邮箱",
+            "org_label": "机构（可选）",
+            "subject_label": "主题",
+            "subject_placeholder": "选择主题",
+            "subject_contribution": "资金支持",
+            "subject_membership": "基金会成员",
+            "subject_partnership": "机构合作",
+            "subject_other": "其他",
+            "message_label": "留言",
+            "message_placeholder": "请说明您支持基金会的意向。",
+            "submit": "发送消息"
+        }
+    },
+    "disclaimer": {
+        "notice_label": "重要提示。",
+        "para_1": "Fabric Payment Standards 基金会为非营利组织。向基金会提供的资金属于运营性资助，并非投资，不赋予任何股权、所有权、收益分配、治理权或代币权益。",
+        "para_2": "本页面内容不构成任何投资邀约、证券发行或财务建议。如需了解相关税务处理，请咨询专业顾问。"
+    },
+    "footer": {
+        "brand": "Stablecoin Stack 基金会",
+        "home": "基金会",
+        "specifications": "规范",
+        "members": "成员",
+        "contribute": "支持",
+        "implementation": "实现",
+        "promise": "开放标准 · 中立治理 · 真实落地"
+    }
+}

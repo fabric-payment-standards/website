@@ -1,0 +1,86 @@
+{
+    "topbar": {
+        "tagline": "Fabric Payment Standards · Відкрита платіжна інфраструктура"
+    },
+    "nav": {
+        "home": "Головна",
+        "specifications": "Специфікації",
+        "members": "Учасники",
+        "implementation": "Впровадження",
+        "community": "Спільнота",
+        "roadmap": "Дорожня карта",
+        "blog": "Блог",
+        "about": "Про нас",
+        "donate": "Підтримати",
+        "brand_part1": "Fabric Payment",
+        "brand_part2": "Standards",
+        "brand_sub": "Фундація",
+        "aria_open_menu": "Відкрити меню",
+        "aria_navigation": "Навігація"
+    },
+    "dropdown": {
+        "shared": {
+            "formal_spec": "Формальна специфікація",
+            "reference": "Довідник"
+        },
+        "cashpack": {
+            "heading": "Протокол CashPack",
+            "overview": "Огляд",
+            "concepts": "Основні концепції",
+            "guides": "Посібники",
+            "governance": "Управління",
+            "business_models": "Бізнес-моделі"
+        },
+        "ssf": {
+            "heading": "Stablecoin Stack",
+            "overview": "Огляд",
+            "architecture": "Архітектура",
+            "concepts": "Основні концепції",
+            "guides": "Посібники",
+            "business_model": "Бізнес-модель",
+            "ssf002": "SSF-002 — wallet-gateway"
+        },
+        "allspecs": {
+            "heading": "Усі специфікації",
+            "cpp": "CPP-1.0 — CashPack",
+            "ssf001": "SSF-001 — Stablecoin Stack",
+            "ssf_planned": "SSF-003…009",
+            "view_all": "Переглянути всі специфікації →"
+        },
+        "community": {
+            "get_involved_heading": "Долучитися",
+            "hub": "Центр спільноти",
+            "contributing": "Як долучитися",
+            "rfcs": "RFC-пропозиції",
+            "governance_heading": "Управління",
+            "governance": "Управління",
+            "working_groups": "Робочі групи"
+        }
+    },
+    "badge": {
+        "draft": "чернетка",
+        "planned": "заплановано"
+    },
+    "mobile": {
+        "cashpack": {
+            "overview": "CashPack — Огляд",
+            "guides": "CashPack — Посібники",
+            "spec": "CashPack — Формальна специфікація"
+        },
+        "ssf": {
+            "overview": "Stablecoin Stack — Огляд",
+            "guides": "Stablecoin Stack — Посібники",
+            "spec": "Stablecoin Stack — Формальна специфікація"
+        },
+        "view_all_specs": "Переглянути всі специфікації"
+    },
+    "footer": {
+        "brand": "Fabric Payment Standards Foundation",
+        "home": "Фундація",
+        "specifications": "Специфікації",
+        "members": "Учасники",
+        "contribute": "Долучитися",
+        "implementation": "Реалізація",
+        "promise": "Відкриті стандарти. Нейтральне управління. Реальне впровадження."
+    }
+}

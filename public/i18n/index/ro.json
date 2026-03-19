@@ -1,0 +1,105 @@
+{
+    "page": {
+        "title": "Fundația Fabric pentru Standarde de Plată"
+    },
+    "topbar": {
+        "tagline": "Fundația Fabric pentru Standarde de Plată · Infrastructură deschisă de plăți"
+    },
+    "nav": {
+        "brand": "Fabric Payment Standards",
+        "brand_sub": "Fundație",
+        "home": "Acasă",
+        "specifications": "Specificații",
+        "members": "Membri",
+        "contribute": "Contribuie",
+        "implementation": "Implementare",
+        "donate": "Donează",
+        "aria_open_menu": "Deschide meniul"
+    },
+    "hero": {
+        "kicker": "Implementare de referință",
+        "title_regular": "Standarde deschise pentru",
+        "title_bold": "plăți digitale.",
+        "body": "Infrastructură de plăți neutră care îmbunătățește interoperabilitatea între bănci și sistemele financiare existente, bazându-se pe algoritmi criptografici pentru a permite fluxuri de plată centrate pe utilizator, mai simple și mai eficiente.",
+        "badge1_value": "Live",
+        "badge1_label": "Mediu de testare",
+        "badge2_value": "Deschis",
+        "badge2_label": "Standard și sursă",
+        "badge3_value": "Gratuit",
+        "badge3_label": "Pentru utilizare și integrare"
+    },
+    "roles": {
+        "kicker": "Alege calea ta",
+        "title_regular": "Cine ești tu ",
+        "title_bold": "în această tranzacție?",
+        "body": "Alege rolul care corespunde modului în care interacționezi cu plățile. Fiecare ghid arată experiența completă din perspectiva ta.",
+        "path1_num": "Calea 01",
+        "path1_title": "Comercianți",
+        "path1_sub": "Am o afacere și vreau să accept plăți",
+        "path1_list": [
+            "Creează o cerere de plată în câteva secunde",
+            "Lasă clienții să plătească prin cod QR sau link",
+            "Primești confirmare când sosesc banii",
+            "Emite rambursări când este necesar"
+        ],
+        "path1_cta": "Vezi ghidul comerciantului",
+        "path2_num": "Calea 02",
+        "path2_title": "Plătitori",
+        "path2_sub": "Vreau să trimit o plată folosind rețele deschise",
+        "path2_list": [
+            "Conectează-ți portofelul într-un singur pas",
+            "Aprobă o plată în câteva secunde",
+            "Plătește în moneda pe care o deții",
+            "Păstrează o chitanță pentru fiecare tranzacție"
+        ],
+        "path2_cta": "Vezi ghidul plătitorului",
+        "path3_num": "Calea 03",
+        "path3_title": "Achizitori",
+        "path3_sub": "Procesez sau decontez plăți în numele altora",
+        "path3_list": [
+            "Direcționează tranzacțiile către canalul potrivit",
+            "Decontează loturi conform programului tău",
+            "Conectează-ți nivelul de conformitate și KYC",
+            "Exportă rapoarte și reconciliază automat"
+        ],
+        "path3_cta": "Vezi ghidul achizitorului"
+    },
+    "about": {
+        "kicker": "Despre aceasta",
+        "title_regular": "Nu este un produs. ",
+        "title_bold": "Este infrastructură.",
+        "body1": "Această demonstrație este menținută de Fundația Fabric pentru Standarde de Plată — o organizație neutră, non-profit, care guvernează standardul deschis de plată din spatele a tot ceea ce vezi aici.",
+        "body2": "Nicio companie nu o deține. Niciun furnizor nu o controlează. Oricine o poate integra, audita sau construi pe baza ei. Acesta este scopul.",
+        "body3": "Dacă dorești să înțelegi specificația tehnică, să devii membru, să contribui la standard sau să sprijini activitatea fundației, link-urile de mai jos te vor conduce acolo.",
+        "principles_kicker": "Cum lucrăm",
+        "p1": "Infrastructură, nu produse",
+        "p2": "Neutral înainte de inovator",
+        "p3": "Claritate în locul persuasiunii",
+        "p4": "Construit pentru a dura, nu pentru a urma tendințe",
+        "p5": "Încredere, câștigată — nu presupusă"
+    },
+    "resources": {
+        "kicker": "Resurse ale fundației",
+        "title_regular": "Totul într-",
+        "title_bold": "un singur loc",
+        "r1_name": "Fundație",
+        "r1_desc": "Cine suntem, ce guvernăm și de ce.",
+        "r2_name": "Specificații",
+        "r2_desc": "Standardul tehnic complet. Deschis pentru lectură și revizuire.",
+        "r3_name": "Membri",
+        "r3_desc": "Cine modelează standardul și cum să li te alături.",
+        "r4_name": "Contribuie",
+        "r4_desc": "Ajută la construirea și îmbunătățirea standardului.",
+        "r5_name": "Donează",
+        "r5_desc": "Finanțează infrastructura deschisă pe care nimeni nu o deține."
+    },
+    "footer": {
+        "brand": "Fundația Fabric pentru Standarde de Plată",
+        "home": "Fundație",
+        "specifications": "Specificații",
+        "members": "Membri",
+        "contribute": "Contribuie",
+        "implementation": "Implementare",
+        "promise": "Standarde deschise. Guvernanță neutră. Adoptare în lumea reală."
+    }
+}

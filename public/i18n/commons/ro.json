@@ -1,0 +1,86 @@
+{
+    "topbar": {
+        "tagline": "Fabric Payment Standards · Infrastructură de plăți deschisă"
+    },
+    "nav": {
+        "home": "Acasă",
+        "specifications": "Specificații",
+        "members": "Membri",
+        "implementation": "Implementare",
+        "community": "Comunitate",
+        "roadmap": "Foaie de parcurs",
+        "blog": "Blog",
+        "about": "Despre noi",
+        "donate": "Donează",
+        "brand_part1": "Fabric Payment",
+        "brand_part2": "Standards",
+        "brand_sub": "Fundație",
+        "aria_open_menu": "Deschide meniul",
+        "aria_navigation": "Navigare"
+    },
+    "dropdown": {
+        "shared": {
+            "formal_spec": "Specificație formală",
+            "reference": "Referință"
+        },
+        "cashpack": {
+            "heading": "Protocolul CashPack",
+            "overview": "Prezentare generală",
+            "concepts": "Concepte de bază",
+            "guides": "Ghiduri",
+            "governance": "Guvernanță",
+            "business_models": "Modele de afaceri"
+        },
+        "ssf": {
+            "heading": "Stablecoin Stack",
+            "overview": "Prezentare generală",
+            "architecture": "Arhitectură",
+            "concepts": "Concepte de bază",
+            "guides": "Ghiduri",
+            "business_model": "Model de afaceri",
+            "ssf002": "SSF-002 — wallet-gateway"
+        },
+        "allspecs": {
+            "heading": "Toate specificațiile",
+            "cpp": "CPP-1.0 — CashPack",
+            "ssf001": "SSF-001 — Stablecoin Stack",
+            "ssf_planned": "SSF-003…009",
+            "view_all": "Vezi toate specificațiile →"
+        },
+        "community": {
+            "get_involved_heading": "Implică-te",
+            "hub": "Centrul comunității",
+            "contributing": "Cum să contribui",
+            "rfcs": "RFC-uri",
+            "governance_heading": "Guvernanță",
+            "governance": "Guvernanță",
+            "working_groups": "Grupuri de lucru"
+        }
+    },
+    "badge": {
+        "draft": "schiță",
+        "planned": "planificat"
+    },
+    "mobile": {
+        "cashpack": {
+            "overview": "CashPack — Prezentare generală",
+            "guides": "CashPack — Ghiduri",
+            "spec": "CashPack — Specificație formală"
+        },
+        "ssf": {
+            "overview": "Stablecoin Stack — Prezentare generală",
+            "guides": "Stablecoin Stack — Ghiduri",
+            "spec": "Stablecoin Stack — Specificație formală"
+        },
+        "view_all_specs": "Vezi toate specificațiile"
+    },
+    "footer": {
+        "brand": "Fabric Payment Standards Foundation",
+        "home": "Fundația",
+        "specifications": "Specificații",
+        "members": "Membri",
+        "contribute": "Contribuie",
+        "implementation": "Implementare",
+        "promise": "Standarde deschise. Guvernanță neutră. Adoptare în lumea reală."
+    }
+}

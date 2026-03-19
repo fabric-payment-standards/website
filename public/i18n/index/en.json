@@ -1,0 +1,105 @@
+{
+    "page": {
+        "title": "Fabric Payment Standards Foundation"
+    },
+    "topbar": {
+        "tagline": "Fabric Payment Standards Foundation · Open payment infrastructure"
+    },
+    "nav": {
+        "brand": "Fabric Payment Standards",
+        "brand_sub": "Foundation",
+        "home": "Home",
+        "specifications": "Specifications",
+        "members": "Members",
+        "contribute": "Contribute",
+        "implementation": "Implementation",
+        "donate": "Donate",
+        "aria_open_menu": "Open menu"
+    },
+    "hero": {
+        "kicker": "Reference Implementation",
+        "title_regular": "Open standards for",
+        "title_bold": "digital payments.",
+        "body": "Neutral payment infrastructure that enhances interoperability between banks and existing financial systems, relying on cryptographic algorithms to enable user-centric, simpler and more efficient payment flows.",
+        "badge1_value": "Live",
+        "badge1_label": "Test environment",
+        "badge2_value": "Open",
+        "badge2_label": "Standard & source",
+        "badge3_value": "Free",
+        "badge3_label": "To use and integrate"
+    },
+    "roles": {
+        "kicker": "Choose your path",
+        "title_regular": "Who are you ",
+        "title_bold": "in this transaction?",
+        "body": "Pick the role that matches how you interact with payments. Each walkthrough shows the full experience from your side.",
+        "path1_num": "Path 01",
+        "path1_title": "Merchants",
+        "path1_sub": "I run a business and want to accept payments",
+        "path1_list": [
+            "Create a payment request in seconds",
+            "Let customers pay by QR code or link",
+            "Get confirmed when the money arrives",
+            "Issue refunds when needed"
+        ],
+        "path1_cta": "See the merchant walkthrough",
+        "path2_num": "Path 02",
+        "path2_title": "Payers",
+        "path2_sub": "I want to send a payment using open rails",
+        "path2_list": [
+            "Connect your wallet in one step",
+            "Approve a payment in seconds",
+            "Pay in the currency you hold",
+            "Keep a receipt for every transaction"
+        ],
+        "path2_cta": "See the payer walkthrough",
+        "path3_num": "Path 03",
+        "path3_title": "Acquirers",
+        "path3_sub": "I process or settle payments on behalf of others",
+        "path3_list": [
+            "Route transactions to the right channel",
+            "Settle batches on your schedule",
+            "Plug in your compliance and KYC layer",
+            "Export reports and reconcile automatically"
+        ],
+        "path3_cta": "See the acquirer walkthrough"
+    },
+    "about": {
+        "kicker": "About this",
+        "title_regular": "Not a product. ",
+        "title_bold": "Infrastructure.",
+        "body1": "This demonstration is maintained by the Fabric Payment Standards Foundation — a neutral, non-profit organisation that governs the open payment standard behind everything you see here.",
+        "body2": "No company owns it. No vendor controls it. Anyone can integrate it, audit it, or build on top of it. That is the point.",
+        "body3": "If you want to understand the technical specification, join as a member, contribute to the standard, or support the foundation's work, the links below will get you there.",
+        "principles_kicker": "How we work",
+        "p1": "Infrastructure, not products",
+        "p2": "Neutral before innovative",
+        "p3": "Clarity over persuasion",
+        "p4": "Built to last, not to trend",
+        "p5": "Trust, earned — not assumed"
+    },
+    "resources": {
+        "kicker": "Foundation resources",
+        "title_regular": "Everything in ",
+        "title_bold": "one place",
+        "r1_name": "Foundation",
+        "r1_desc": "Who we are, what we govern, and why.",
+        "r2_name": "Specifications",
+        "r2_desc": "The full technical standard. Open to read and review.",
+        "r3_name": "Members",
+        "r3_desc": "Who shapes the standard and how to join them.",
+        "r4_name": "Contribute",
+        "r4_desc": "Help build and improve the standard.",
+        "r5_name": "Donate",
+        "r5_desc": "Fund open infrastructure that no one owns."
+    },
+    "footer": {
+        "brand": "Fabric Payment Standards Foundation",
+        "home": "Foundation",
+        "specifications": "Specifications",
+        "members": "Members",
+        "contribute": "Contribute",
+        "implementation": "Implementation",
+        "promise": "Open standards. Neutral governance. Real-world adoption."
+    }
+}
