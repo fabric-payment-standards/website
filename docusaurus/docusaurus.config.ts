@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Fabric Payment Standards',
   tagline: 'Neutral payment infrastructure that enhances interoperability between banks and existing financial systems, relying on cryptographic algorithms to enable user-centric, simpler and more efficient payment flows',
-  favicon: 'img/icon-blue-bg.png',
+  favicon: 'https://fabricpaymentstandards.org/img/logo-512x512.png',
 
   future: {
     v4: true,
@@ -58,7 +58,7 @@ const config: Config = {
       title: 'Fabric Payment Standards',
       logo: {
         alt: 'Fabric Payment Standards Foundation Logo',
-        src: 'img/logo-512x512.png',
+        src: 'https://fabricpaymentstandards.org/img/logo-512x512.png',
       },
       items: [
         {

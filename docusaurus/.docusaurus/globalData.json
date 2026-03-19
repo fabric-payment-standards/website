@@ -226,6 +226,11 @@
               "sidebar": "fpsfSidebar"
             },
             {
+              "id": "/ssf/ssf-001",
+              "path": "/specs/ssf/ssf-001",
+              "sidebar": "fpsfSidebar"
+            },
+            {
               "id": "/ssf/ssf-001/overview",
               "path": "/specs/ssf/ssf-001/overview",
               "sidebar": "fpsfSidebar"
@@ -258,6 +263,11 @@
             {
               "id": "/ssf/ssf-001/spec",
               "path": "/specs/ssf/ssf-001/spec",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "/ssf/ssf-002",
+              "path": "/specs/ssf/ssf-002",
               "sidebar": "fpsfSidebar"
             },
             {
