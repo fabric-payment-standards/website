@@ -236,6 +236,11 @@
               "sidebar": "fpsfSidebar"
             },
             {
+              "id": "cashpack",
+              "path": "/specs/cashpack",
+              "sidebar": "fpsfSidebar"
+            },
+            {
               "id": "ssf",
               "path": "/specs/ssf",
               "sidebar": "fpsfSidebar"
@@ -300,8 +305,8 @@
           "sidebars": {
             "fpsfSidebar": {
               "link": {
-                "path": "/specs/cashpack/overview/",
-                "label": "Overview"
+                "path": "/specs/cashpack",
+                "label": "— Cash-Pack"
               }
             }
           }

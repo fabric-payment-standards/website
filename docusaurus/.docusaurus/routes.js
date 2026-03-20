@@ -9,16 +9,22 @@ export default [
   },
   {
     path: '/specs/',
-    component: ComponentCreator('/specs/', 'de3'),
+    component: ComponentCreator('/specs/', '1c8'),
     routes: [
       {
         path: '/specs/',
-        component: ComponentCreator('/specs/', 'c76'),
+        component: ComponentCreator('/specs/', '0d7'),
         routes: [
           {
             path: '/specs/',
-            component: ComponentCreator('/specs/', '3a6'),
+            component: ComponentCreator('/specs/', 'db8'),
             routes: [
+              {
+                path: '/specs/cashpack',
+                component: ComponentCreator('/specs/cashpack', '670'),
+                exact: true,
+                sidebar: "fpsfSidebar"
+              },
               {
                 path: '/specs/cashpack/business-model/',
                 component: ComponentCreator('/specs/cashpack/business-model/', '2a0'),

@@ -6,18 +6,22 @@
     },
     "config": "5e9f5e1a"
   },
-  "/specs/-de3": {
+  "/specs/-1c8": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "aba21aa0"
     }
   },
-  "/specs/-c76": {
+  "/specs/-0d7": {
     "__comp": "a7bd4aaa",
     "__props": "8ec50cce"
   },
-  "/specs/-3a6": {
+  "/specs/-db8": {
     "__comp": "a94703ab"
+  },
+  "/specs/cashpack-670": {
+    "__comp": "14eb3368",
+    "__props": "2d3f044e"
   },
   "/specs/cashpack/business-model/-2a0": {
     "__comp": "17896441",
