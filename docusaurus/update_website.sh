@@ -45,7 +45,7 @@ if ! npm run build; then
 fi
 
 echo "Build successful."
-
+exit 1
 # Commit changes in working branch
 echo "Committing working changes..."
 git add .
@@ -72,14 +72,17 @@ mkdir -p "$WEBSITE_SPEC_SUB_FOLDER"
 echo "Copying build output..."
 cp -r "$WORKING_DIR/build/"* "$WEBSITE_SPEC_SUB_FOLDER/"
 
-echo "Committing public changes..."
-git add .
-git commit -m "chore: deploy updated build" || true
-
 echo "Pushing..."
 git push origin "$PUBLIC_BRANCH"
 
 echo "Deploying with wrangler..."
 wrangler deploy
+
+echo "Committing the published website"
+git add .
+git commit -m "Post deploy commit" || true
+
+echo "Switching to back to WORKING_BRANCH ..."
+git checkout "$WORKING_BRANCH"
 
 echo "Done."
