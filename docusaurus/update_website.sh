@@ -30,11 +30,13 @@ rm -rf build
 
 echo "Cleaning docs folder..."
 rm -rf docs/*
-mkdir -p docs/{"$CASHPACK_SPEC_SLUG","$SSF_SPEC_SLUG"}
+mkdir -p docs/{"$SSF_SPEC_SLUG/ssf-001","$SSF_SPEC_SLUG/ssf-002","$CASHPACK_SPEC_SLUG"}
 
 echo "Copying specs..."
 cp -r "$CASHPACK_SPEC_FOLDER/"* docs/"$CASHPACK_SPEC_SLUG"/
-cp -r "$SSF_SPEC_FOLDER/ssf-"* docs/"$SSF_SPEC_SLUG"/
+cp -r "$SSF_SPEC_FOLDER/ssf-001/spec"/* docs/"$SSF_SPEC_SLUG"/ssf-001/
+cp -r "$SSF_SPEC_FOLDER/ssf-002/spec"/* docs/"$SSF_SPEC_SLUG"/ssf-002/
+cp -r "$SSF_SPEC_FOLDER/_category_.json" docs/"$SSF_SPEC_SLUG"/
 
 echo "Running build..."
 if ! npm run build; then

@@ -1,0 +1,27 @@
+{
+  "id": "ssf/ssf-archived/ssf-spec-001/specifications/ssf-spec-001",
+  "title": "SSF-SPEC-001 — Instant Payment With Permitted Token Transfer - Submission",
+  "description": "| Field              | Value                                                      |",
+  "source": "@site/docs/ssf/ssf-archived/ssf-spec-001/specifications/ssf-spec-001.md",
+  "sourceDirName": "ssf/ssf-archived/ssf-spec-001/specifications",
+  "slug": "/ssf/ssf-archived/ssf-spec-001/specifications/ssf-spec-001",
+  "permalink": "/specs/ssf/ssf-archived/ssf-spec-001/specifications/ssf-spec-001",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/orgs/fabric-payment-standards/docs/ssf/ssf-archived/ssf-spec-001/specifications/ssf-spec-001.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "fpsfSidebar",
+  "previous": {
+    "title": "Payload Fields Reference",
+    "permalink": "/specs/ssf/ssf-archived/ssf-spec-001/reference/payload-fields"
+  },
+  "next": {
+    "title": "Dual-Signature Pattern",
+    "permalink": "/specs/ssf/ssf-archived/ssf-spec-002/core-concepts/dual-signature-pattern"
+  }
+}

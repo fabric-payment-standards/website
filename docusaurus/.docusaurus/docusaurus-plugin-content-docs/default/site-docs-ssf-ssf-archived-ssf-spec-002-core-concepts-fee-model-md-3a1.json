@@ -1,0 +1,27 @@
+{
+  "id": "ssf/ssf-archived/ssf-spec-002/core-concepts/fee-model",
+  "title": "Fee Model",
+  "description": "Overview",
+  "source": "@site/docs/ssf/ssf-archived/ssf-spec-002/core-concepts/fee-model.md",
+  "sourceDirName": "ssf/ssf-archived/ssf-spec-002/core-concepts",
+  "slug": "/ssf/ssf-archived/ssf-spec-002/core-concepts/fee-model",
+  "permalink": "/specs/ssf/ssf-archived/ssf-spec-002/core-concepts/fee-model",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/orgs/fabric-payment-standards/docs/ssf/ssf-archived/ssf-spec-002/core-concepts/fee-model.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "fpsfSidebar",
+  "previous": {
+    "title": "Dual-Signature Pattern",
+    "permalink": "/specs/ssf/ssf-archived/ssf-spec-002/core-concepts/dual-signature-pattern"
+  },
+  "next": {
+    "title": "Change Log — SSF-SPEC-002",
+    "permalink": "/specs/ssf/ssf-archived/ssf-spec-002/governance/changelog"
+  }
+}

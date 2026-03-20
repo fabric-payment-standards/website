@@ -1,0 +1,27 @@
+{
+  "id": "ssf/ssf-archived/ssf-spec-002/guides/integrate-settlement-contract",
+  "title": "Integrate the Settlement Contract",
+  "description": "Guide for payment processor operators and off-chain service builders who need to interact with a deployed Settlement Contract.",
+  "source": "@site/docs/ssf/ssf-archived/ssf-spec-002/guides/integrate-settlement-contract.md",
+  "sourceDirName": "ssf/ssf-archived/ssf-spec-002/guides",
+  "slug": "/ssf/ssf-archived/ssf-spec-002/guides/integrate-settlement-contract",
+  "permalink": "/specs/ssf/ssf-archived/ssf-spec-002/guides/integrate-settlement-contract",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/orgs/fabric-payment-standards/docs/ssf/ssf-archived/ssf-spec-002/guides/integrate-settlement-contract.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "fpsfSidebar",
+  "previous": {
+    "title": "Change Log — SSF-SPEC-002",
+    "permalink": "/specs/ssf/ssf-archived/ssf-spec-002/governance/changelog"
+  },
+  "next": {
+    "title": "The Settlement Contract",
+    "permalink": "/specs/ssf/ssf-archived/ssf-spec-002/overview/settlement-contract"
+  }
+}

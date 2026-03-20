@@ -1,0 +1,24 @@
+{
+  "id": "ssf/ssf-archived/ssf-spec-000/core-concepts/system-architecture",
+  "title": "System Architecture",
+  "description": "This document describes the structure of the Stablecoin Stack: who the principal actors are, what each component does, how components relate to one another, and where trust is placed and withheld. Reading this document gives you the mental model needed to understand any individual specification in the series.",
+  "source": "@site/docs/ssf/ssf-archived/ssf-spec-000/core-concepts/system-architecture.md",
+  "sourceDirName": "ssf/ssf-archived/ssf-spec-000/core-concepts",
+  "slug": "/ssf/ssf-archived/ssf-spec-000/core-concepts/system-architecture",
+  "permalink": "/specs/ssf/ssf-archived/ssf-spec-000/core-concepts/system-architecture",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/orgs/fabric-payment-standards/docs/ssf/ssf-archived/ssf-spec-000/core-concepts/system-architecture.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "fpsfSidebar",
+  "previous": {
+    "title": "The Payment Flow",
+    "permalink": "/specs/ssf/ssf-archived/ssf-spec-000/core-concepts/payment-flow"
+  },
+  "next": {
+    "title": "Why Cryptographic Payments",
+    "permalink": "/specs/ssf/ssf-archived/ssf-spec-000/core-concepts/why-cryptographic-payments"
+  }
+}
