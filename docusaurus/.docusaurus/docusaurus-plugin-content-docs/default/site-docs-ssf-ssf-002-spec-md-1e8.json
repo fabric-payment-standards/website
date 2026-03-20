@@ -11,7 +11,16 @@
   "editUrl": "https://github.com/orgs/fabric-payment-standards/docs/ssf/ssf-002/SPEC.md",
   "tags": [],
   "version": "current",
-  "frontMatter": {},
+  "frontMatter": {
+    "document": "SSF-002/specifications/ssf-002.md",
+    "spec": "SSF-002",
+    "version": "1.0.0",
+    "status": "Draft",
+    "date": "2026-03-10T00:00:00.000Z",
+    "author": "Adalton Reis <reis@stablecoinstack.org>",
+    "organization": "Stablecoin Stack Foundation",
+    "license": "Apache License 2.0"
+  },
   "sidebar": "fpsfSidebar",
   "previous": {
     "title": "ssf-002",
