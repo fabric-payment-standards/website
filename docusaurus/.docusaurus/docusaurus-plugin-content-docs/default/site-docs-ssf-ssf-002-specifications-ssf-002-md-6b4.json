@@ -14,11 +14,11 @@
   "frontMatter": {},
   "sidebar": "fpsfSidebar",
   "previous": {
-    "title": "Formal Specification",
-    "permalink": "/specs/ssf/ssf-002/spec"
+    "title": "Change Log",
+    "permalink": "/specs/ssf/ssf-002/governance/changelog"
   },
   "next": {
-    "title": "SSF-SPEC-002 — wallet-gateway Interface Specification",
+    "title": "SSF-002 — wallet-gateway Interface Specification",
     "permalink": "/specs/ssf/ssf-002/SPEC"
   }
 }
