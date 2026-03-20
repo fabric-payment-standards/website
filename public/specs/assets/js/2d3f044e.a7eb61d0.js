@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkbroadcast_docs=globalThis.webpackChunkbroadcast_docs||[]).push([[2795],{4526(a){a.exports=JSON.parse('{"categoryGeneratedIndex":{"title":"\u2014 Cash-Pack","slug":"cashpack","permalink":"/specs/cashpack","sidebar":"fpsfSidebar","navigation":{"next":{"title":"Overview","permalink":"/specs/cashpack/overview/"}}}}')}}]);
