@@ -55,7 +55,13 @@ git commit -m "chore: update specs and rebuild" || true
 echo "Switching to public branch..."
 git checkout "$PUBLIC_BRANCH"
 
-# Switch to public branch
+#Commit the local changes to avoid merging conflicts
+cd "$BASE_PATH/website"
+git add .
+git commit -m "Safeguarding localchaninges before commit" || true
+cd "$WORKING_DIR" 
+
+#Merge the changes from the WORKING_BRANCH
 echo "Switching to public branch..."
 git merge "$WORKING_BRANCH"
 
