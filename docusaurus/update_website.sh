@@ -51,7 +51,8 @@ echo "Build successful."
 
 # Commit changes in working branch
 echo "Committing working changes..."
-git add .
+git config advice.addIgnoredFile false
+git add .  || true
 git commit -m "chore: update specs and rebuild" || true
 
 echo "Cleaning website spec subfolder..."
