@@ -16,5 +16,9 @@
   "previous": {
     "title": "CashPack Protocol — CPP-1.0",
     "permalink": "/specs/cashpack/layer-5-formal-spec"
+  },
+  "next": {
+    "title": "Stablecoin Stack",
+    "permalink": "/specs/ssf"
   }
 }

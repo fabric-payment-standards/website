@@ -6,17 +6,17 @@
     },
     "config": "5e9f5e1a"
   },
-  "/specs/-1ee": {
+  "/specs/-666": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "aba21aa0"
     }
   },
-  "/specs/-345": {
+  "/specs/-fca": {
     "__comp": "a7bd4aaa",
     "__props": "8ec50cce"
   },
-  "/specs/-1b9": {
+  "/specs/-c86": {
     "__comp": "a94703ab"
   },
   "/specs/cashpack/layer-1-overview-b6c": {
@@ -42,6 +42,10 @@
   "/specs/cashpack/layer-6-reference-1e2": {
     "__comp": "17896441",
     "content": "94b10c00"
+  },
+  "/specs/ssf-f79": {
+    "__comp": "14eb3368",
+    "__props": "a3575b99"
   },
   "/specs/ssf-001-8a2": {
     "__comp": "14eb3368",
