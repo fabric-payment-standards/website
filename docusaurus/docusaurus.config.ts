@@ -12,7 +12,7 @@ const config: Config = {
   },
 
   url: 'https://fabricpaymentstandards.org',
-  baseUrl: '/specs',
+  baseUrl: '/specs/',
 
   organizationName: 'fabric-payment-standards',
   projectName: 'docs',
