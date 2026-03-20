@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkbroadcast_docs=globalThis.webpackChunkbroadcast_docs||[]).push([[2860],{1396(s){s.exports=JSON.parse('{"categoryGeneratedIndex":{"title":"Authoritative Spec","slug":"/ssf-001","permalink":"/specs/ssf-001","sidebar":"fpsfSidebar","navigation":{"next":{"title":"Overview","permalink":"/specs/ssf/ssf-001/overview"}}}}')}}]);
