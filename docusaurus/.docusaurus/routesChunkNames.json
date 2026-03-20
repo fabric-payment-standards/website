@@ -6,42 +6,70 @@
     },
     "config": "5e9f5e1a"
   },
-  "/specs/-39b": {
+  "/specs/-f6e": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "aba21aa0"
     }
   },
-  "/specs/-1d1": {
+  "/specs/-af0": {
     "__comp": "a7bd4aaa",
     "__props": "8ec50cce"
   },
-  "/specs/-67e": {
+  "/specs/-0a4": {
     "__comp": "a94703ab"
   },
-  "/specs/cashpack/layer-1-overview-b6c": {
+  "/specs/cashpack/business-model/-2a0": {
     "__comp": "17896441",
-    "content": "6f7995ea"
+    "content": "e9617efe"
   },
-  "/specs/cashpack/layer-2-concepts-794": {
-    "__comp": "17896441",
-    "content": "4d3d695e"
+  "/specs/cashpack/core-concepts-21e": {
+    "__comp": "14eb3368",
+    "__props": "6b0632ed"
   },
-  "/specs/cashpack/layer-3-guides-a18": {
+  "/specs/cashpack/core-concepts/layer-2-concepts-c64": {
     "__comp": "17896441",
-    "content": "af0e2c14"
+    "content": "90efa0ab"
   },
-  "/specs/cashpack/layer-4-governance-035": {
-    "__comp": "17896441",
-    "content": "5210d395"
+  "/specs/cashpack/governance-727": {
+    "__comp": "14eb3368",
+    "__props": "5632c583"
   },
-  "/specs/cashpack/layer-5-formal-spec-f01": {
+  "/specs/cashpack/governance/layer-4-governance-c18": {
     "__comp": "17896441",
-    "content": "9feedfbc"
+    "content": "6f6cc00c"
   },
-  "/specs/cashpack/layer-6-reference-1e2": {
+  "/specs/cashpack/guides-f30": {
+    "__comp": "14eb3368",
+    "__props": "678b8fad"
+  },
+  "/specs/cashpack/guides/layer-3-guides-cd3": {
     "__comp": "17896441",
-    "content": "94b10c00"
+    "content": "1df84c39"
+  },
+  "/specs/cashpack/overview-3a4": {
+    "__comp": "14eb3368",
+    "__props": "7e44daf6"
+  },
+  "/specs/cashpack/overview/layer-1-overview-133": {
+    "__comp": "17896441",
+    "content": "5f57931c"
+  },
+  "/specs/cashpack/reference-ae8": {
+    "__comp": "14eb3368",
+    "__props": "72c7897c"
+  },
+  "/specs/cashpack/reference/layer-6-reference-dff": {
+    "__comp": "17896441",
+    "content": "0dc40250"
+  },
+  "/specs/cashpack/SPEC-14a": {
+    "__comp": "17896441",
+    "content": "1671ea58"
+  },
+  "/specs/cashpack/specifications/cpp-001-5a9": {
+    "__comp": "17896441",
+    "content": "7a032a60"
   },
   "/specs/ssf-f79": {
     "__comp": "14eb3368",

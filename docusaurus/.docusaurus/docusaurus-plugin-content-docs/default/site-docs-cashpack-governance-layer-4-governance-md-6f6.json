@@ -1,0 +1,24 @@
+{
+  "id": "cashpack/governance/layer-4-governance",
+  "title": "layer-4-governance",
+  "description": "layer-4-governance.md",
+  "source": "@site/docs/cashpack/governance/layer-4-governance.md",
+  "sourceDirName": "cashpack/governance",
+  "slug": "/cashpack/governance/layer-4-governance",
+  "permalink": "/specs/cashpack/governance/layer-4-governance",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/orgs/fabric-payment-standards/docs/cashpack/governance/layer-4-governance.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "fpsfSidebar",
+  "previous": {
+    "title": "Governance",
+    "permalink": "/specs/cashpack/governance"
+  },
+  "next": {
+    "title": "ssf-001",
+    "permalink": "/specs/cashpack/specifications/cpp-001"
+  }
+}

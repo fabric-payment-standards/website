@@ -1,0 +1,24 @@
+{
+  "id": "cashpack/SPEC",
+  "title": "CashPack Protocol — CPP-1.0",
+  "description": "Layered Documentation · DRAFT · Infrastructure-Agnostic · For Discussion and Adoption",
+  "source": "@site/docs/cashpack/SPEC.md",
+  "sourceDirName": "cashpack",
+  "slug": "/cashpack/SPEC",
+  "permalink": "/specs/cashpack/SPEC",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/orgs/fabric-payment-standards/docs/cashpack/SPEC.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "fpsfSidebar",
+  "previous": {
+    "title": "ssf-001",
+    "permalink": "/specs/cashpack/specifications/cpp-001"
+  },
+  "next": {
+    "title": "—— Stablecoin Stack",
+    "permalink": "/specs/ssf"
+  }
+}
