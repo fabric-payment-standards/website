@@ -9,15 +9,15 @@ export default [
   },
   {
     path: '/specs/',
-    component: ComponentCreator('/specs/', '198'),
+    component: ComponentCreator('/specs/', '370'),
     routes: [
       {
         path: '/specs/',
-        component: ComponentCreator('/specs/', '280'),
+        component: ComponentCreator('/specs/', '293'),
         routes: [
           {
             path: '/specs/',
-            component: ComponentCreator('/specs/', '30c'),
+            component: ComponentCreator('/specs/', '8ac'),
             routes: [
               {
                 path: '/specs/cashpack/layer-1-overview',
@@ -74,8 +74,8 @@ export default [
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-001/business-model/',
-                component: ComponentCreator('/specs/ssf/ssf-001/business-model/', 'a94'),
+                path: '/specs/ssf/ssf-001/business-model/business-models',
+                component: ComponentCreator('/specs/ssf/ssf-001/business-model/business-models', '769'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },

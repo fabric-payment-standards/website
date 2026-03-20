@@ -6,17 +6,17 @@
     },
     "config": "5e9f5e1a"
   },
-  "/specs/-198": {
+  "/specs/-370": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "aba21aa0"
     }
   },
-  "/specs/-280": {
+  "/specs/-293": {
     "__comp": "a7bd4aaa",
     "__props": "8ec50cce"
   },
-  "/specs/-30c": {
+  "/specs/-8ac": {
     "__comp": "a94703ab"
   },
   "/specs/cashpack/layer-1-overview-b6c": {
@@ -55,9 +55,9 @@
     "__comp": "14eb3368",
     "__props": "f3306675"
   },
-  "/specs/ssf/ssf-001/business-model/-a94": {
+  "/specs/ssf/ssf-001/business-model/business-models-769": {
     "__comp": "17896441",
-    "content": "82959098"
+    "content": "424f826a"
   },
   "/specs/ssf/ssf-001/core-concepts-072": {
     "__comp": "14eb3368",
