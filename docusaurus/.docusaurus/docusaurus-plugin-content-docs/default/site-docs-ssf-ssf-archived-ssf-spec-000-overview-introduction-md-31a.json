@@ -1,0 +1,24 @@
+{
+  "id": "ssf/ssf-archived/ssf-spec-000/overview/introduction",
+  "title": "Introduction to the Stablecoin Stack",
+  "description": "The Stablecoin Stack is an open architecture for processing stablecoin payments on Ethereum-compatible networks. It defines the protocols, interfaces, and on-chain contracts required to accept a stablecoin payment — from the moment a merchant creates a charge to the moment the funds are confirmed on-chain and the session is reconciled.",
+  "source": "@site/docs/ssf/ssf-archived/ssf-spec-000/overview/introduction.md",
+  "sourceDirName": "ssf/ssf-archived/ssf-spec-000/overview",
+  "slug": "/ssf/ssf-archived/ssf-spec-000/overview/introduction",
+  "permalink": "/specs/ssf/ssf-archived/ssf-spec-000/overview/introduction",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/orgs/fabric-payment-standards/docs/ssf/ssf-archived/ssf-spec-000/overview/introduction.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "fpsfSidebar",
+  "previous": {
+    "title": "Payment Flow Walkthrough",
+    "permalink": "/specs/ssf/ssf-archived/ssf-spec-000/guides/payment-flow-walkthrough"
+  },
+  "next": {
+    "title": "Component Index",
+    "permalink": "/specs/ssf/ssf-archived/ssf-spec-000/reference/component-index"
+  }
+}

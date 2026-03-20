@@ -1,0 +1,24 @@
+{
+  "id": "ssf/ssf-archived/ssf-spec-000/reference/normative-references",
+  "title": "Normative References",
+  "description": "This document lists all external standards and specifications that are normative references for the Stablecoin Stack specification series. Where a specification in this series invokes a standard by name, the requirements of that standard apply to a conformant implementation.",
+  "source": "@site/docs/ssf/ssf-archived/ssf-spec-000/reference/normative-references.md",
+  "sourceDirName": "ssf/ssf-archived/ssf-spec-000/reference",
+  "slug": "/ssf/ssf-archived/ssf-spec-000/reference/normative-references",
+  "permalink": "/specs/ssf/ssf-archived/ssf-spec-000/reference/normative-references",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/orgs/fabric-payment-standards/docs/ssf/ssf-archived/ssf-spec-000/reference/normative-references.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "fpsfSidebar",
+  "previous": {
+    "title": "Glossary",
+    "permalink": "/specs/ssf/ssf-archived/ssf-spec-000/reference/glossary"
+  },
+  "next": {
+    "title": "SSF-SPEC-000 — The Stablecoin Stack: System Overview and Architecture",
+    "permalink": "/specs/ssf/ssf-archived/ssf-spec-000/specifications/SSF-SPEC-000-system-overview"
+  }
+}

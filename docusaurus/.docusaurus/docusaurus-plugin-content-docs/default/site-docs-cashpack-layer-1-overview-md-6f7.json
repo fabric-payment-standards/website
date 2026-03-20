@@ -13,6 +13,10 @@
   "version": "current",
   "frontMatter": {},
   "sidebar": "fpsfSidebar",
+  "previous": {
+    "title": "Message Type Index",
+    "permalink": "/specs/ssf/ssf-002/reference/message-type-index"
+  },
   "next": {
     "title": "layer-2-concepts",
     "permalink": "/specs/cashpack/layer-2-concepts"

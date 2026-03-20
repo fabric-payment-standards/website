@@ -1,0 +1,24 @@
+{
+  "id": "ssf/SECURITY",
+  "title": "SECURITY",
+  "description": "",
+  "source": "@site/docs/ssf/SECURITY.md",
+  "sourceDirName": "ssf",
+  "slug": "/ssf/SECURITY",
+  "permalink": "/specs/ssf/SECURITY",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/orgs/fabric-payment-standards/docs/ssf/SECURITY.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "fpsfSidebar",
+  "previous": {
+    "title": "Stablecoin Stack Foundation — Specification Repository",
+    "permalink": "/specs/ssf/"
+  },
+  "next": {
+    "title": "Issue Management Manual",
+    "permalink": "/specs/ssf/issue-management-manual"
+  }
+}

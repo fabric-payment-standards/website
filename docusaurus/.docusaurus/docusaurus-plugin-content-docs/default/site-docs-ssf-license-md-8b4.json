@@ -1,0 +1,24 @@
+{
+  "id": "ssf/LICENSE",
+  "title": "LICENSE",
+  "description": "Apache License",
+  "source": "@site/docs/ssf/LICENSE.md",
+  "sourceDirName": "ssf",
+  "slug": "/ssf/LICENSE",
+  "permalink": "/specs/ssf/LICENSE",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/orgs/fabric-payment-standards/docs/ssf/LICENSE.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "fpsfSidebar",
+  "previous": {
+    "title": "Contributing to Stablecoin Stack",
+    "permalink": "/specs/ssf/CONTRIBUTING"
+  },
+  "next": {
+    "title": "Stablecoin Stack Foundation — Specification Repository",
+    "permalink": "/specs/ssf/"
+  }
+}

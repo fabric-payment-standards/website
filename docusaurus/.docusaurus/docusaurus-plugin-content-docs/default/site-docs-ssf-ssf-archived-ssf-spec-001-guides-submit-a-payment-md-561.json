@@ -1,0 +1,27 @@
+{
+  "id": "ssf/ssf-archived/ssf-spec-001/guides/submit-a-payment",
+  "title": "Submit a Payment",
+  "description": "Step-by-step guide for constructing, signing, and submitting a TransferRequest to the Payment Processor API.",
+  "source": "@site/docs/ssf/ssf-archived/ssf-spec-001/guides/submit-a-payment.md",
+  "sourceDirName": "ssf/ssf-archived/ssf-spec-001/guides",
+  "slug": "/ssf/ssf-archived/ssf-spec-001/guides/submit-a-payment",
+  "permalink": "/specs/ssf/ssf-archived/ssf-spec-001/guides/submit-a-payment",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/orgs/fabric-payment-standards/docs/ssf/ssf-archived/ssf-spec-001/guides/submit-a-payment.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "fpsfSidebar",
+  "previous": {
+    "title": "Change Log — SSF-SPEC-001",
+    "permalink": "/specs/ssf/ssf-archived/ssf-spec-001/governance/changelog"
+  },
+  "next": {
+    "title": "Buy an Acquiring Pack",
+    "permalink": "/specs/ssf/ssf-archived/ssf-spec-001/guides/buy-acquiring-pack"
+  }
+}

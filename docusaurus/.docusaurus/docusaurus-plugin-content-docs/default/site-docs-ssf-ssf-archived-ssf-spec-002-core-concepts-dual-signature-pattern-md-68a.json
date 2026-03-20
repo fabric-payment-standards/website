@@ -1,0 +1,27 @@
+{
+  "id": "ssf/ssf-archived/ssf-spec-002/core-concepts/dual-signature-pattern",
+  "title": "Dual-Signature Pattern",
+  "description": "Overview",
+  "source": "@site/docs/ssf/ssf-archived/ssf-spec-002/core-concepts/dual-signature-pattern.md",
+  "sourceDirName": "ssf/ssf-archived/ssf-spec-002/core-concepts",
+  "slug": "/ssf/ssf-archived/ssf-spec-002/core-concepts/dual-signature-pattern",
+  "permalink": "/specs/ssf/ssf-archived/ssf-spec-002/core-concepts/dual-signature-pattern",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/orgs/fabric-payment-standards/docs/ssf/ssf-archived/ssf-spec-002/core-concepts/dual-signature-pattern.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "fpsfSidebar",
+  "previous": {
+    "title": "SSF-SPEC-001 — Instant Payment With Permitted Token Transfer - Submission",
+    "permalink": "/specs/ssf/ssf-archived/ssf-spec-001/specifications/ssf-spec-001"
+  },
+  "next": {
+    "title": "Fee Model",
+    "permalink": "/specs/ssf/ssf-archived/ssf-spec-002/core-concepts/fee-model"
+  }
+}

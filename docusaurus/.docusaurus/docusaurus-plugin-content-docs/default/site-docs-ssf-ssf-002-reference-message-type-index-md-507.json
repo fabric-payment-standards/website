@@ -16,5 +16,9 @@
   "previous": {
     "title": "Glossary",
     "permalink": "/specs/ssf/ssf-002/reference/glossary"
+  },
+  "next": {
+    "title": "layer-1-overview",
+    "permalink": "/specs/cashpack/layer-1-overview"
   }
 }
