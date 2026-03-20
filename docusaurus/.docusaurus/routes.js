@@ -9,15 +9,15 @@ export default [
   },
   {
     path: '/specs/',
-    component: ComponentCreator('/specs/', '1c8'),
+    component: ComponentCreator('/specs/', '254'),
     routes: [
       {
         path: '/specs/',
-        component: ComponentCreator('/specs/', '0d7'),
+        component: ComponentCreator('/specs/', 'e7c'),
         routes: [
           {
             path: '/specs/',
-            component: ComponentCreator('/specs/', 'db8'),
+            component: ComponentCreator('/specs/', 'f23'),
             routes: [
               {
                 path: '/specs/cashpack',
@@ -248,12 +248,6 @@ export default [
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-001/specifications/ssf-001',
-                component: ComponentCreator('/specs/ssf/ssf-001/specifications/ssf-001', 'ea5'),
-                exact: true,
-                sidebar: "fpsfSidebar"
-              },
-              {
                 path: '/specs/ssf/ssf-002',
                 component: ComponentCreator('/specs/ssf/ssf-002', '95d'),
                 exact: true,
@@ -358,12 +352,6 @@ export default [
               {
                 path: '/specs/ssf/ssf-002/SPEC',
                 component: ComponentCreator('/specs/ssf/ssf-002/SPEC', 'bc8'),
-                exact: true,
-                sidebar: "fpsfSidebar"
-              },
-              {
-                path: '/specs/ssf/ssf-002/specifications/ssf-002',
-                component: ComponentCreator('/specs/ssf/ssf-002/specifications/ssf-002', '12b'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               }

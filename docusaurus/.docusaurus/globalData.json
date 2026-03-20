@@ -161,11 +161,6 @@
               "sidebar": "fpsfSidebar"
             },
             {
-              "id": "ssf/ssf-001/specifications/ssf-001",
-              "path": "/specs/ssf/ssf-001/specifications/ssf-001",
-              "sidebar": "fpsfSidebar"
-            },
-            {
               "id": "ssf/ssf-002/core-concepts/connection-model",
               "path": "/specs/ssf/ssf-002/core-concepts/connection-model",
               "sidebar": "fpsfSidebar"
@@ -228,11 +223,6 @@
             {
               "id": "ssf/ssf-002/SPEC",
               "path": "/specs/ssf/ssf-002/SPEC",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "ssf/ssf-002/specifications/ssf-002",
-              "path": "/specs/ssf/ssf-002/specifications/ssf-002",
               "sidebar": "fpsfSidebar"
             },
             {

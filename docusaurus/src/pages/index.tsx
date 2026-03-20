@@ -58,7 +58,7 @@ export default function Home(): JSX.Element {
         <h1>Specification's directory</h1>
 
         <p style={{ fontSize: '1.2rem', marginBottom: '2.5rem' }}>
-          Canonical specification and Layered docs.
+          Pick one to read:
         </p>
 
         <div style={{ marginBottom: '3rem' }}>
@@ -67,8 +67,19 @@ export default function Home(): JSX.Element {
             to="/ssf/ssf-001/overview/introduction"
             style={{ marginRight: '1rem' }}
           >
-            Read the Specification
+            Stablecoin Stack
           </Link>
+
+
+          <Link
+            className="button button--primary button--lg"
+            to="/specs/cashpack/overview"
+            style={{ marginRight: '1rem' }}
+          >
+            Cash-Pack
+          </Link>
+
+
 
           <Link
             className="button button--secondary button--lg"

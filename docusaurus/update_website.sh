@@ -47,12 +47,19 @@ fi
 
 echo "Build successful."
 
- 
+#exit 1
 
 # Commit changes in working branch
 echo "Committing working changes..."
 git add .
 git commit -m "chore: update specs and rebuild" || true
+
+echo "Cleaning website spec subfolder..."
+rm -rf "$WEBSITE_SPEC_SUB_FOLDER"/*
+mkdir -p "$WEBSITE_SPEC_SUB_FOLDER"
+
+echo "Copying build output..."
+cp -r "$WORKING_DIR/build/"* "$WEBSITE_SPEC_SUB_FOLDER/"
 
 # Switch to public branch
 echo "Switching to public branch..."
@@ -67,13 +74,6 @@ cd "$WORKING_DIR"
 #Merge the changes from the WORKING_BRANCH
 echo "Switching to public branch..."
 git merge "$WORKING_BRANCH"
-
-echo "Cleaning website spec subfolder..."
-rm -rf "$WEBSITE_SPEC_SUB_FOLDER"/*
-mkdir -p "$WEBSITE_SPEC_SUB_FOLDER"
-
-echo "Copying build output..."
-cp -r "$WORKING_DIR/build/"* "$WEBSITE_SPEC_SUB_FOLDER/"
 
 echo "Pushing..."
 git push origin "$PUBLIC_BRANCH"
