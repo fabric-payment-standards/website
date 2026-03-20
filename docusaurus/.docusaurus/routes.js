@@ -9,49 +9,91 @@ export default [
   },
   {
     path: '/specs/',
-    component: ComponentCreator('/specs/', '39b'),
+    component: ComponentCreator('/specs/', 'f6e'),
     routes: [
       {
         path: '/specs/',
-        component: ComponentCreator('/specs/', '1d1'),
+        component: ComponentCreator('/specs/', 'af0'),
         routes: [
           {
             path: '/specs/',
-            component: ComponentCreator('/specs/', '67e'),
+            component: ComponentCreator('/specs/', '0a4'),
             routes: [
               {
-                path: '/specs/cashpack/layer-1-overview',
-                component: ComponentCreator('/specs/cashpack/layer-1-overview', 'b6c'),
+                path: '/specs/cashpack/business-model/',
+                component: ComponentCreator('/specs/cashpack/business-model/', '2a0'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/cashpack/layer-2-concepts',
-                component: ComponentCreator('/specs/cashpack/layer-2-concepts', '794'),
+                path: '/specs/cashpack/core-concepts',
+                component: ComponentCreator('/specs/cashpack/core-concepts', '21e'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/cashpack/layer-3-guides',
-                component: ComponentCreator('/specs/cashpack/layer-3-guides', 'a18'),
+                path: '/specs/cashpack/core-concepts/layer-2-concepts',
+                component: ComponentCreator('/specs/cashpack/core-concepts/layer-2-concepts', 'c64'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/cashpack/layer-4-governance',
-                component: ComponentCreator('/specs/cashpack/layer-4-governance', '035'),
+                path: '/specs/cashpack/governance',
+                component: ComponentCreator('/specs/cashpack/governance', '727'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/cashpack/layer-5-formal-spec',
-                component: ComponentCreator('/specs/cashpack/layer-5-formal-spec', 'f01'),
+                path: '/specs/cashpack/governance/layer-4-governance',
+                component: ComponentCreator('/specs/cashpack/governance/layer-4-governance', 'c18'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/cashpack/layer-6-reference',
-                component: ComponentCreator('/specs/cashpack/layer-6-reference', '1e2'),
+                path: '/specs/cashpack/guides',
+                component: ComponentCreator('/specs/cashpack/guides', 'f30'),
+                exact: true,
+                sidebar: "fpsfSidebar"
+              },
+              {
+                path: '/specs/cashpack/guides/layer-3-guides',
+                component: ComponentCreator('/specs/cashpack/guides/layer-3-guides', 'cd3'),
+                exact: true,
+                sidebar: "fpsfSidebar"
+              },
+              {
+                path: '/specs/cashpack/overview',
+                component: ComponentCreator('/specs/cashpack/overview', '3a4'),
+                exact: true,
+                sidebar: "fpsfSidebar"
+              },
+              {
+                path: '/specs/cashpack/overview/layer-1-overview',
+                component: ComponentCreator('/specs/cashpack/overview/layer-1-overview', '133'),
+                exact: true,
+                sidebar: "fpsfSidebar"
+              },
+              {
+                path: '/specs/cashpack/reference',
+                component: ComponentCreator('/specs/cashpack/reference', 'ae8'),
+                exact: true,
+                sidebar: "fpsfSidebar"
+              },
+              {
+                path: '/specs/cashpack/reference/layer-6-reference',
+                component: ComponentCreator('/specs/cashpack/reference/layer-6-reference', 'dff'),
+                exact: true,
+                sidebar: "fpsfSidebar"
+              },
+              {
+                path: '/specs/cashpack/SPEC',
+                component: ComponentCreator('/specs/cashpack/SPEC', '14a'),
+                exact: true,
+                sidebar: "fpsfSidebar"
+              },
+              {
+                path: '/specs/cashpack/specifications/cpp-001',
+                component: ComponentCreator('/specs/cashpack/specifications/cpp-001', '5a9'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
