@@ -9,15 +9,15 @@ export default [
   },
   {
     path: '/specs/',
-    component: ComponentCreator('/specs/', 'f6e'),
+    component: ComponentCreator('/specs/', 'de3'),
     routes: [
       {
         path: '/specs/',
-        component: ComponentCreator('/specs/', 'af0'),
+        component: ComponentCreator('/specs/', 'c76'),
         routes: [
           {
             path: '/specs/',
-            component: ComponentCreator('/specs/', '0a4'),
+            component: ComponentCreator('/specs/', '3a6'),
             routes: [
               {
                 path: '/specs/cashpack/business-model/',
@@ -26,62 +26,32 @@ export default [
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/cashpack/core-concepts',
-                component: ComponentCreator('/specs/cashpack/core-concepts', '21e'),
+                path: '/specs/cashpack/core-concepts/',
+                component: ComponentCreator('/specs/cashpack/core-concepts/', '177'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/cashpack/core-concepts/layer-2-concepts',
-                component: ComponentCreator('/specs/cashpack/core-concepts/layer-2-concepts', 'c64'),
+                path: '/specs/cashpack/governance/',
+                component: ComponentCreator('/specs/cashpack/governance/', 'a75'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/cashpack/governance',
-                component: ComponentCreator('/specs/cashpack/governance', '727'),
+                path: '/specs/cashpack/guides/',
+                component: ComponentCreator('/specs/cashpack/guides/', '26b'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/cashpack/governance/layer-4-governance',
-                component: ComponentCreator('/specs/cashpack/governance/layer-4-governance', 'c18'),
+                path: '/specs/cashpack/overview/',
+                component: ComponentCreator('/specs/cashpack/overview/', '298'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/cashpack/guides',
-                component: ComponentCreator('/specs/cashpack/guides', 'f30'),
-                exact: true,
-                sidebar: "fpsfSidebar"
-              },
-              {
-                path: '/specs/cashpack/guides/layer-3-guides',
-                component: ComponentCreator('/specs/cashpack/guides/layer-3-guides', 'cd3'),
-                exact: true,
-                sidebar: "fpsfSidebar"
-              },
-              {
-                path: '/specs/cashpack/overview',
-                component: ComponentCreator('/specs/cashpack/overview', '3a4'),
-                exact: true,
-                sidebar: "fpsfSidebar"
-              },
-              {
-                path: '/specs/cashpack/overview/layer-1-overview',
-                component: ComponentCreator('/specs/cashpack/overview/layer-1-overview', '133'),
-                exact: true,
-                sidebar: "fpsfSidebar"
-              },
-              {
-                path: '/specs/cashpack/reference',
-                component: ComponentCreator('/specs/cashpack/reference', 'ae8'),
-                exact: true,
-                sidebar: "fpsfSidebar"
-              },
-              {
-                path: '/specs/cashpack/reference/layer-6-reference',
-                component: ComponentCreator('/specs/cashpack/reference/layer-6-reference', 'dff'),
+                path: '/specs/cashpack/reference/',
+                component: ComponentCreator('/specs/cashpack/reference/', 'a01'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },

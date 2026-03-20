@@ -1,7 +1,7 @@
 {
   "id": "cashpack/specifications/cpp-001",
-  "title": "CashPack Protocol — CPP-1.0",
-  "description": "Layered Documentation · DRAFT · Infrastructure-Agnostic · For Discussion and Adoption",
+  "title": "Formal Specification",
+  "description": "The normative CashPack Protocol specification — CPP-1.0. Data structures, cryptographic requirements, and protocol obligations.",
   "source": "@site/docs/cashpack/specifications/cpp-001.md",
   "sourceDirName": "cashpack/specifications",
   "slug": "/cashpack/specifications/cpp-001",
@@ -11,14 +11,17 @@
   "editUrl": "https://github.com/orgs/fabric-payment-standards/docs/cashpack/specifications/cpp-001.md",
   "tags": [],
   "version": "current",
-  "frontMatter": {},
+  "frontMatter": {
+    "title": "Formal Specification",
+    "description": "The normative CashPack Protocol specification — CPP-1.0. Data structures, cryptographic requirements, and protocol obligations."
+  },
   "sidebar": "fpsfSidebar",
   "previous": {
-    "title": "layer-4-governance",
-    "permalink": "/specs/cashpack/governance/layer-4-governance"
+    "title": "Governance",
+    "permalink": "/specs/cashpack/governance/"
   },
   "next": {
-    "title": "CashPack Protocol — CPP-1.0",
+    "title": "Formal Specification",
     "permalink": "/specs/cashpack/SPEC"
   }
 }

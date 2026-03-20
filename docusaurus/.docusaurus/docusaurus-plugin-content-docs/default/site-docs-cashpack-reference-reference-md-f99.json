@@ -1,0 +1,27 @@
+{
+  "id": "cashpack/reference/reference",
+  "title": "Reference",
+  "description": "API endpoints, transport requirements, error codes, versioning, and glossary for the CashPack Protocol.",
+  "source": "@site/docs/cashpack/reference/reference.md",
+  "sourceDirName": "cashpack/reference",
+  "slug": "/cashpack/reference/",
+  "permalink": "/specs/cashpack/reference/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/orgs/fabric-payment-standards/docs/cashpack/reference/reference.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Reference",
+    "description": "API endpoints, transport requirements, error codes, versioning, and glossary for the CashPack Protocol."
+  },
+  "sidebar": "fpsfSidebar",
+  "previous": {
+    "title": "Core Concepts",
+    "permalink": "/specs/cashpack/core-concepts/"
+  },
+  "next": {
+    "title": "Guides",
+    "permalink": "/specs/cashpack/guides/"
+  }
+}

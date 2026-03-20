@@ -1,6 +1,6 @@
 {
   "id": "ssf/ssf-001/SPEC",
-  "title": "SSF-001 — The Stablecoin Stack",
+  "title": "FPSF-SSF-001 — The Stablecoin Stack",
   "description": "| Field | Value |",
   "source": "@site/docs/ssf/ssf-001/SPEC.md",
   "sourceDirName": "ssf/ssf-001",
@@ -12,8 +12,8 @@
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "document": "SSF-001/specifications/ssf-001.md",
-    "spec": "SSF-001",
+    "document": "FPSF-SSF-001/specifications/ssf-001.md",
+    "spec": "FPSF-SSF-001",
     "version": "1.0.0",
     "status": "Draft",
     "date": "2026-03-04T00:00:00.000Z",
@@ -27,7 +27,7 @@
     "permalink": "/specs/ssf/ssf-001/specifications/ssf-001"
   },
   "next": {
-    "title": "—— SSF-002",
+    "title": "— SSF-002",
     "permalink": "/specs/ssf/ssf-002"
   }
 }

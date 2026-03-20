@@ -17,11 +17,11 @@
   },
   "sidebar": "fpsfSidebar",
   "previous": {
-    "title": "layer-3-guides",
-    "permalink": "/specs/cashpack/guides/layer-3-guides"
+    "title": "Guides",
+    "permalink": "/specs/cashpack/guides/"
   },
   "next": {
     "title": "Governance",
-    "permalink": "/specs/cashpack/governance"
+    "permalink": "/specs/cashpack/governance/"
   }
 }

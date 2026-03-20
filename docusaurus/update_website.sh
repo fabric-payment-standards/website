@@ -45,6 +45,9 @@ if ! npm run build; then
 fi
 
 echo "Build successful."
+
+ 
+
 # Commit changes in working branch
 echo "Committing working changes..."
 git add .
