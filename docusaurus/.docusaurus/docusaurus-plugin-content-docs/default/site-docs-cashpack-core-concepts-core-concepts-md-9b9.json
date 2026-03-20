@@ -1,0 +1,27 @@
+{
+  "id": "cashpack/core-concepts/core-concepts",
+  "title": "Core Concepts",
+  "description": "The mental models and key ideas underlying the CashPack Protocol — bearer instruments, the trust model, chain integrity, and privacy through disposable keys.",
+  "source": "@site/docs/cashpack/core-concepts/core-concepts.md",
+  "sourceDirName": "cashpack/core-concepts",
+  "slug": "/cashpack/core-concepts/",
+  "permalink": "/specs/cashpack/core-concepts/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/orgs/fabric-payment-standards/docs/cashpack/core-concepts/core-concepts.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Core Concepts",
+    "description": "The mental models and key ideas underlying the CashPack Protocol — bearer instruments, the trust model, chain integrity, and privacy through disposable keys."
+  },
+  "sidebar": "fpsfSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/specs/cashpack/overview/"
+  },
+  "next": {
+    "title": "Reference",
+    "permalink": "/specs/cashpack/reference/"
+  }
+}

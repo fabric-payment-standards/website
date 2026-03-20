@@ -1,6 +1,6 @@
 {
   "id": "ssf/ssf-002/specifications/ssf-002",
-  "title": "SSF-SPEC-002 — wallet-gateway Interface Specification",
+  "title": "FPSF-SSF-002 — wallet-gateway Interface Specification",
   "description": "| Field | Value |",
   "source": "@site/docs/ssf/ssf-002/specifications/ssf-002.md",
   "sourceDirName": "ssf/ssf-002/specifications",
@@ -18,7 +18,7 @@
     "permalink": "/specs/ssf/ssf-002/governance/changelog"
   },
   "next": {
-    "title": "SSF-002 — wallet-gateway Interface Specification",
+    "title": "FPSF-SSF-002 — wallet-gateway Interface Specification",
     "permalink": "/specs/ssf/ssf-002/SPEC"
   }
 }

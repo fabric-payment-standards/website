@@ -1,0 +1,23 @@
+{
+  "id": "cashpack/overview/overview",
+  "title": "Overview",
+  "description": "What the CashPack Protocol is, why it exists, and what problems it solves.",
+  "source": "@site/docs/cashpack/overview/overview.md",
+  "sourceDirName": "cashpack/overview",
+  "slug": "/cashpack/overview/",
+  "permalink": "/specs/cashpack/overview/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/orgs/fabric-payment-standards/docs/cashpack/overview/overview.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Overview",
+    "description": "What the CashPack Protocol is, why it exists, and what problems it solves."
+  },
+  "sidebar": "fpsfSidebar",
+  "next": {
+    "title": "Core Concepts",
+    "permalink": "/specs/cashpack/core-concepts/"
+  }
+}

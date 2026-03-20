@@ -8,7 +8,7 @@
           "label": "Next",
           "isLast": true,
           "path": "/specs/",
-          "mainDocId": "cashpack/overview/layer-1-overview",
+          "mainDocId": "cashpack/overview/overview",
           "docs": [
             {
               "id": "cashpack/business-model/business-model",
@@ -16,28 +16,28 @@
               "sidebar": "fpsfSidebar"
             },
             {
-              "id": "cashpack/core-concepts/layer-2-concepts",
-              "path": "/specs/cashpack/core-concepts/layer-2-concepts",
+              "id": "cashpack/core-concepts/core-concepts",
+              "path": "/specs/cashpack/core-concepts/",
               "sidebar": "fpsfSidebar"
             },
             {
-              "id": "cashpack/governance/layer-4-governance",
-              "path": "/specs/cashpack/governance/layer-4-governance",
+              "id": "cashpack/governance/governance",
+              "path": "/specs/cashpack/governance/",
               "sidebar": "fpsfSidebar"
             },
             {
-              "id": "cashpack/guides/layer-3-guides",
-              "path": "/specs/cashpack/guides/layer-3-guides",
+              "id": "cashpack/guides/guides",
+              "path": "/specs/cashpack/guides/",
               "sidebar": "fpsfSidebar"
             },
             {
-              "id": "cashpack/overview/layer-1-overview",
-              "path": "/specs/cashpack/overview/layer-1-overview",
+              "id": "cashpack/overview/overview",
+              "path": "/specs/cashpack/overview/",
               "sidebar": "fpsfSidebar"
             },
             {
-              "id": "cashpack/reference/layer-6-reference",
-              "path": "/specs/cashpack/reference/layer-6-reference",
+              "id": "cashpack/reference/reference",
+              "path": "/specs/cashpack/reference/",
               "sidebar": "fpsfSidebar"
             },
             {
@@ -236,31 +236,6 @@
               "sidebar": "fpsfSidebar"
             },
             {
-              "id": "cashpack/overview",
-              "path": "/specs/cashpack/overview",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "cashpack/core-concepts",
-              "path": "/specs/cashpack/core-concepts",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "cashpack/reference",
-              "path": "/specs/cashpack/reference",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "cashpack/guides",
-              "path": "/specs/cashpack/guides",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "cashpack/governance",
-              "path": "/specs/cashpack/governance",
-              "sidebar": "fpsfSidebar"
-            },
-            {
               "id": "ssf",
               "path": "/specs/ssf",
               "sidebar": "fpsfSidebar"
@@ -325,7 +300,7 @@
           "sidebars": {
             "fpsfSidebar": {
               "link": {
-                "path": "/specs/cashpack/overview",
+                "path": "/specs/cashpack/overview/",
                 "label": "Overview"
               }
             }
