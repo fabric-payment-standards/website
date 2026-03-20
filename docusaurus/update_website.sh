@@ -34,6 +34,7 @@ mkdir -p docs/{"$SSF_SPEC_SLUG/ssf-001","$SSF_SPEC_SLUG/ssf-002","$CASHPACK_SPEC
 
 echo "Copying specs..."
 cp -r "$CASHPACK_SPEC_FOLDER/"* docs/"$CASHPACK_SPEC_SLUG"/
+cp -r "$CASHPACK_SPEC_FOLDER/_category_.json" docs/"$CASHPACK_SPEC_SLUG"/
 cp -r "$SSF_SPEC_FOLDER/ssf-001/spec"/* docs/"$SSF_SPEC_SLUG"/ssf-001/
 cp -r "$SSF_SPEC_FOLDER/ssf-002/spec"/* docs/"$SSF_SPEC_SLUG"/ssf-002/
 cp -r "$SSF_SPEC_FOLDER/_category_.json" docs/"$SSF_SPEC_SLUG"/

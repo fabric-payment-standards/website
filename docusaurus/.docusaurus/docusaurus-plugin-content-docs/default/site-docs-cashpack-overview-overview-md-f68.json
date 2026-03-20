@@ -16,6 +16,10 @@
     "description": "What the CashPack Protocol is, why it exists, and what problems it solves."
   },
   "sidebar": "fpsfSidebar",
+  "previous": {
+    "title": "— Cash-Pack",
+    "permalink": "/specs/cashpack"
+  },
   "next": {
     "title": "Core Concepts",
     "permalink": "/specs/cashpack/core-concepts/"
