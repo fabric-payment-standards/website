@@ -23,8 +23,8 @@
   },
   "sidebar": "fpsfSidebar",
   "previous": {
-    "title": "Formal Specification",
-    "permalink": "/specs/ssf/ssf-001/spec"
+    "title": "Versioning Policy",
+    "permalink": "/specs/ssf/ssf-001/governance/versioning-policy"
   },
   "next": {
     "title": "SSF-SPEC-001 — The Stablecoin Stack",

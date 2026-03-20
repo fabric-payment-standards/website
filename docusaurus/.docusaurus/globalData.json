@@ -41,8 +41,8 @@
               "sidebar": "fpsfSidebar"
             },
             {
-              "id": "ssf/ssf-001/business-model/business-models",
-              "path": "/specs/ssf/ssf-001/business-model/business-models",
+              "id": "ssf/ssf-001/business-model/business-model",
+              "path": "/specs/ssf/ssf-001/business-model/",
               "sidebar": "fpsfSidebar"
             },
             {
@@ -226,7 +226,7 @@
               "sidebar": "fpsfSidebar"
             },
             {
-              "id": "/ssf",
+              "id": "ssf",
               "path": "/specs/ssf",
               "sidebar": "fpsfSidebar"
             },
@@ -256,18 +256,8 @@
               "sidebar": "fpsfSidebar"
             },
             {
-              "id": "/ssf/ssf-001/business-model",
-              "path": "/specs/ssf/ssf-001/business-model",
-              "sidebar": "fpsfSidebar"
-            },
-            {
               "id": "/ssf/ssf-001/governance",
               "path": "/specs/ssf/ssf-001/governance",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "/ssf/ssf-001/spec",
-              "path": "/specs/ssf/ssf-001/spec",
               "sidebar": "fpsfSidebar"
             },
             {
@@ -293,11 +283,6 @@
             {
               "id": "/ssf/ssf-002/governance",
               "path": "/specs/ssf/ssf-002/governance",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "/ssf/ssf-002/spec",
-              "path": "/specs/ssf/ssf-002/spec",
               "sidebar": "fpsfSidebar"
             }
           ],

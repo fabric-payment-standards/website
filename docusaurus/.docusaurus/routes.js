@@ -9,15 +9,15 @@ export default [
   },
   {
     path: '/specs/',
-    component: ComponentCreator('/specs/', '370'),
+    component: ComponentCreator('/specs/', '39b'),
     routes: [
       {
         path: '/specs/',
-        component: ComponentCreator('/specs/', '293'),
+        component: ComponentCreator('/specs/', '1d1'),
         routes: [
           {
             path: '/specs/',
-            component: ComponentCreator('/specs/', '8ac'),
+            component: ComponentCreator('/specs/', '67e'),
             routes: [
               {
                 path: '/specs/cashpack/layer-1-overview',
@@ -68,14 +68,8 @@ export default [
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-001/business-model',
-                component: ComponentCreator('/specs/ssf/ssf-001/business-model', '0f6'),
-                exact: true,
-                sidebar: "fpsfSidebar"
-              },
-              {
-                path: '/specs/ssf/ssf-001/business-model/business-models',
-                component: ComponentCreator('/specs/ssf/ssf-001/business-model/business-models', '769'),
+                path: '/specs/ssf/ssf-001/business-model/',
+                component: ComponentCreator('/specs/ssf/ssf-001/business-model/', 'a94'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
@@ -230,12 +224,6 @@ export default [
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-001/spec',
-                component: ComponentCreator('/specs/ssf/ssf-001/spec', '6dd'),
-                exact: true,
-                sidebar: "fpsfSidebar"
-              },
-              {
                 path: '/specs/ssf/ssf-001/SPEC',
                 component: ComponentCreator('/specs/ssf/ssf-001/SPEC', 'd67'),
                 exact: true,
@@ -346,12 +334,6 @@ export default [
               {
                 path: '/specs/ssf/ssf-002/reference/message-type-index',
                 component: ComponentCreator('/specs/ssf/ssf-002/reference/message-type-index', 'e5e'),
-                exact: true,
-                sidebar: "fpsfSidebar"
-              },
-              {
-                path: '/specs/ssf/ssf-002/spec',
-                component: ComponentCreator('/specs/ssf/ssf-002/spec', 'd42'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },

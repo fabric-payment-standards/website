@@ -6,17 +6,17 @@
     },
     "config": "5e9f5e1a"
   },
-  "/specs/-370": {
+  "/specs/-39b": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "aba21aa0"
     }
   },
-  "/specs/-293": {
+  "/specs/-1d1": {
     "__comp": "a7bd4aaa",
     "__props": "8ec50cce"
   },
-  "/specs/-8ac": {
+  "/specs/-67e": {
     "__comp": "a94703ab"
   },
   "/specs/cashpack/layer-1-overview-b6c": {
@@ -51,13 +51,9 @@
     "__comp": "14eb3368",
     "__props": "d7a427f8"
   },
-  "/specs/ssf/ssf-001/business-model-0f6": {
-    "__comp": "14eb3368",
-    "__props": "f3306675"
-  },
-  "/specs/ssf/ssf-001/business-model/business-models-769": {
+  "/specs/ssf/ssf-001/business-model/-a94": {
     "__comp": "17896441",
-    "content": "424f826a"
+    "content": "82959098"
   },
   "/specs/ssf/ssf-001/core-concepts-072": {
     "__comp": "14eb3368",
@@ -159,10 +155,6 @@
     "__comp": "17896441",
     "content": "d18253e2"
   },
-  "/specs/ssf/ssf-001/spec-6dd": {
-    "__comp": "14eb3368",
-    "__props": "00aea477"
-  },
   "/specs/ssf/ssf-001/SPEC-d67": {
     "__comp": "17896441",
     "content": "b32e70a4"
@@ -238,10 +230,6 @@
   "/specs/ssf/ssf-002/reference/message-type-index-e5e": {
     "__comp": "17896441",
     "content": "50777137"
-  },
-  "/specs/ssf/ssf-002/spec-d42": {
-    "__comp": "14eb3368",
-    "__props": "46f80040"
   },
   "/specs/ssf/ssf-002/SPEC-bc8": {
     "__comp": "17896441",
