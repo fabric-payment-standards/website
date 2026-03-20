@@ -8,7 +8,7 @@
           "label": "Next",
           "isLast": true,
           "path": "/specs/",
-          "mainDocId": "ssf/ssf-001/overview/introduction",
+          "mainDocId": "cashpack/layer-1-overview",
           "docs": [
             {
               "id": "cashpack/layer-1-overview",
@@ -226,6 +226,11 @@
               "sidebar": "fpsfSidebar"
             },
             {
+              "id": "/ssf",
+              "path": "/specs/ssf",
+              "sidebar": "fpsfSidebar"
+            },
+            {
               "id": "/ssf-001",
               "path": "/specs/ssf-001",
               "sidebar": "fpsfSidebar"
@@ -300,8 +305,8 @@
           "sidebars": {
             "fpsfSidebar": {
               "link": {
-                "path": "/specs/ssf-001",
-                "label": "Authoritative Spec"
+                "path": "/specs/cashpack/layer-1-overview",
+                "label": "cashpack/layer-1-overview"
               }
             }
           }

@@ -9,15 +9,15 @@ export default [
   },
   {
     path: '/specs/',
-    component: ComponentCreator('/specs/', '1ee'),
+    component: ComponentCreator('/specs/', '666'),
     routes: [
       {
         path: '/specs/',
-        component: ComponentCreator('/specs/', '345'),
+        component: ComponentCreator('/specs/', 'fca'),
         routes: [
           {
             path: '/specs/',
-            component: ComponentCreator('/specs/', '1b9'),
+            component: ComponentCreator('/specs/', 'c86'),
             routes: [
               {
                 path: '/specs/cashpack/layer-1-overview',
@@ -52,6 +52,12 @@ export default [
               {
                 path: '/specs/cashpack/layer-6-reference',
                 component: ComponentCreator('/specs/cashpack/layer-6-reference', '1e2'),
+                exact: true,
+                sidebar: "fpsfSidebar"
+              },
+              {
+                path: '/specs/ssf',
+                component: ComponentCreator('/specs/ssf', 'f79'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
