@@ -1,6 +1,6 @@
 {
   "id": "ssf/ssf-001/SPEC",
-  "title": "SSF-SPEC-001 — The Stablecoin Stack",
+  "title": "SSF-001 — The Stablecoin Stack",
   "description": "| Field | Value |",
   "source": "@site/docs/ssf/ssf-001/SPEC.md",
   "sourceDirName": "ssf/ssf-001",
@@ -27,7 +27,7 @@
     "permalink": "/specs/ssf/ssf-001/specifications/ssf-001"
   },
   "next": {
-    "title": "Wallet Gateway",
+    "title": "ssf-002",
     "permalink": "/specs/ssf/ssf-002"
   }
 }
