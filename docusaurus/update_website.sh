@@ -51,7 +51,7 @@ echo "Build successful."
 
 # Commit changes in working branch
 echo "Committing working changes..."
-git add .
+git add -A
 git commit -m "chore: update specs and rebuild" || true
 
 # Switch to public branch
