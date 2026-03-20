@@ -1,0 +1,35 @@
+{
+  "id": "ssf/ssf-002/SPEC",
+  "title": "Formal Specification",
+  "description": "The normative Wallet-gateway specification — SSF-002.",
+  "source": "@site/docs/ssf/ssf-002/SPEC.md",
+  "sourceDirName": "ssf/ssf-002",
+  "slug": "/ssf/ssf-002/SPEC",
+  "permalink": "/specs/ssf/ssf-002/SPEC",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/orgs/fabric-payment-standards/docs/ssf/ssf-002/SPEC.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Formal Specification",
+    "description": "The normative Wallet-gateway specification — SSF-002.",
+    "document": "ssf/ssf-002/SPEC.md",
+    "spec": "FPSF-SSF-002",
+    "version": "1.0.0",
+    "status": "Draft",
+    "date": "2026-03-10T00:00:00.000Z",
+    "author": "Adalton Reis <reis@stablecoinstack.org>",
+    "organization": "Stablecoin Stack Foundation",
+    "license": "Apache License 2.0"
+  },
+  "sidebar": "fpsfSidebar",
+  "previous": {
+    "title": "Change Log",
+    "permalink": "/specs/ssf/ssf-002/governance/changelog"
+  },
+  "next": {
+    "title": "Error Codes",
+    "permalink": "/specs/ssf/ssf-002/reference/error-codes"
+  }
+}

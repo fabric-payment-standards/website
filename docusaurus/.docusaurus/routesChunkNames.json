@@ -1,0 +1,246 @@
+{
+  "/specs/-648": {
+    "__comp": "1df93b7f",
+    "__context": {
+      "plugin": "a7456010"
+    },
+    "config": "5e9f5e1a"
+  },
+  "/specs/-254": {
+    "__comp": "5e95c892",
+    "__context": {
+      "plugin": "aba21aa0"
+    }
+  },
+  "/specs/-e7c": {
+    "__comp": "a7bd4aaa",
+    "__props": "8ec50cce"
+  },
+  "/specs/-f23": {
+    "__comp": "a94703ab"
+  },
+  "/specs/cashpack-670": {
+    "__comp": "14eb3368",
+    "__props": "2d3f044e"
+  },
+  "/specs/cashpack/business-model/-2a0": {
+    "__comp": "17896441",
+    "content": "e9617efe"
+  },
+  "/specs/cashpack/core-concepts/-177": {
+    "__comp": "17896441",
+    "content": "9b9b7920"
+  },
+  "/specs/cashpack/governance/-a75": {
+    "__comp": "17896441",
+    "content": "d3bacad0"
+  },
+  "/specs/cashpack/guides/-26b": {
+    "__comp": "17896441",
+    "content": "0bb61e94"
+  },
+  "/specs/cashpack/overview/-298": {
+    "__comp": "17896441",
+    "content": "f682558c"
+  },
+  "/specs/cashpack/reference/-a01": {
+    "__comp": "17896441",
+    "content": "f99ddf06"
+  },
+  "/specs/cashpack/SPEC-14a": {
+    "__comp": "17896441",
+    "content": "1671ea58"
+  },
+  "/specs/cashpack/specifications/cpp-001-5a9": {
+    "__comp": "17896441",
+    "content": "7a032a60"
+  },
+  "/specs/ssf-f79": {
+    "__comp": "14eb3368",
+    "__props": "a3575b99"
+  },
+  "/specs/ssf/ssf-001-989": {
+    "__comp": "14eb3368",
+    "__props": "d7a427f8"
+  },
+  "/specs/ssf/ssf-001/business-model/-a94": {
+    "__comp": "17896441",
+    "content": "82959098"
+  },
+  "/specs/ssf/ssf-001/core-concepts-072": {
+    "__comp": "14eb3368",
+    "__props": "4104ce45"
+  },
+  "/specs/ssf/ssf-001/core-concepts/dual-signature-pattern-300": {
+    "__comp": "17896441",
+    "content": "aec0313b"
+  },
+  "/specs/ssf/ssf-001/core-concepts/fee-model-41f": {
+    "__comp": "17896441",
+    "content": "25c98018"
+  },
+  "/specs/ssf/ssf-001/core-concepts/payment-flow-3bd": {
+    "__comp": "17896441",
+    "content": "26f90b5c"
+  },
+  "/specs/ssf/ssf-001/core-concepts/permit-based-payments-dba": {
+    "__comp": "17896441",
+    "content": "443af830"
+  },
+  "/specs/ssf/ssf-001/core-concepts/system-architecture-3c0": {
+    "__comp": "17896441",
+    "content": "35503652"
+  },
+  "/specs/ssf/ssf-001/core-concepts/why-cryptographic-payments-ec4": {
+    "__comp": "17896441",
+    "content": "46dc1129"
+  },
+  "/specs/ssf/ssf-001/governance-93f": {
+    "__comp": "14eb3368",
+    "__props": "99679034"
+  },
+  "/specs/ssf/ssf-001/governance/changelog-ecf": {
+    "__comp": "17896441",
+    "content": "89d70ce4"
+  },
+  "/specs/ssf/ssf-001/governance/versioning-policy-f1f": {
+    "__comp": "17896441",
+    "content": "00362b9b"
+  },
+  "/specs/ssf/ssf-001/guides-d18": {
+    "__comp": "14eb3368",
+    "__props": "254c9685"
+  },
+  "/specs/ssf/ssf-001/guides/buy-acquiring-pack-f8b": {
+    "__comp": "17896441",
+    "content": "09f5f465"
+  },
+  "/specs/ssf/ssf-001/guides/integrate-settlement-contract-602": {
+    "__comp": "17896441",
+    "content": "01c33234"
+  },
+  "/specs/ssf/ssf-001/guides/payment-flow-walkthrough-d72": {
+    "__comp": "17896441",
+    "content": "66ac6b1f"
+  },
+  "/specs/ssf/ssf-001/guides/submit-a-payment-f51": {
+    "__comp": "17896441",
+    "content": "8a6f53a8"
+  },
+  "/specs/ssf/ssf-001/overview-aec": {
+    "__comp": "14eb3368",
+    "__props": "62894003"
+  },
+  "/specs/ssf/ssf-001/overview/introduction-c85": {
+    "__comp": "17896441",
+    "content": "75397d7f"
+  },
+  "/specs/ssf/ssf-001/overview/payment-submission-e01": {
+    "__comp": "17896441",
+    "content": "a907b096"
+  },
+  "/specs/ssf/ssf-001/overview/settlement-contract-f2f": {
+    "__comp": "17896441",
+    "content": "b06a036e"
+  },
+  "/specs/ssf/ssf-001/reference-640": {
+    "__comp": "14eb3368",
+    "__props": "7a774683"
+  },
+  "/specs/ssf/ssf-001/reference/component-index-00a": {
+    "__comp": "17896441",
+    "content": "29852712"
+  },
+  "/specs/ssf/ssf-001/reference/contract-interface-7b9": {
+    "__comp": "17896441",
+    "content": "3feca95a"
+  },
+  "/specs/ssf/ssf-001/reference/glossary-691": {
+    "__comp": "17896441",
+    "content": "b05bd771"
+  },
+  "/specs/ssf/ssf-001/reference/normative-references-1c1": {
+    "__comp": "17896441",
+    "content": "acda28f8"
+  },
+  "/specs/ssf/ssf-001/reference/payload-fields-773": {
+    "__comp": "17896441",
+    "content": "d18253e2"
+  },
+  "/specs/ssf/ssf-001/SPEC-d67": {
+    "__comp": "17896441",
+    "content": "b32e70a4"
+  },
+  "/specs/ssf/ssf-002-95d": {
+    "__comp": "14eb3368",
+    "__props": "e07bbca8"
+  },
+  "/specs/ssf/ssf-002/core-concepts-2b3": {
+    "__comp": "14eb3368",
+    "__props": "53d11d6d"
+  },
+  "/specs/ssf/ssf-002/core-concepts/connection-model-f38": {
+    "__comp": "17896441",
+    "content": "19c1f4d1"
+  },
+  "/specs/ssf/ssf-002/core-concepts/message-authentication-f92": {
+    "__comp": "17896441",
+    "content": "99967903"
+  },
+  "/specs/ssf/ssf-002/core-concepts/subscription-model-b60": {
+    "__comp": "17896441",
+    "content": "89429ea3"
+  },
+  "/specs/ssf/ssf-002/governance-bd8": {
+    "__comp": "14eb3368",
+    "__props": "d612f50b"
+  },
+  "/specs/ssf/ssf-002/governance/changelog-d8e": {
+    "__comp": "17896441",
+    "content": "1e782abc"
+  },
+  "/specs/ssf/ssf-002/guides-5ec": {
+    "__comp": "14eb3368",
+    "__props": "00c64ca1"
+  },
+  "/specs/ssf/ssf-002/guides/connect-and-authenticate-dbe": {
+    "__comp": "17896441",
+    "content": "64281779"
+  },
+  "/specs/ssf/ssf-002/guides/submit-a-payment-871": {
+    "__comp": "17896441",
+    "content": "af2ea2ed"
+  },
+  "/specs/ssf/ssf-002/guides/subscribe-to-updates-63d": {
+    "__comp": "17896441",
+    "content": "09d7bdd4"
+  },
+  "/specs/ssf/ssf-002/overview-9b7": {
+    "__comp": "14eb3368",
+    "__props": "adb5220a"
+  },
+  "/specs/ssf/ssf-002/overview/gateway-role-e61": {
+    "__comp": "17896441",
+    "content": "87007330"
+  },
+  "/specs/ssf/ssf-002/overview/introduction-8b8": {
+    "__comp": "17896441",
+    "content": "ef49530c"
+  },
+  "/specs/ssf/ssf-002/reference/error-codes-2a2": {
+    "__comp": "17896441",
+    "content": "2685ec5b"
+  },
+  "/specs/ssf/ssf-002/reference/glossary-153": {
+    "__comp": "17896441",
+    "content": "4b369f8d"
+  },
+  "/specs/ssf/ssf-002/reference/message-type-index-e5e": {
+    "__comp": "17896441",
+    "content": "50777137"
+  },
+  "/specs/ssf/ssf-002/SPEC-bc8": {
+    "__comp": "17896441",
+    "content": "1e80754d"
+  }
+}

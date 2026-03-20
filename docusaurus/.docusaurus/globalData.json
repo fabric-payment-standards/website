@@ -1,0 +1,308 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/specs/",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/specs/",
+          "mainDocId": "cashpack/overview/overview",
+          "docs": [
+            {
+              "id": "cashpack/business-model/business-model",
+              "path": "/specs/cashpack/business-model/",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "cashpack/core-concepts/core-concepts",
+              "path": "/specs/cashpack/core-concepts/",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "cashpack/governance/governance",
+              "path": "/specs/cashpack/governance/",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "cashpack/guides/guides",
+              "path": "/specs/cashpack/guides/",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "cashpack/overview/overview",
+              "path": "/specs/cashpack/overview/",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "cashpack/reference/reference",
+              "path": "/specs/cashpack/reference/",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "cashpack/SPEC",
+              "path": "/specs/cashpack/SPEC",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "cashpack/specifications/cpp-001",
+              "path": "/specs/cashpack/specifications/cpp-001",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf/ssf-001/business-model/business-model",
+              "path": "/specs/ssf/ssf-001/business-model/",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf/ssf-001/core-concepts/dual-signature-pattern",
+              "path": "/specs/ssf/ssf-001/core-concepts/dual-signature-pattern",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf/ssf-001/core-concepts/fee-model",
+              "path": "/specs/ssf/ssf-001/core-concepts/fee-model",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf/ssf-001/core-concepts/payment-flow",
+              "path": "/specs/ssf/ssf-001/core-concepts/payment-flow",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf/ssf-001/core-concepts/permit-based-payments",
+              "path": "/specs/ssf/ssf-001/core-concepts/permit-based-payments",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf/ssf-001/core-concepts/system-architecture",
+              "path": "/specs/ssf/ssf-001/core-concepts/system-architecture",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf/ssf-001/core-concepts/why-cryptographic-payments",
+              "path": "/specs/ssf/ssf-001/core-concepts/why-cryptographic-payments",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf/ssf-001/governance/changelog",
+              "path": "/specs/ssf/ssf-001/governance/changelog",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf/ssf-001/governance/versioning-policy",
+              "path": "/specs/ssf/ssf-001/governance/versioning-policy",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf/ssf-001/guides/buy-acquiring-pack",
+              "path": "/specs/ssf/ssf-001/guides/buy-acquiring-pack",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf/ssf-001/guides/integrate-settlement-contract",
+              "path": "/specs/ssf/ssf-001/guides/integrate-settlement-contract",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf/ssf-001/guides/payment-flow-walkthrough",
+              "path": "/specs/ssf/ssf-001/guides/payment-flow-walkthrough",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf/ssf-001/guides/submit-a-payment",
+              "path": "/specs/ssf/ssf-001/guides/submit-a-payment",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf/ssf-001/overview/introduction",
+              "path": "/specs/ssf/ssf-001/overview/introduction",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf/ssf-001/overview/payment-submission",
+              "path": "/specs/ssf/ssf-001/overview/payment-submission",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf/ssf-001/overview/settlement-contract",
+              "path": "/specs/ssf/ssf-001/overview/settlement-contract",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf/ssf-001/reference/component-index",
+              "path": "/specs/ssf/ssf-001/reference/component-index",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf/ssf-001/reference/contract-interface",
+              "path": "/specs/ssf/ssf-001/reference/contract-interface",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf/ssf-001/reference/glossary",
+              "path": "/specs/ssf/ssf-001/reference/glossary",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf/ssf-001/reference/normative-references",
+              "path": "/specs/ssf/ssf-001/reference/normative-references",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf/ssf-001/reference/payload-fields",
+              "path": "/specs/ssf/ssf-001/reference/payload-fields",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf/ssf-001/SPEC",
+              "path": "/specs/ssf/ssf-001/SPEC",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf/ssf-002/core-concepts/connection-model",
+              "path": "/specs/ssf/ssf-002/core-concepts/connection-model",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf/ssf-002/core-concepts/message-authentication",
+              "path": "/specs/ssf/ssf-002/core-concepts/message-authentication",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf/ssf-002/core-concepts/subscription-model",
+              "path": "/specs/ssf/ssf-002/core-concepts/subscription-model",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf/ssf-002/governance/changelog",
+              "path": "/specs/ssf/ssf-002/governance/changelog",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf/ssf-002/guides/connect-and-authenticate",
+              "path": "/specs/ssf/ssf-002/guides/connect-and-authenticate",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf/ssf-002/guides/submit-a-payment",
+              "path": "/specs/ssf/ssf-002/guides/submit-a-payment",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf/ssf-002/guides/subscribe-to-updates",
+              "path": "/specs/ssf/ssf-002/guides/subscribe-to-updates",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf/ssf-002/overview/gateway-role",
+              "path": "/specs/ssf/ssf-002/overview/gateway-role",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf/ssf-002/overview/introduction",
+              "path": "/specs/ssf/ssf-002/overview/introduction",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf/ssf-002/reference/error-codes",
+              "path": "/specs/ssf/ssf-002/reference/error-codes",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf/ssf-002/reference/glossary",
+              "path": "/specs/ssf/ssf-002/reference/glossary",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf/ssf-002/reference/message-type-index",
+              "path": "/specs/ssf/ssf-002/reference/message-type-index",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf/ssf-002/SPEC",
+              "path": "/specs/ssf/ssf-002/SPEC",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "/cashpack",
+              "path": "/specs/cashpack",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "ssf",
+              "path": "/specs/ssf",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "/ssf/ssf-001",
+              "path": "/specs/ssf/ssf-001",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "/ssf/ssf-001/overview",
+              "path": "/specs/ssf/ssf-001/overview",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "/ssf/ssf-001/core-concepts",
+              "path": "/specs/ssf/ssf-001/core-concepts",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "/ssf/ssf-001/reference",
+              "path": "/specs/ssf/ssf-001/reference",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "/ssf/ssf-001/guides",
+              "path": "/specs/ssf/ssf-001/guides",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "/ssf/ssf-001/governance",
+              "path": "/specs/ssf/ssf-001/governance",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "/ssf/ssf-002",
+              "path": "/specs/ssf/ssf-002",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "/ssf/ssf-002/overview",
+              "path": "/specs/ssf/ssf-002/overview",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "/ssf/ssf-002/core-concepts",
+              "path": "/specs/ssf/ssf-002/core-concepts",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "/ssf/ssf-002/guides",
+              "path": "/specs/ssf/ssf-002/guides",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "/ssf/ssf-002/governance",
+              "path": "/specs/ssf/ssf-002/governance",
+              "sidebar": "fpsfSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "fpsfSidebar": {
+              "link": {
+                "path": "/specs/cashpack",
+                "label": "— Cash-Pack"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

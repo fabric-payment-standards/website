@@ -1,0 +1,24 @@
+{
+  "id": "ssf/ssf-002/governance/changelog",
+  "title": "Change Log",
+  "description": "All changes to SSF-SPEC-004 are recorded here. This document follows the versioning policy defined in SSF-SPEC-001, Section 21.",
+  "source": "@site/docs/ssf/ssf-002/governance/changelog.md",
+  "sourceDirName": "ssf/ssf-002/governance",
+  "slug": "/ssf/ssf-002/governance/changelog",
+  "permalink": "/specs/ssf/ssf-002/governance/changelog",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/orgs/fabric-payment-standards/docs/ssf/ssf-002/governance/changelog.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "fpsfSidebar",
+  "previous": {
+    "title": "Governance",
+    "permalink": "/specs/ssf/ssf-002/governance"
+  },
+  "next": {
+    "title": "Formal Specification",
+    "permalink": "/specs/ssf/ssf-002/SPEC"
+  }
+}
