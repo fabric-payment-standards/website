@@ -231,8 +231,8 @@
               "sidebar": "fpsfSidebar"
             },
             {
-              "id": "/ssf-001",
-              "path": "/specs/ssf-001",
+              "id": "/ssf/ssf-001",
+              "path": "/specs/ssf/ssf-001",
               "sidebar": "fpsfSidebar"
             },
             {
@@ -271,8 +271,8 @@
               "sidebar": "fpsfSidebar"
             },
             {
-              "id": "/ssf-002",
-              "path": "/specs/ssf-002",
+              "id": "/ssf/ssf-002",
+              "path": "/specs/ssf/ssf-002",
               "sidebar": "fpsfSidebar"
             },
             {
