@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StableCoin Stack · Now at Fabric Payment Standards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --blue: #0B1F33;
+            --white: #FFFFFF;
+            --gray: #6B7280;
+            --teal: #1FA3A3;
+            --light: #F4F6F8;
+            --border: #D9DFE6;
+            --sub: #374151;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--white);
+            color: var(--blue);
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        /* ── TOPBAR ── */
+        .topbar {
+            background: var(--blue);
+            font-size: 12px;
+            padding: 8px 0;
+        }
+
+        .topbar .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .topbar span {
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .topbar-links {
+            display: flex;
+            gap: 28px;
+        }
+
+        .topbar-links a {
+            color: rgba(255, 255, 255, 0.5);
+            text-decoration: none;
+            transition: color 0.15s;
+        }
+
+        .topbar-links a:hover {
+            color: #fff;
+        }
+
+        /* ── NAV ── */
+        nav {
+            background: var(--white);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 68px;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            text-decoration: none;
+        }
+
+        .logo-wordmark {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 600;
+            font-size: 15px;
+            color: var(--blue);
+        }
+
+        .logo-wordmark .pipe {
+            color: var(--border);
+            margin: 0 10px;
+            font-weight: 300;
+        }
+
+        .logo-wordmark .sub-label {
+            font-weight: 400;
+            color: var(--gray);
+            font-size: 13px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 14px;
+            color: var(--sub);
+            text-decoration: none;
+            transition: color 0.15s;
+        }
+
+        .nav-links a:hover {
+            color: var(--teal);
+        }
+
+        .nav-links .active {
+            color: var(--teal);
+            font-weight: 500;
+        }
+
+        .nav-cta {
+            background-color: var(--blue);
+            color: var(--white);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            text-decoration: none;
+            transition: background-color 0.2s, transform 0.2s;
+        }
+
+        .nav-cta:hover {
+            background-color: #0a1628;
+            transform: scale(1.03);
+        }
+
+        /* ── HERO ── */
+        .hero {
+            background: var(--blue);
+            color: var(--white);
+            padding: 96px 0 88px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+            background-size: 72px 72px;
+            pointer-events: none;
+            animation: gridDrift 40s linear infinite;
+        }
+
+        @keyframes gridDrift {
+            from {
+                background-position: 0 0;
+            }
+
+            to {
+                background-position: 72px 72px;
+            }
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-kicker {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--teal);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 32px;
+            opacity: 0;
+            animation: fadeUp 0.6s 0.1s ease forwards;
+        }
+
+        .hero-kicker::before {
+            content: '';
+            width: 24px;
+            height: 1px;
+            background: var(--teal);
+        }
+
+        .hero-title {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 300;
+            font-size: clamp(48px, 7vw, 88px);
+            line-height: 1.0;
+            letter-spacing: -0.03em;
+            max-width: 820px;
+            margin-bottom: 36px;
+            opacity: 0;
+            animation: fadeUp 0.6s 0.2s ease forwards;
+        }
+
+        .hero-title strong {
+            font-weight: 600;
+            display: block;
+        }
+
+        .hero-body {
+            font-size: clamp(17px, 1.8vw, 21px);
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.55);
+            max-width: 580px;
+            line-height: 1.65;
+            opacity: 0;
+            animation: fadeUp 0.6s 0.35s ease forwards;
+        }
+
+        .hero-body strong {
+            color: rgba(255, 255, 255, 0.85);
+            font-weight: 500;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(14px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ── URL MIGRATION STRIP ── */
+        .url-strip {
+            margin-top: 52px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            opacity: 0;
+            animation: fadeUp 0.6s 0.5s ease forwards;
+        }
+
+        .url-chip {
+            font-family: 'IBM Plex Sans', monospace;
+            font-size: 13px;
+            padding: 9px 16px;
+            border-radius: 4px;
+            letter-spacing: 0.02em;
+        }
+
+        .url-chip.old {
+            background: rgba(255, 255, 255, 0.06);
+            color: rgba(255, 255, 255, 0.3);
+            text-decoration: line-through;
+            text-decoration-color: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .url-arrow {
+            color: rgba(255, 255, 255, 0.25);
+            font-size: 18px;
+            animation: arrowPulse 1.6s ease-in-out infinite;
+        }
+
+        @keyframes arrowPulse {
+
+            0%,
+            100% {
+                opacity: 0.3;
+                transform: translateX(0);
+            }
+
+            50% {
+                opacity: 0.9;
+                transform: translateX(5px);
+            }
+        }
+
+        .url-chip.new {
+            background: rgba(31, 163, 163, 0.15);
+            color: #5fd0d0;
+            border: 1px solid rgba(31, 163, 163, 0.35);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .url-chip.new::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -60%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(31, 163, 163, 0.3), transparent);
+            animation: shimmer 3s 1.2s ease-in-out infinite;
+        }
+
+        @keyframes shimmer {
+            0% {
+                left: -60%;
+            }
+
+            100% {
+                left: 130%;
+            }
+        }
+
+        /* ── MAIN ── */
+        .main {
+            padding: 88px 0;
+        }
+
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 380px;
+            gap: 80px;
+            align-items: start;
+        }
+
+        .section-kicker {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--teal);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+
+        .section-kicker::before {
+            content: '';
+            width: 20px;
+            height: 1px;
+            background: var(--teal);
+        }
+
+        .col-title {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 300;
+            font-size: clamp(32px, 4vw, 52px);
+            line-height: 1.08;
+            letter-spacing: -0.025em;
+            color: var(--blue);
+            margin-bottom: 28px;
+        }
+
+        .col-title strong {
+            font-weight: 600;
+        }
+
+        .col-body {
+            font-size: 16px;
+            color: var(--sub);
+            line-height: 1.75;
+        }
+
+        .col-body p+p {
+            margin-top: 18px;
+        }
+
+        /* list */
+        .funds-list {
+            list-style: none;
+            margin-top: 40px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .funds-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 18px 24px;
+            border-bottom: 1px solid var(--border);
+            font-size: 14px;
+            transition: background 0.15s;
+        }
+
+        .funds-list li:hover {
+            background: var(--light);
+        }
+
+        .funds-list li:last-child {
+            border-bottom: none;
+        }
+
+        .funds-list .fi {
+            font-size: 18px;
+            flex-shrink: 0;
+            margin-top: 1px;
+        }
+
+        .funds-list .ft {
+            font-weight: 500;
+            color: var(--blue);
+            display: block;
+            margin-bottom: 3px;
+            font-size: 14px;
+        }
+
+        .funds-list .fd {
+            color: var(--gray);
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        /* sidebar card */
+        .give-card {
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            overflow: hidden;
+            position: sticky;
+            top: 88px;
+        }
+
+        .give-card-head {
+            background: var(--blue);
+            color: var(--white);
+            padding: 28px 32px;
+        }
+
+        .give-card-head h3 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            letter-spacing: -0.01em;
+            margin-bottom: 6px;
+        }
+
+        .give-card-head p {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.5);
+            line-height: 1.5;
+        }
+
+        .give-card-body {
+            padding: 28px 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .give-btn {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 16px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            border: 1px solid var(--border);
+            color: var(--blue);
+            transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
+        }
+
+        .give-btn:hover {
+            border-color: rgba(11, 31, 51, 0.3);
+            box-shadow: 0 4px 16px rgba(11, 31, 51, 0.07);
+            transform: translateY(-1px);
+        }
+
+        .give-btn.primary {
+            background: var(--teal);
+            border-color: var(--teal);
+            color: var(--white);
+        }
+
+        .give-btn.primary:hover {
+            background: #1a9090;
+            border-color: #1a9090;
+        }
+
+        .give-btn-icon {
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        .give-btn-text .gbt {
+            font-size: 14px;
+            font-weight: 500;
+            display: block;
+        }
+
+        .give-btn-text .gbs {
+            font-size: 12px;
+            opacity: 0.65;
+            display: block;
+            margin-top: 2px;
+        }
+
+        .give-btn .arrow {
+            margin-left: auto;
+            font-size: 14px;
+            opacity: 0.4;
+            transition: transform 0.15s;
+        }
+
+        .give-btn:hover .arrow {
+            transform: translateX(3px);
+            opacity: 0.7;
+        }
+
+        .give-note {
+            font-size: 12px;
+            color: var(--gray);
+            line-height: 1.55;
+            text-align: center;
+            padding: 16px 0 4px;
+            border-top: 1px solid var(--border);
+            margin-top: 4px;
+        }
+
+        /* ── FOOTER ── */
+        footer {
+            background: var(--blue);
+            padding: 40px 0;
+        }
+
+        .footer-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-brand {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.38);
+            text-decoration: none;
+            transition: color 0.15s;
+        }
+
+        .footer-links a:hover {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .footer-promise {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.25);
+            font-style: italic;
+        }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 960px) {
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .give-card {
+                position: static;
+            }
+
+            .topbar .topbar-links {
+                display: none;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 0 20px;
+            }
+
+            .hero {
+                padding: 60px 0 52px;
+            }
+
+            .main {
+                padding: 56px 0;
+            }
+
+            .url-strip {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div data-include="./components/header.html"></div>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <p class="hero-kicker" data-i18n="hero.kicker">Project Update</p>
+            <h1 class="hero-title">
+                <span data-i18n="hero.title.line1">StableCoin Stack</span>
+                <strong data-i18n="hero.title.line2">has a new home.</strong>
+            </h1>
+            <p class="hero-body">
+                <span data-i18n="hero.body.line1">
+                    This project has joined a broader initiative. The StableCoin Stack Foundation spec is now hosted
+                    under
+                </span>
+                <strong data-i18n="hero.body.highlight">Fabric Payment Standards</strong>
+                <span data-i18n="hero.body.line2">
+                    — a unified umbrella advancing open standards for the future of digital payments.
+                </span>
+            </p>
+            <div class="url-strip">
+                <span class="url-chip old" data-i18n="hero.old_url">stablecoinstack.org</span>
+                <span class="url-arrow">→</span>
+                <span class="url-chip new" data-i18n="hero.new_url">fabricpaymentstandards.org/specs/ssf</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN -->
+    <section class="main">
+        <div class="container">
+            <div class="main-grid">
+
+                <div>
+                    <p class="section-kicker" data-i18n="main.kicker">What changed</p>
+                    <h2 class="col-title">
+                        <span data-i18n="main.title.line1">Same spec,</span><br>
+                        <strong data-i18n="main.title.line2">bigger vision.</strong>
+                    </h2>
+                    <div class="col-body">
+                        <p data-i18n="main.body.p1">
+                            The StableCoin Stack Foundation (SSF) specification you know hasn't changed — it's simply
+                            been brought into the Fabric Payment Standards umbrella to align with a wider ecosystem of
+                            open payment protocols.
+                        </p>
+                        <p data-i18n="main.body.p2">
+                            All previous links, documentation, and references to stablecoinstack.org should be
+                            updated to point to the new URL. This page will remain active as a permanent redirect.
+                        </p>
+                    </div>
+
+                    <ul class="funds-list">
+                        <li>
+                            <span class="fi">📄</span>
+                            <div>
+                                <span class="ft" data-i18n="features.spec.title">Specification unchanged</span>
+                                <span class="fd" data-i18n="features.spec.desc">
+                                    The SSF spec content, versioning, and structure remain exactly as they were.
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="fi">🔗</span>
+                            <div>
+                                <span class="ft" data-i18n="features.url.title">New canonical URL</span>
+                                <span class="fd" data-i18n="features.url.desc">
+                                    All traffic and links should now point to fabricpaymentstandards.org/specs/ssf.
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="fi">🏛️</span>
+                            <div>
+                                <span class="ft" data-i18n="features.umbrella.title">Under an umbrella
+                                    organization</span>
+                                <span class="fd" data-i18n="features.umbrella.desc">
+                                    SSF is now one of several open standards governed by Fabric Payment Standards.
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="fi">🔖</span>
+                            <div>
+                                <span class="ft" data-i18n="features.bookmark.title">Update your bookmarks</span>
+                                <span class="fd" data-i18n="features.bookmark.desc">
+                                    This redirect page will stay active, but we recommend updating any saved links.
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <div class="give-card">
+                        <div class="give-card-head">
+                            <h3 data-i18n="cta.title">Visit the new location</h3>
+                            <p data-i18n="cta.subtitle">
+                                Find the SSF specification and all related resources at its new permanent home.
+                            </p>
+                        </div>
+                        <div class="give-card-body">
+                            <a class="give-btn primary" href="https://fabricpaymentstandards.org/specs/ssf">
+                                <span class="give-btn-icon">🚀</span>
+                                <span class="give-btn-text">
+                                    <span class="gbt" data-i18n="cta.primary.title">Go to SSF Spec</span>
+                                    <span class="gbs" data-i18n="cta.primary.subtitle">
+                                        fabricpaymentstandards.org/specs/ssf
+                                    </span>
+                                </span>
+                                <span class="arrow">→</span>
+                            </a>
+                            <a class="give-btn" href="https://fabricpaymentstandards.org">
+                                <span class="give-btn-icon">🏠</span>
+                                <span class="give-btn-text">
+                                    <span class="gbt" data-i18n="cta.secondary.title">
+                                        Fabric Payment Standards
+                                    </span>
+                                    <span class="gbs" data-i18n="cta.secondary.subtitle">
+                                        Explore the umbrella organization
+                                    </span>
+                                </span>
+                                <span class="arrow">→</span>
+                            </a>
+                            <p class="give-note" data-i18n="cta.note">
+                                This page is a permanent redirect. Bookmark the new URL to stay current.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <script src="script.js"></script>
+    <script src="i18n.js"></script>
+</body>
+
+</html>

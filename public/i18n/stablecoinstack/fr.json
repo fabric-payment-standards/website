@@ -1,0 +1,58 @@
+{
+    "hero": {
+        "kicker": "Mise à jour du projet",
+        "title": {
+            "line1": "StableCoin Stack",
+            "line2": "a un nouveau foyer."
+        },
+        "body": {
+            "line1": "Ce projet a rejoint une initiative plus large. La spécification StableCoin Stack Foundation est désormais hébergée sous",
+            "highlight": "Fabric Payment Standards",
+            "line2": "— une structure unifiée faisant progresser les standards ouverts pour l’avenir des paiements numériques."
+        },
+        "old_url": "stablecoinstack.org",
+        "new_url": "fabricpaymentstandards.org/specs/ssf"
+    },
+    "main": {
+        "kicker": "Ce qui a changé",
+        "title": {
+            "line1": "Même spécification,",
+            "line2": "vision élargie."
+        },
+        "body": {
+            "p1": "La spécification StableCoin Stack Foundation (SSF) que vous connaissez n’a pas changé — elle a simplement été intégrée à l’écosystème Fabric Payment Standards pour s’aligner sur un ensemble plus large de protocoles de paiement ouverts.",
+            "p2": "Tous les anciens liens, documents et références à stablecoinstack.org doivent être mis à jour vers la nouvelle URL. Cette page restera active comme redirection permanente."
+        }
+    },
+    "features": {
+        "spec": {
+            "title": "Spécification inchangée",
+            "desc": "Le contenu, le versionnement et la structure de la spécification SSF restent identiques."
+        },
+        "url": {
+            "title": "Nouvelle URL canonique",
+            "desc": "Tout le trafic et les liens doivent désormais pointer vers fabricpaymentstandards.org/specs/ssf."
+        },
+        "umbrella": {
+            "title": "Sous une organisation fédératrice",
+            "desc": "SSF est désormais l’un des standards ouverts gouvernés par Fabric Payment Standards."
+        },
+        "bookmark": {
+            "title": "Mettez à jour vos favoris",
+            "desc": "Cette page restera active, mais nous recommandons de mettre à jour vos liens enregistrés."
+        }
+    },
+    "cta": {
+        "title": "Visitez le nouvel emplacement",
+        "subtitle": "Retrouvez la spécification SSF et toutes les ressources associées dans son nouveau foyer permanent.",
+        "primary": {
+            "title": "Accéder à la spécification SSF",
+            "subtitle": "fabricpaymentstandards.org/specs/ssf"
+        },
+        "secondary": {
+            "title": "Fabric Payment Standards",
+            "subtitle": "Explorer l’organisation"
+        },
+        "note": "Cette page est une redirection permanente. Ajoutez la nouvelle URL à vos favoris."
+    }
+}
