@@ -1,0 +1,58 @@
+{
+    "hero": {
+        "kicker": "项目更新",
+        "title": {
+            "line1": "StableCoin Stack",
+            "line2": "有了新的归属。"
+        },
+        "body": {
+            "line1": "该项目已加入一个更广泛的计划。StableCoin Stack Foundation 规范现已托管于",
+            "highlight": "Fabric Payment Standards",
+            "line2": "—— 一个推动数字支付未来开放标准的统一框架。"
+        },
+        "old_url": "stablecoinstack.org",
+        "new_url": "fabricpaymentstandards.org/specs/ssf"
+    },
+    "main": {
+        "kicker": "变更内容",
+        "title": {
+            "line1": "相同规范，",
+            "line2": "更大愿景。"
+        },
+        "body": {
+            "p1": "你所熟悉的 StableCoin Stack Foundation (SSF) 规范并未改变——只是被纳入 Fabric Payment Standards 体系，以对齐更广泛的开放支付协议生态。",
+            "p2": "所有指向 stablecoinstack.org 的链接、文档和引用都应更新为新的 URL。本页面将作为永久重定向继续保留。"
+        }
+    },
+    "features": {
+        "spec": {
+            "title": "规范未变",
+            "desc": "SSF 规范的内容、版本和结构保持完全一致。"
+        },
+        "url": {
+            "title": "新的规范 URL",
+            "desc": "所有流量和链接现在应指向 fabricpaymentstandards.org/specs/ssf。"
+        },
+        "umbrella": {
+            "title": "纳入统一组织",
+            "desc": "SSF 现在是 Fabric Payment Standards 管理的多个开放标准之一。"
+        },
+        "bookmark": {
+            "title": "更新书签",
+            "desc": "该重定向页面将继续保留，但建议更新已保存的链接。"
+        }
+    },
+    "cta": {
+        "title": "访问新地址",
+        "subtitle": "在新的永久地址查找 SSF 规范及所有相关资源。",
+        "primary": {
+            "title": "前往 SSF 规范",
+            "subtitle": "fabricpaymentstandards.org/specs/ssf"
+        },
+        "secondary": {
+            "title": "Fabric Payment Standards",
+            "subtitle": "了解该组织"
+        },
+        "note": "本页面为永久重定向。请收藏新的 URL 以保持更新。"
+    }
+}

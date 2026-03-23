@@ -1,0 +1,58 @@
+{
+    "hero": {
+        "kicker": "Actualizare proiect",
+        "title": {
+            "line1": "StableCoin Stack",
+            "line2": "are o nouă casă."
+        },
+        "body": {
+            "line1": "Acest proiect a fost integrat într-o inițiativă mai largă. Specificația StableCoin Stack Foundation este acum găzduită sub",
+            "highlight": "Fabric Payment Standards",
+            "line2": "— o umbrelă unificată care promovează standarde deschise pentru viitorul plăților digitale."
+        },
+        "old_url": "stablecoinstack.org",
+        "new_url": "fabricpaymentstandards.org/specs/ssf"
+    },
+    "main": {
+        "kicker": "Ce s-a schimbat",
+        "title": {
+            "line1": "Aceeași specificație,",
+            "line2": "o viziune mai mare."
+        },
+        "body": {
+            "p1": "Specificația StableCoin Stack Foundation (SSF) pe care o cunoști nu s-a schimbat — a fost doar integrată în ecosistemul Fabric Payment Standards pentru a se alinia unui set mai larg de protocoale de plată deschise.",
+            "p2": "Toate linkurile, documentația și referințele anterioare către stablecoinstack.org trebuie actualizate către noul URL. Această pagină va rămâne activă ca redirecționare permanentă."
+        }
+    },
+    "features": {
+        "spec": {
+            "title": "Specificație neschimbată",
+            "desc": "Conținutul, versiunea și structura specificației SSF rămân identice."
+        },
+        "url": {
+            "title": "URL canonic nou",
+            "desc": "Tot traficul și toate linkurile trebuie să indice acum către fabricpaymentstandards.org/specs/ssf."
+        },
+        "umbrella": {
+            "title": "Sub o organizație umbrelă",
+            "desc": "SSF este acum unul dintre mai multe standarde deschise guvernate de Fabric Payment Standards."
+        },
+        "bookmark": {
+            "title": "Actualizează marcajele",
+            "desc": "Această pagină va rămâne activă, dar recomandăm actualizarea linkurilor salvate."
+        }
+    },
+    "cta": {
+        "title": "Vizitează noua locație",
+        "subtitle": "Găsește specificația SSF și toate resursele asociate în noua sa locație permanentă.",
+        "primary": {
+            "title": "Accesează specificația SSF",
+            "subtitle": "fabricpaymentstandards.org/specs/ssf"
+        },
+        "secondary": {
+            "title": "Fabric Payment Standards",
+            "subtitle": "Explorează organizația"
+        },
+        "note": "Această pagină este o redirecționare permanentă. Salvează noul URL pentru a rămâne la zi."
+    }
+}

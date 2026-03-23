@@ -1,0 +1,58 @@
+{
+    "hero": {
+        "kicker": "Project Update",
+        "title": {
+            "line1": "StableCoin Stack",
+            "line2": "has a new home."
+        },
+        "body": {
+            "line1": "This project has joined a broader initiative. The StableCoin Stack Foundation spec is now hosted under",
+            "highlight": "Fabric Payment Standards",
+            "line2": "— a unified umbrella advancing open standards for the future of digital payments."
+        },
+        "old_url": "stablecoinstack.org",
+        "new_url": "fabricpaymentstandards.org/specs/ssf"
+    },
+    "main": {
+        "kicker": "What changed",
+        "title": {
+            "line1": "Same spec,",
+            "line2": "bigger vision."
+        },
+        "body": {
+            "p1": "The StableCoin Stack Foundation (SSF) specification you know hasn't changed — it's simply been brought into the Fabric Payment Standards umbrella to align with a wider ecosystem of open payment protocols.",
+            "p2": "All previous links, documentation, and references to stablecoinstack.org should be updated to point to the new URL. This page will remain active as a permanent redirect."
+        }
+    },
+    "features": {
+        "spec": {
+            "title": "Specification unchanged",
+            "desc": "The SSF spec content, versioning, and structure remain exactly as they were."
+        },
+        "url": {
+            "title": "New canonical URL",
+            "desc": "All traffic and links should now point to fabricpaymentstandards.org/specs/ssf."
+        },
+        "umbrella": {
+            "title": "Under an umbrella organization",
+            "desc": "SSF is now one of several open standards governed by Fabric Payment Standards."
+        },
+        "bookmark": {
+            "title": "Update your bookmarks",
+            "desc": "This redirect page will stay active, but we recommend updating any saved links."
+        }
+    },
+    "cta": {
+        "title": "Visit the new location",
+        "subtitle": "Find the SSF specification and all related resources at its new permanent home.",
+        "primary": {
+            "title": "Go to SSF Spec",
+            "subtitle": "fabricpaymentstandards.org/specs/ssf"
+        },
+        "secondary": {
+            "title": "Fabric Payment Standards",
+            "subtitle": "Explore the umbrella organization"
+        },
+        "note": "This page is a permanent redirect. Bookmark the new URL to stay current."
+    }
+}
