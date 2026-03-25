@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="page.title">Community Hub — Fabric Payment Standards</title>
+    <link rel="icon" href="../img/logo-512x512.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../../styles.css" />
+</head>
+
+<body>
+
+    <div data-include="../../components/header.html"></div>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-kicker">Community</div>
+            <h1 class="hero-title">Community<strong>Hub</strong></h1>
+            <p class="hero-body">The central gathering point for contributors, implementers, and organisations working
+                to advance open payment infrastructure.</p>
+        </div>
+    </section>
+
+    <!-- MAIN -->
+    <main class="main">
+        <div class="container">
+            <div class="placeholder-grid">
+
+                <div class="placeholder-section">
+                    <div class="section-kicker">About This Space</div>
+                    <h2 class="col-title">A <strong>neutral forum</strong> for open collaboration</h2>
+                    <div class="col-body">
+                        <p>The Fabric Payment Standards Community Hub is the primary venue for discussion, coordination,
+                            and collective decision-making across all active working groups and specification tracks.
+                        </p>
+                        <p>Participation is open to any individual or organisation committed to the Foundation's
+                            principles of vendor neutrality, interoperability, and transparent governance.</p>
+                        <p>This page is under active development. Community forums, mailing lists, and discussion
+                            channels will be listed here upon launch.</p>
+                    </div>
+                </div>
+
+                <div class="placeholder-panel">
+                    <div class="panel-head">
+                        <h3>Participation Pathways</h3>
+                        <p>Multiple routes to contribute and engage</p>
+                    </div>
+                    <div class="panel-body">
+                        <a href="../contributing/" class="panel-link">
+                            <span class="panel-link-icon">✍</span>
+                            <span class="panel-link-text">
+                                <span class="plt">Contributing</span>
+                                <span class="pls">Submit proposals, patches, and feedback</span>
+                            </span>
+                            <span class="panel-link-arrow">→</span>
+                        </a>
+                        <a href="../rfcs/" class="panel-link">
+                            <span class="panel-link-icon">📄</span>
+                            <span class="panel-link-text">
+                                <span class="plt">RFCs</span>
+                                <span class="pls">Track open requests for comment</span>
+                            </span>
+                            <span class="panel-link-arrow">→</span>
+                        </a>
+                        <a href="../governance/" class="panel-link">
+                            <span class="panel-link-icon">⚖</span>
+                            <span class="panel-link-text">
+                                <span class="plt">Governance</span>
+                                <span class="pls">Understand how decisions are made</span>
+                            </span>
+                            <span class="panel-link-arrow">→</span>
+                        </a>
+                        <a href="../working-groups/" class="panel-link">
+                            <span class="panel-link-icon">👥</span>
+                            <span class="panel-link-text">
+                                <span class="plt">Working Groups</span>
+                                <span class="pls">Join a specialised technical group</span>
+                            </span>
+                            <span class="panel-link-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="coming-soon-notice">
+                <div class="csn-inner">
+                    <span class="csn-icon">🔔</span>
+                    <div>
+                        <strong>This section is coming soon.</strong>
+                        <p>Community infrastructure — including forums, mailing lists, and a contributor directory — is
+                            currently in preparation. Subscribe to Foundation updates to be notified at launch.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div data-include="../../components/footer.html"></div>
+
+    <style>
+        .placeholder-grid {
+            display: grid;
+            grid-template-columns: 1fr 360px;
+            gap: 80px;
+            align-items: start;
+        }
+
+        .placeholder-section {}
+
+        .placeholder-panel {
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            overflow: hidden;
+            position: sticky;
+            top: 88px;
+        }
+
+        .panel-head {
+            background: var(--blue);
+            color: var(--white);
+            padding: 24px 28px;
+        }
+
+        .panel-head h3 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .panel-head p {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .panel-body {
+            padding: 12px 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .panel-link {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 12px;
+            border-radius: 5px;
+            text-decoration: none;
+            border: 1px solid var(--border);
+            color: var(--blue);
+            transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
+        }
+
+        .panel-link:hover {
+            border-color: rgba(11, 31, 51, 0.3);
+            box-shadow: 0 4px 16px rgba(11, 31, 51, 0.07);
+            transform: translateY(-1px);
+        }
+
+        .panel-link-icon {
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        .panel-link-text {
+            flex: 1;
+        }
+
+        .plt {
+            font-size: 13px;
+            font-weight: 500;
+            display: block;
+        }
+
+        .pls {
+            font-size: 12px;
+            color: var(--gray);
+            display: block;
+            margin-top: 2px;
+        }
+
+        .panel-link-arrow {
+            font-size: 14px;
+            color: var(--gray);
+            transition: transform 0.15s;
+        }
+
+        .panel-link:hover .panel-link-arrow {
+            transform: translateX(3px);
+            color: var(--teal);
+        }
+
+        .coming-soon-notice {
+            margin-top: 60px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .csn-inner {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 24px 28px;
+            background: var(--light);
+        }
+
+        .csn-icon {
+            font-size: 22px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .csn-inner strong {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--blue);
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .csn-inner p {
+            font-size: 13px;
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        @media (max-width: 960px) {
+            .placeholder-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .placeholder-panel {
+                position: static;
+            }
+        }
+    </style>
+
+    <script src="../../i18n.js"></script>
+    <script src="../../script.js"></script>
+</body>
+
+</html>

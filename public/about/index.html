@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="page.title">About — Fabric Payment Standards</title>
+    <link rel="icon" href="../img/logo-512x512.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+
+    <div data-include="../components/header.html"></div>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-kicker">The Foundation</div>
+            <h1 class="hero-title">About Fabric<strong>Payment Standards</strong></h1>
+            <p class="hero-body">An independent, non-profit body dedicated to open, interoperable payment infrastructure
+                — governed by its participants, beholden to no single vendor.</p>
+        </div>
+    </section>
+
+    <!-- MISSION -->
+    <main class="main">
+        <div class="container">
+
+            <div class="main-grid">
+                <div>
+                    <div class="section-kicker">Mission</div>
+                    <h2 class="col-title">Open standards for<strong>real-world payments</strong></h2>
+                    <div class="col-body">
+                        <p>The global payments landscape is increasingly fragmented. Proprietary protocols, closed
+                            networks, and competing vendor ecosystems impose unnecessary friction on the organisations
+                            and individuals who depend on reliable value transfer.</p>
+                        <p>Fabric Payment Standards exists to produce and maintain rigorous, vendor-neutral
+                            specifications that any implementer — from a central bank to a startup — can adopt without
+                            licence fees, lock-in, or permission from a commercial gatekeeper.</p>
+                        <p>The Foundation operates as a neutral convener: its specifications are developed in the open,
+                            its governance is multi-stakeholder, and its outputs are published under permissive terms
+                            that maximise real-world adoption.</p>
+                    </div>
+                </div>
+
+                <div class="give-card">
+                    <div class="give-card-head">
+                        <h3>At a Glance</h3>
+                        <p>Foundation facts</p>
+                    </div>
+                    <div class="give-card-body">
+                        <div class="fact-row">
+                            <span class="fact-label">Type</span>
+                            <span class="fact-value">Non-profit foundation</span>
+                        </div>
+                        <div class="fact-row">
+                            <span class="fact-label">Governance</span>
+                            <span class="fact-value">Multi-stakeholder, neutral</span>
+                        </div>
+                        <div class="fact-row">
+                            <span class="fact-label">Active specs</span>
+                            <span class="fact-value">CPD-1.0, CPP-1.0, MPC-1.0, SSF-001</span>
+                        </div>
+                        <div class="fact-row">
+                            <span class="fact-label">In draft</span>
+                            <span class="fact-value">SSF-002, SSF-003–009</span>
+                        </div>
+                        <div class="fact-row" style="border-bottom:none;">
+                            <span class="fact-label">Licence</span>
+                            <span class="fact-value">Permissive open terms</span>
+                        </div>
+                        <div class="give-divider"><span>contact</span></div>
+                        <a href="#contact" class="give-btn primary">
+                            <span class="give-btn-icon">✉</span>
+                            <span class="give-btn-text">
+                                <span class="gbt">Get in Touch</span>
+                                <span class="gbs">Enquiries &amp; partnerships</span>
+                            </span>
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Principles -->
+            <div class="about-principles">
+                <div class="section-kicker" style="margin-bottom:32px;">Principles</div>
+                <div class="principles-grid">
+                    <div class="principle-card">
+                        <div class="principle-icon">⚖</div>
+                        <h3>Neutral Governance</h3>
+                        <p>No participant class — vendor, financial institution, or government — holds a controlling
+                            interest. Decisions require broad consensus.</p>
+                    </div>
+                    <div class="principle-card">
+                        <div class="principle-icon">🔓</div>
+                        <h3>Open Process</h3>
+                        <p>All specification work is conducted in public. Meeting minutes, votes, and decision
+                            rationales are published as a matter of policy.</p>
+                    </div>
+                    <div class="principle-card">
+                        <div class="principle-icon">🌍</div>
+                        <h3>Real-World Focus</h3>
+                        <p>Specifications are evaluated against deployment reality, not theoretical elegance.
+                            Implementer feedback drives revision cycles.</p>
+                    </div>
+                    <div class="principle-card">
+                        <div class="principle-icon">🔗</div>
+                        <h3>Interoperability First</h3>
+                        <p>Every design decision is measured against its impact on cross-implementation compatibility
+                            and long-term ecosystem coherence.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div>
+                    <div class="section-kicker">Contact</div>
+                    <h2 class="col-title">Get in<strong>touch</strong></h2>
+                    <div class="col-body">
+                        <p>For enquiries about membership, specification collaboration, implementation support, or press
+                            matters, use the form opposite or reach the Foundation through its public community
+                            channels.</p>
+                        <p>The Foundation aims to respond to all substantive enquiries within five working days.</p>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-row">
+                        <div class="field-group">
+                            <label for="cf-name">Name</label>
+                            <input type="text" id="cf-name" name="name" placeholder="Your name" required />
+                        </div>
+                        <div class="field-group">
+                            <label for="cf-org">Organisation</label>
+                            <input type="text" id="cf-org" name="organisation" placeholder="Your organisation" />
+                        </div>
+                    </div>
+                    <div class="field-group">
+                        <label for="cf-email">Email</label>
+                        <input type="email" id="cf-email" name="email" placeholder="you@organisation.org" required />
+                    </div>
+                    <div class="field-group">
+                        <label for="cf-subject">Subject</label>
+                        <select id="cf-subject" name="subject">
+                            <option value="">Select a topic…</option>
+                            <option value="membership">Membership enquiry</option>
+                            <option value="specification">Specification question</option>
+                            <option value="partnership">Partnership or collaboration</option>
+                            <option value="press">Press &amp; media</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="field-group">
+                        <label for="cf-message">Message</label>
+                        <textarea id="cf-message" name="message" placeholder="Your message…" rows="5"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div data-include="../components/footer.html"></div>
+
+    <style>
+        .about-principles {
+            margin-top: 80px;
+            padding-top: 64px;
+            border-top: 1px solid var(--border);
+        }
+
+        .principles-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .principle-card {
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 28px 24px;
+            background: var(--white);
+            transition: box-shadow 0.15s, transform 0.15s;
+        }
+
+        .principle-card:hover {
+            box-shadow: 0 4px 20px rgba(11, 31, 51, 0.07);
+            transform: translateY(-2px);
+        }
+
+        .principle-icon {
+            font-size: 24px;
+            margin-bottom: 14px;
+        }
+
+        .principle-card h3 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--blue);
+            margin-bottom: 10px;
+            letter-spacing: -0.01em;
+        }
+
+        .principle-card p {
+            font-size: 13px;
+            color: var(--sub);
+            line-height: 1.65;
+        }
+
+        .fact-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 12px;
+            padding: 9px 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 13px;
+        }
+
+        .fact-label {
+            color: var(--gray);
+            flex-shrink: 0;
+        }
+
+        .fact-value {
+            color: var(--blue);
+            font-weight: 500;
+            text-align: right;
+        }
+
+        @media (max-width: 960px) {
+            .principles-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .principles-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <script src="../i18n.js"></script>
+    <script src="../script.js"></script>
+</body>
+
+</html>

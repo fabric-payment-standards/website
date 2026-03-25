@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="page.title">RFCs — Fabric Payment Standards</title>
+    <link rel="icon" href="../../img/logo-512x512.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../../styles.css" />
+</head>
+
+<body>
+
+    <div data-include="../../components/header.html"></div>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-kicker">Process</div>
+            <h1 class="hero-title">Requests<strong>for Comment</strong></h1>
+            <p class="hero-body">The RFC process is how the Foundation considers substantive changes to its
+                specifications. Every significant modification begins as a public, reviewable proposal.</p>
+        </div>
+    </section>
+
+    <!-- MAIN -->
+    <main class="main">
+        <div class="container">
+
+            <div class="main-grid">
+                <div>
+                    <div class="section-kicker">RFC Process</div>
+                    <h2 class="col-title">Structured change<strong>by design</strong></h2>
+                    <div class="col-body">
+                        <p>The RFC (Request for Comment) process ensures that all meaningful changes to Fabric Payment
+                            Standards specifications are subject to community review, technical scrutiny, and explicit
+                            acceptance criteria before adoption.</p>
+                        <p>An RFC is not a discussion thread — it is a structured proposal document that includes
+                            motivation, detailed design, implementation considerations, and drawbacks. This rigour
+                            ensures the Foundation's specifications remain coherent and interoperable across diverse
+                            deployment contexts.</p>
+                        <p>The RFC register and submission tooling are currently in preparation. When live, this page
+                            will list all open, accepted, and archived RFCs with full status tracking.</p>
+                    </div>
+
+                    <ul class="funds-list" style="margin-top:48px;">
+                        <li>
+                            <span class="fi">🟡</span>
+                            <span>
+                                <span class="ft">Draft</span>
+                                <span class="fd">Proposal is open for community review and comment. Author may revise
+                                    based on feedback.</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="fi">🔵</span>
+                            <span>
+                                <span class="ft">Final Comment Period</span>
+                                <span class="fd">The RFC has reached rough consensus. A final 10-day window for
+                                    objections before disposition.</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="fi">🟢</span>
+                            <span>
+                                <span class="ft">Accepted</span>
+                                <span class="fd">RFC has been accepted and is pending or undergoing
+                                    implementation.</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="fi">⚫</span>
+                            <span>
+                                <span class="ft">Withdrawn / Superseded</span>
+                                <span class="fd">Archived RFCs that were withdrawn by the author or superseded by a
+                                    later proposal.</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="give-card">
+                    <div class="give-card-head">
+                        <h3>Submit an RFC</h3>
+                        <p>Propose a change to the specification</p>
+                    </div>
+                    <div class="give-card-body">
+                        <div class="give-note" style="text-align:left; padding:0 0 12px; border:none; margin:0;">
+                            <strong
+                                style="color:var(--blue); font-size:13px; font-weight:500; display:block; margin-bottom:8px;">Before
+                                submitting</strong>
+                            <span style="font-size:12px; color:var(--gray); line-height:1.6; display:block;">Review
+                                existing RFCs and open issues to avoid duplication. Discuss the idea informally in the
+                                Community Hub before drafting.</span>
+                        </div>
+                        <div class="give-divider"><span>steps</span></div>
+                        <a href="../contributing/" class="give-btn">
+                            <span class="give-btn-icon">✍</span>
+                            <span class="give-btn-text">
+                                <span class="gbt">Sign the CLA</span>
+                                <span class="gbs">Required before any submission</span>
+                            </span>
+                            <span class="arrow">→</span>
+                        </a>
+                        <a href="../community/" class="give-btn primary">
+                            <span class="give-btn-icon">📄</span>
+                            <span class="give-btn-text">
+                                <span class="gbt">Use the RFC Template</span>
+                                <span class="gbs">Available in the community repository</span>
+                            </span>
+                            <span class="arrow">→</span>
+                        </a>
+                        <p class="give-note">The RFC submission portal will be available when the public repository
+                            launches.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="coming-soon-notice" style="margin-top:60px;">
+                <div class="csn-inner">
+                    <span class="csn-icon">🔔</span>
+                    <div>
+                        <strong>RFC register coming soon.</strong>
+                        <p>The public RFC register, submission workflow, and comment tooling are under preparation. All
+                            active and historical RFCs will be listed here at launch.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div data-include="../../components/footer.html"></div>
+
+    <style>
+        .coming-soon-notice {
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .csn-inner {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 24px 28px;
+            background: var(--light);
+        }
+
+        .csn-icon {
+            font-size: 22px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .csn-inner strong {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--blue);
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .csn-inner p {
+            font-size: 13px;
+            color: var(--gray);
+            line-height: 1.6;
+        }
+    </style>
+
+    <script src="../../i18n.js"></script>
+    <script src="../../script.js"></script>
+</body>
+
+</html>

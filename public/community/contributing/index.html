@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="page.title">Contributing — Fabric Payment Standards</title>
+    <link rel="icon" href="../../img/logo-512x512.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../../styles.css" />
+</head>
+
+<body>
+
+    <div data-include="../../components/header.html"></div>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-kicker">Get Involved</div>
+            <h1 class="hero-title">Contributing to<strong>the Foundation</strong></h1>
+            <p class="hero-body">Fabric Payment Standards is built through collective effort. Learn how individuals and
+                organisations can contribute to specifications, tooling, and governance.</p>
+        </div>
+    </section>
+
+    <!-- MAIN -->
+    <main class="main">
+        <div class="container">
+
+            <div class="main-grid">
+                <div>
+                    <div class="section-kicker">Contribution Model</div>
+                    <h2 class="col-title">Open process,<strong>structured governance</strong></h2>
+                    <div class="col-body">
+                        <p>All contributions to Fabric Payment Standards — whether to specification text, reference
+                            implementations, documentation, or governance processes — follow a transparent,
+                            community-reviewed process.</p>
+                        <p>The Foundation operates on the principle that the best standards emerge from broad
+                            participation. Domain experts, implementers, and end-user organisations each bring
+                            indispensable perspective to the work.</p>
+                        <p>Contribution guidelines, Contributor Licence Agreements (CLA), and detailed workflow
+                            documentation are currently being finalised and will be published here prior to the public
+                            contribution portal launch.</p>
+                    </div>
+
+                    <ul class="funds-list" style="margin-top:48px;">
+                        <li>
+                            <span class="fi">📝</span>
+                            <span>
+                                <span class="ft">Specification Contributions</span>
+                                <span class="fd">Propose amendments, extensions, or new specification tracks via the RFC
+                                    process.</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="fi">🔧</span>
+                            <span>
+                                <span class="ft">Reference Implementations</span>
+                                <span class="fd">Build and maintain open-source implementations that demonstrate
+                                    real-world protocol compliance.</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="fi">📚</span>
+                            <span>
+                                <span class="ft">Documentation & Translation</span>
+                                <span class="fd">Improve technical documentation and expand language coverage for global
+                                    accessibility.</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="fi">🔍</span>
+                            <span>
+                                <span class="ft">Review & Feedback</span>
+                                <span class="fd">Participate in public comment periods on active RFCs and draft
+                                    specifications.</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="give-card">
+                    <div class="give-card-head">
+                        <h3>Prerequisites</h3>
+                        <p>What you need before contributing</p>
+                    </div>
+                    <div class="give-card-body">
+                        <div class="give-note" style="text-align:left; padding:0 0 12px; border:none; margin:0;">
+                            <strong
+                                style="color:var(--blue); font-size:13px; font-weight:500; display:block; margin-bottom:8px;">Contributor
+                                Licence Agreement</strong>
+                            <span style="font-size:12px; color:var(--gray); line-height:1.6; display:block;">A signed
+                                CLA is required for all code and specification contributions. The CLA form will be
+                                available at launch.</span>
+                        </div>
+                        <div class="give-divider"><span>then</span></div>
+                        <a href="../rfcs/" class="give-btn">
+                            <span class="give-btn-icon">📄</span>
+                            <span class="give-btn-text">
+                                <span class="gbt">Open an RFC</span>
+                                <span class="gbs">For new features or changes</span>
+                            </span>
+                            <span class="arrow">→</span>
+                        </a>
+                        <a href="../community/" class="give-btn">
+                            <span class="give-btn-icon">💬</span>
+                            <span class="give-btn-text">
+                                <span class="gbt">Join the Discussion</span>
+                                <span class="gbs">Community Hub forums</span>
+                            </span>
+                            <span class="arrow">→</span>
+                        </a>
+                        <p class="give-note">Full contributing documentation will be published alongside the public
+                            repository launch.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="coming-soon-notice" style="margin-top:60px;">
+                <div class="csn-inner">
+                    <span class="csn-icon">🔔</span>
+                    <div>
+                        <strong>Contribution portal coming soon.</strong>
+                        <p>The contributor onboarding portal, CLA workflow, and issue tracker integration are under
+                            preparation. This page will be updated with full instructions upon launch.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div data-include="../../components/footer.html"></div>
+
+    <style>
+        .coming-soon-notice {
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .csn-inner {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 24px 28px;
+            background: var(--light);
+        }
+
+        .csn-icon {
+            font-size: 22px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .csn-inner strong {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--blue);
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .csn-inner p {
+            font-size: 13px;
+            color: var(--gray);
+            line-height: 1.6;
+        }
+    </style>
+
+    <script src="../../i18n.js"></script>
+    <script src="../../script.js"></script>
+</body>
+
+</html>

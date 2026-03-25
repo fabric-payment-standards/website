@@ -14,21 +14,22 @@ async function renderIncludes() {
       const html = await res.text();
       el.outerHTML = html;
 
-      if (window.i18n) {
-        window.i18n.applyTranslations();
-        if (componentName.includes("header")) {
-          window.i18n.addLanguageSwitcher();
-        }
-      }
-
       if (componentName.includes("header")) {
         initMobileMenu();
       }
     }));
+
+    // Wait for i18n to finish loading translations, then apply
+    await waitForI18n();
+    window.i18n.applyTranslations();
+    window.i18n.addLanguageSwitcher();
+
   } catch (error) {
     console.error("Component loading error:", error);
   }
 }
+
+
 
 let initMobileMenu;
 
