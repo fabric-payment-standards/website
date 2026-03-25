@@ -61,29 +61,51 @@ export default function Home(): JSX.Element {
           Pick one to read:
         </p>
 
-        <div style={{ marginBottom: '3rem' }}>
+        <div
+          style={{
+            marginBottom: '3rem',
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+            gap: '1rem',
+            justifyItems: 'center',
+          }}
+        >
           <Link
             className="button button--primary button--lg"
-            to="/ssf/ssf-001/overview/introduction"
-            style={{ marginRight: '1rem' }}
+            to="/specs/canonical-payment/SPEC"
+            style={{ width: '100%', maxWidth: '280px' }}
+          >
+            Canonical Payment Definition
+          </Link>
+
+          <Link
+            className="button button--primary button--lg"
+            to="/specs/disposable-keys/SPEC"
+            style={{ width: '100%', maxWidth: '280px' }}
+          >
+            Disposable Keys
+          </Link>
+
+          <Link
+            className="button button--primary button--lg"
+            to="/stablecoin-stack/ss-001/overview/introduction"
+            style={{ width: '100%', maxWidth: '280px' }}
           >
             Stablecoin Stack
           </Link>
 
-
           <Link
             className="button button--primary button--lg"
             to="/specs/cashpack/overview"
-            style={{ marginRight: '1rem' }}
+            style={{ width: '100%', maxWidth: '280px' }}
           >
             Cash-Pack
           </Link>
 
-
-
           <Link
             className="button button--secondary button--lg"
-            to="https://github.com/Stablecoin-Stack/specs/blob/main/CONTRIBUTING.md"
+            to="https://fabricpaymentstandards.org/community/contributing"
+            style={{ width: '100%', maxWidth: '280px' }}
           >
             Contribute
           </Link>

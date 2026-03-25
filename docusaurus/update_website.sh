@@ -5,8 +5,14 @@ set -e  # stop on error
 
 # ---- CONFIG ----
 BASE_PATH=/home/blackshark/data/fabric-payment-standards
-CASHPACK_SPEC_FOLDER=$BASE_PATH/cashpack-spec/spec
-SSF_SPEC_FOLDER=$BASE_PATH/ssf-spec/
+#Cash-pack
+CASHPACK_SPEC_FOLDER=$BASE_PATH/specs/cashpack-spec/spec
+#Satblecoi Stack
+SS_SPEC_FOLDER=$BASE_PATH/specs/ss-spec
+#Disposable-keys
+MPC_SPEC_FOLDER=$BASE_PATH/specs/disposable-keys-spec/spec
+#Canonical Payment
+CANONICAL_PAYMENT_FOLDER=$BASE_PATH/specs/canonical-payment-spec/spec
 #
 WORKING_DIR=$BASE_PATH/website/docusaurus
 PUBLIC_BRANCH="public"
@@ -14,8 +20,11 @@ WORKING_BRANCH="working-dir"
 #
 WEBSITE_SPEC_SUB_FOLDER=$BASE_PATH/website/public/specs
 CASHPACK_SPEC_SLUG=cashpack
-SSF_SPEC_SLUG=ssf
+SS_SPEC_SLUG=stablecoin-stack
+MPC_SPEC_SLUG=disposable-keys
+CANONICAL_PAYMENT_SLUG=canonical-payment
 
+ 
 
 # ---- START ----
 echo "Entering working dir..."
@@ -26,21 +35,35 @@ echo "Switching to WORKING branch..."
 git checkout "$WORKING_BRANCH"
 
 echo "Cleaning build folder..."
-rm -rf build
+rm -rf build 
 
 echo "Cleaning docs folder..."
 rm -rf docs/*
-mkdir -p docs/{"$SSF_SPEC_SLUG/ssf-001","$SSF_SPEC_SLUG/ssf-002","$CASHPACK_SPEC_SLUG"}
+mkdir -p docs/{"$SS_SPEC_SLUG/ss-001","$SS_SPEC_SLUG/ss-002","$CASHPACK_SPEC_SLUG","$MPC_SPEC_SLUG","$CANONICAL_PAYMENT_SLUG"}
 
 echo "Copying specs..."
+#Cash-pack
 cp -r "$CASHPACK_SPEC_FOLDER/"* docs/"$CASHPACK_SPEC_SLUG"/
 cp -r "$CASHPACK_SPEC_FOLDER/_category_.json" docs/"$CASHPACK_SPEC_SLUG"/
-cp -r "$SSF_SPEC_FOLDER/ssf-001/spec"/* docs/"$SSF_SPEC_SLUG"/ssf-001/
-cp -r "$SSF_SPEC_FOLDER/ssf-002/spec"/* docs/"$SSF_SPEC_SLUG"/ssf-002/
-cp -r "$SSF_SPEC_FOLDER/_category_.json" docs/"$SSF_SPEC_SLUG"/
+
+#Satblecoi Stack
+cp -r "$SS_SPEC_FOLDER/ss-001/spec"/* docs/"$SS_SPEC_SLUG"/ss-001/
+cp -r "$SS_SPEC_FOLDER/ss-002/spec"/* docs/"$SS_SPEC_SLUG"/ss-002/
+cp -r "$SS_SPEC_FOLDER/_category_.json" docs/"$SS_SPEC_SLUG"/
+
+#Disposable-keys
+cp -r "$MPC_SPEC_FOLDER/"* docs/"$MPC_SPEC_SLUG"/
+cp -r "$MPC_SPEC_FOLDER/_category_.json" docs/"$MPC_SPEC_SLUG"/
+
+#Canonical Payment
+cp -r "$CANONICAL_PAYMENT_FOLDER/"* docs/"$CANONICAL_PAYMENT_SLUG"/
+cp -r "$CANONICAL_PAYMENT_FOLDER/_category_.json" docs/"$CANONICAL_PAYMENT_SLUG"/
+#
+
+#exit 1;
 
 echo "Running build..."
-if ! npm run build; then
+if ! npm run build ; then
   echo "Build failed. Exiting."
   exit 1
 fi

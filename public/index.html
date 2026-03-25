@@ -13,13 +13,11 @@
         rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <style>
-        /* PAGE-SPECIFIC STYLES */
-
-        /* HERO */
+        /* ─── HERO ─────────────────────────────────────────────────── */
         .hero {
             background: var(--blue);
             color: var(--white);
-            padding: 96px 0 88px;
+            padding: 104px 0 96px;
             position: relative;
             overflow: hidden;
         }
@@ -32,6 +30,18 @@
                 linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
                 linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
             background-size: 72px 72px;
+            pointer-events: none;
+        }
+
+        /* Subtle radial glow */
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: -120px;
+            right: -80px;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(31, 163, 163, 0.07) 0%, transparent 70%);
             pointer-events: none;
         }
 
@@ -51,6 +61,7 @@
             align-items: center;
             gap: 10px;
             margin-bottom: 32px;
+            animation: fadeUp 0.5s ease both;
         }
 
         .hero-kicker::before {
@@ -68,7 +79,7 @@
             letter-spacing: -0.03em;
             max-width: 820px;
             margin-bottom: 36px;
-            animation: fadeUp 0.6s ease both;
+            animation: fadeUp 0.6s 0.05s ease both;
         }
 
         .hero-title strong {
@@ -80,42 +91,91 @@
             font-size: clamp(17px, 1.8vw, 21px);
             font-weight: 300;
             color: rgba(255, 255, 255, 0.55);
-            max-width: 580px;
+            max-width: 600px;
             line-height: 1.65;
-            margin-bottom: 48px;
+            margin-bottom: 52px;
             animation: fadeUp 0.6s 0.1s ease both;
         }
 
-        .hero-badges {
+        .hero-actions {
             display: flex;
-            gap: 32px;
-            animation: fadeUp 0.6s 0.2s ease both;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 72px;
+            animation: fadeUp 0.6s 0.15s ease both;
         }
 
-        .hero-badge {
-            display: flex;
-            flex-direction: column;
-            gap: 4px;
-        }
-
-        .hero-badge-value {
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 13px;
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--teal);
+            color: var(--white);
+            padding: 14px 28px;
+            border-radius: 4px;
+            font-size: 14px;
             font-weight: 500;
-            color: var(--teal);
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
+            text-decoration: none;
+            transition: background 0.15s, transform 0.15s;
         }
 
-        .hero-badge-label {
+        .btn-primary:hover {
+            background: #1a9090;
+            transform: translateY(-1px);
+        }
+
+        .btn-ghost {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: transparent;
+            color: rgba(255, 255, 255, 0.65);
+            padding: 14px 0;
+            font-size: 14px;
+            font-weight: 400;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            transition: color 0.15s, border-color 0.15s;
+        }
+
+        .btn-ghost:hover {
+            color: var(--white);
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 0;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 6px;
+            overflow: hidden;
+            animation: fadeUp 0.6s 0.2s ease both;
+            width: fit-content;
+        }
+
+        .hero-stat {
+            padding: 20px 36px;
+            border-right: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .hero-stat:last-child {
+            border-right: none;
+        }
+
+        .hero-stat-value {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--white);
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .hero-stat-label {
             font-size: 12px;
             color: rgba(255, 255, 255, 0.35);
-        }
-
-        .hero-badge-sep {
-            width: 1px;
-            background: rgba(255, 255, 255, 0.1);
-            align-self: stretch;
+            letter-spacing: 0.04em;
         }
 
         @keyframes fadeUp {
@@ -130,7 +190,73 @@
             }
         }
 
-        /* SECTION COMMON */
+        /* ─── MISSION STRIP ────────────────────────────────────────── */
+        .mission-strip {
+            border-bottom: 1px solid var(--border);
+            background: var(--light);
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .mission-strip-inner {
+            display: flex;
+            border-left: 1px solid var(--border);
+        }
+
+        .mission-pillar {
+            flex: 1;
+            padding: 36px 40px;
+            border-right: 1px solid var(--border);
+            display: flex;
+            align-items: flex-start;
+            gap: 18px;
+        }
+
+        .mission-pillar-icon {
+            width: 36px;
+            height: 36px;
+            flex-shrink: 0;
+            background: var(--blue);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2px;
+        }
+
+        .mission-pillar-icon svg {
+            width: 18px;
+            height: 18px;
+            fill: none;
+            stroke: var(--teal);
+            stroke-width: 1.5;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .mission-pillar-title {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--blue);
+            margin-bottom: 6px;
+        }
+
+        .mission-pillar-desc {
+            font-size: 13px;
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        /* ─── ROLES SECTION ────────────────────────────────────────── */
+        .roles {
+            padding: 88px 0;
+        }
+
+        .roles-header {
+            margin-bottom: 56px;
+        }
+
         .section-kicker {
             font-family: 'IBM Plex Sans', sans-serif;
             font-size: 12px;
@@ -149,39 +275,6 @@
             width: 20px;
             height: 1px;
             background: var(--teal);
-        }
-
-        .col-title {
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-weight: 300;
-            font-size: clamp(32px, 4vw, 52px);
-            line-height: 1.08;
-            letter-spacing: -0.025em;
-            color: var(--blue);
-            margin-bottom: 28px;
-        }
-
-        .col-title strong {
-            font-weight: 600;
-        }
-
-        .col-body {
-            font-size: 16px;
-            color: var(--sub);
-            line-height: 1.75;
-        }
-
-        .col-body p+p {
-            margin-top: 18px;
-        }
-
-        /* ROLES SECTION */
-        .roles {
-            padding: 88px 0;
-        }
-
-        .roles-header {
-            margin-bottom: 56px;
         }
 
         .roles-grid {
@@ -280,8 +373,8 @@
             opacity: 0.5;
         }
 
-        /* ABOUT SECTION */
-        .about {
+        /* ─── HOW IT WORKS ─────────────────────────────────────────── */
+        .how {
             border-top: 1px solid var(--border);
             padding: 88px 0;
             background: var(--blue);
@@ -290,7 +383,7 @@
             overflow: hidden;
         }
 
-        .about::before {
+        .how::before {
             content: '';
             position: absolute;
             inset: 0;
@@ -301,9 +394,101 @@
             pointer-events: none;
         }
 
-        .about .container {
+        .how .container {
             position: relative;
             z-index: 1;
+        }
+
+        .how .section-kicker {
+            color: var(--teal);
+        }
+
+        .how .section-kicker::before {
+            background: var(--teal);
+        }
+
+        .how-header {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            margin-bottom: 56px;
+            gap: 40px;
+        }
+
+        .how-header .col-title {
+            color: var(--white);
+            margin-bottom: 0;
+        }
+
+        .how-header-sub {
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.45);
+            line-height: 1.65;
+            max-width: 380px;
+            flex-shrink: 0;
+        }
+
+        .how-steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1px;
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .how-step {
+            background: rgba(255, 255, 255, 0.02);
+            padding: 36px 28px;
+            position: relative;
+        }
+
+        .how-step:hover {
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        .how-step-num {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 40px;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.07);
+            letter-spacing: -0.04em;
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+
+        .how-step-title {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--white);
+            margin-bottom: 10px;
+        }
+
+        .how-step-desc {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.45);
+            line-height: 1.65;
+        }
+
+        .how-step-tag {
+            display: inline-block;
+            margin-top: 18px;
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--teal);
+            background: rgba(31, 163, 163, 0.1);
+            padding: 3px 8px;
+            border-radius: 2px;
+        }
+
+        /* ─── ABOUT / PRINCIPLES ───────────────────────────────────── */
+        .about {
+            border-top: 1px solid var(--border);
+            padding: 88px 0;
         }
 
         .about-grid {
@@ -313,27 +498,11 @@
             align-items: start;
         }
 
-        .about .section-kicker {
-            color: var(--teal);
-        }
-
-        .about .section-kicker::before {
-            background: var(--teal);
-        }
-
-        .about .col-title {
-            color: var(--white);
-        }
-
-        .about .col-body {
-            color: rgba(255, 255, 255, 0.55);
-        }
-
         .principles-list {
             list-style: none;
             display: flex;
             flex-direction: column;
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            border: 1px solid var(--border);
             border-radius: 6px;
             overflow: hidden;
         }
@@ -343,9 +512,9 @@
             align-items: baseline;
             gap: 20px;
             padding: 20px 28px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            border-bottom: 1px solid var(--border);
             font-size: 14px;
-            color: rgba(255, 255, 255, 0.65);
+            color: var(--sub);
         }
 
         .principles-list li:last-child {
@@ -362,10 +531,486 @@
             width: 28px;
         }
 
-        /* RESOURCES SECTION */
-        .resources {
-            padding: 88px 0;
+        /* ─── COMMUNITY ────────────────────────────────────────────── */
+        .community {
             border-top: 1px solid var(--border);
+            padding: 88px 0;
+            background: var(--light);
+        }
+
+        .community-header {
+            margin-bottom: 56px;
+        }
+
+        .community-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .community-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 32px;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            transition: box-shadow 0.15s, transform 0.15s;
+        }
+
+        .community-card:hover {
+            box-shadow: 0 8px 24px rgba(11, 31, 51, 0.08);
+            transform: translateY(-2px);
+        }
+
+        .community-card-icon {
+            width: 44px;
+            height: 44px;
+            background: var(--blue);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 8px;
+        }
+
+        .community-card-icon svg {
+            width: 22px;
+            height: 22px;
+            fill: none;
+            stroke: var(--teal);
+            stroke-width: 1.5;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .community-card-title {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--blue);
+        }
+
+        .community-card-desc {
+            font-size: 14px;
+            color: var(--gray);
+            line-height: 1.65;
+            flex: 1;
+        }
+
+        .community-card-link {
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--teal);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 8px;
+        }
+
+        .community-card:hover .community-card-link-arrow {
+            transform: translateX(3px);
+        }
+
+        .community-card-link-arrow {
+            transition: transform 0.15s;
+        }
+
+        /* ─── CONTRIBUTORS ─────────────────────────────────────────── */
+        .contributors {
+            border-top: 1px solid var(--border);
+            padding: 88px 0;
+        }
+
+        .contributors-header {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            margin-bottom: 48px;
+            gap: 40px;
+        }
+
+        .contributors-header .col-title {
+            margin-bottom: 0;
+        }
+
+        .contributors-header a {
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--teal);
+            text-decoration: none;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .contributors-header a:hover {
+            text-decoration: underline;
+        }
+
+        .contributors-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 1px;
+            background: var(--border);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+
+        .contributor-card {
+            background: var(--white);
+            padding: 24px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: inherit;
+            transition: background 0.15s;
+        }
+
+        .contributor-card:hover {
+            background: var(--light);
+        }
+
+        .contributor-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: var(--blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--white);
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+
+        .contributor-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .contributor-name {
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--blue);
+            text-align: center;
+        }
+
+        .contributor-role {
+            font-size: 11px;
+            color: var(--gray);
+            text-align: center;
+            line-height: 1.4;
+        }
+
+        .contributor-commits {
+            font-size: 11px;
+            color: var(--teal);
+            font-weight: 500;
+        }
+
+        .contribute-banner {
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 28px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 32px;
+            background: var(--light);
+        }
+
+        .contribute-banner-text h4 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--blue);
+            margin-bottom: 4px;
+        }
+
+        .contribute-banner-text p {
+            font-size: 13px;
+            color: var(--gray);
+            line-height: 1.5;
+        }
+
+        .contribute-banner-actions {
+            display: flex;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+
+        .btn-outline {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            border: 1px solid var(--border);
+            color: var(--blue);
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: border-color 0.15s, box-shadow 0.15s;
+        }
+
+        .btn-outline:hover {
+            border-color: rgba(11, 31, 51, 0.3);
+            box-shadow: 0 2px 8px rgba(11, 31, 51, 0.06);
+        }
+
+        .btn-solid {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--blue);
+            color: var(--white);
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: background 0.15s;
+        }
+
+        .btn-solid:hover {
+            background: #112b47;
+        }
+
+        /* ─── SPONSORS ─────────────────────────────────────────────── */
+        .sponsors {
+            border-top: 1px solid var(--border);
+            padding: 88px 0;
+            background: var(--light);
+        }
+
+        .sponsors-header {
+            margin-bottom: 56px;
+        }
+
+        /* Tier: Founding */
+        .sponsors-tier {
+            margin-bottom: 48px;
+        }
+
+        .sponsors-tier-label {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .sponsors-tier-label span {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--gray);
+        }
+
+        .sponsors-tier-label::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border);
+        }
+
+        .sponsors-tier-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .sponsors-tier-dot.founding {
+            background: var(--teal);
+        }
+
+        .sponsors-tier-dot.infrastructure {
+            background: var(--blue);
+        }
+
+        .sponsors-tier-dot.supporting {
+            background: var(--gray);
+        }
+
+        .sponsors-founding-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1px;
+            background: var(--border);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .sponsor-card {
+            background: var(--white);
+            padding: 40px 36px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            text-decoration: none;
+            color: inherit;
+            transition: background 0.15s;
+        }
+
+        .sponsor-card:hover {
+            background: #fafbfc;
+        }
+
+        .sponsor-logo-placeholder {
+            height: 40px;
+            display: flex;
+            align-items: center;
+        }
+
+        .sponsor-logo-wordmark {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--blue);
+            letter-spacing: -0.02em;
+        }
+
+        .sponsor-logo-wordmark .teal {
+            color: var(--teal);
+        }
+
+        .sponsor-desc {
+            font-size: 13px;
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        .sponsor-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 11px;
+            font-weight: 500;
+            color: var(--teal);
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+
+        .sponsor-badge::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--teal);
+        }
+
+        .sponsors-infra-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1px;
+            background: var(--border);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .sponsor-card-sm {
+            background: var(--white);
+            padding: 28px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-decoration: none;
+            color: inherit;
+            transition: background 0.15s;
+        }
+
+        .sponsor-card-sm:hover {
+            background: #fafbfc;
+        }
+
+        .sponsor-logo-sm {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--blue);
+            letter-spacing: -0.01em;
+        }
+
+        .sponsor-logo-sm .teal {
+            color: var(--teal);
+        }
+
+        .sponsor-desc-sm {
+            font-size: 12px;
+            color: var(--gray);
+            line-height: 1.55;
+        }
+
+        .sponsors-supporting-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .sponsor-pill {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 10px 20px;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--sub);
+            text-decoration: none;
+            transition: border-color 0.15s, color 0.15s;
+        }
+
+        .sponsor-pill:hover {
+            border-color: rgba(11, 31, 51, 0.25);
+            color: var(--blue);
+        }
+
+        .sponsors-cta {
+            margin-top: 48px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 32px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            background: var(--white);
+        }
+
+        .sponsors-cta-text h4 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--blue);
+            margin-bottom: 6px;
+        }
+
+        .sponsors-cta-text p {
+            font-size: 14px;
+            color: var(--gray);
+            line-height: 1.5;
+            max-width: 480px;
+        }
+
+        /* ─── RESOURCES ────────────────────────────────────────────── */
+        .resources {
+            border-top: 1px solid var(--border);
+            padding: 88px 0;
         }
 
         .resources-header {
@@ -431,8 +1076,230 @@
             margin-top: 12px;
         }
 
-        /* RESPONSIVE */
+        /* ─── CASHPACK ─────────────────────────────────────────────── */
+        .cashpack {
+            border-top: 1px solid var(--border);
+            padding: 88px 0;
+            background: var(--light);
+        }
+
+        .cashpack-grid {
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: 80px;
+            align-items: start;
+        }
+
+        .cashpack-highlights {
+            margin-top: 36px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .cashpack-highlight {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .cashpack-highlight:last-child {
+            border-bottom: none;
+        }
+
+        .cashpack-highlight-label {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--blue);
+        }
+
+        .cashpack-highlight-desc {
+            font-size: 13px;
+            color: var(--gray);
+            line-height: 1.55;
+        }
+
+        .cashpack-actions {
+            display: flex;
+            gap: 12px;
+            margin-top: 32px;
+            flex-wrap: wrap;
+        }
+
+        .cashpack-flow {
+            background: var(--blue);
+            border-radius: 6px;
+            padding: 32px;
+            position: sticky;
+            top: 88px;
+        }
+
+        .cashpack-flow-title {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--teal);
+            margin-bottom: 28px;
+        }
+
+        .cashpack-flow-steps {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cashpack-flow-step {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+
+        .cashpack-flow-step-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            flex-shrink: 0;
+            margin-top: 4px;
+        }
+
+        .cashpack-dot-lock {
+            background: var(--teal);
+        }
+
+        .cashpack-dot-transfer {
+            background: rgba(31, 163, 163, 0.5);
+        }
+
+        .cashpack-dot-redeem {
+            background: rgba(31, 163, 163, 0.25);
+            border: 1px solid rgba(31, 163, 163, 0.5);
+        }
+
+        .cashpack-flow-connector {
+            width: 1px;
+            height: 24px;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 6px 0 6px 5.5px;
+        }
+
+        .cashpack-flow-step-title {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--white);
+            margin-bottom: 6px;
+        }
+
+        .cashpack-flow-step-desc {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.45);
+            line-height: 1.6;
+        }
+
+        .cashpack-flow-note {
+            margin-top: 28px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.07);
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.2);
+            letter-spacing: 0.06em;
+        }
+
+        /* ─── RESPONSIVE ───────────────────────────────────────────── */
+        .roles-grid-secondary {
+            grid-template-columns: repeat(4, 1fr);
+            border-top: none;
+            border-radius: 0 0 6px 6px;
+        }
+
+        .role-card-sm {
+            padding: 28px 28px 28px;
+        }
+
+        .role-card-sm .role-title {
+            font-size: 16px;
+        }
+
+        /* Eliptic */
+        .cashpack-flow-ellipsis {
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cashpack-dot-ellipsis {
+            background: #999;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        .cashpack-flow-ellipsis-content {
+            font-size: 24px;
+            letter-spacing: 6px;
+            color: #999;
+            margin-left: 8px;
+        }
+
+        /* Eliptic */
+
         @media (max-width: 960px) {
+            .roles-grid-secondary {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .roles-grid-secondary .role-card {
+                border-right: none;
+                border-bottom: 1px solid var(--border);
+            }
+
+            .roles-grid-secondary .role-card:nth-child(odd) {
+                border-right: 1px solid var(--border);
+            }
+
+            .roles-grid-secondary .role-card:nth-last-child(-n+2) {
+                border-bottom: none;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .roles-grid-secondary {
+                grid-template-columns: 1fr;
+            }
+
+            .roles-grid-secondary .role-card {
+                border-right: none !important;
+            }
+
+            .roles-grid-secondary .role-card:last-child {
+                border-bottom: none;
+            }
+
+            .roles-grid-secondary .role-card:nth-last-child(-n+2) {
+                border-bottom: 1px solid var(--border);
+            }
+        }
+
+        @media (max-width: 960px) {
+            .mission-strip-inner {
+                flex-direction: column;
+                border-left: none;
+            }
+
+            .mission-pillar {
+                border-right: none;
+                border-bottom: 1px solid var(--border);
+            }
+
+            .mission-pillar:last-child {
+                border-bottom: none;
+            }
+
             .roles-grid {
                 grid-template-columns: 1fr;
             }
@@ -446,9 +1313,53 @@
                 border-bottom: none;
             }
 
+            .how-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .how-steps {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
             .about-grid {
                 grid-template-columns: 1fr;
                 gap: 48px;
+            }
+
+            .cashpack-grid {
+                grid-template-columns: 1fr;
+                gap: 48px;
+            }
+
+            .cashpack-flow {
+                position: static;
+            }
+
+            .community-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contributors-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .contribute-banner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .sponsors-founding-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .sponsors-infra-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .sponsors-cta {
+                flex-direction: column;
+                align-items: flex-start;
             }
 
             .resources-grid {
@@ -461,24 +1372,36 @@
                 padding: 60px 0 52px;
             }
 
-            .hero-badges {
+            .hero-stats {
                 flex-direction: column;
-                gap: 16px;
+                width: 100%;
             }
 
-            .hero-badge-sep {
-                display: none;
+            .hero-stat {
+                border-right: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.08);
             }
 
-            .roles {
-                padding: 56px 0;
+            .hero-stat:last-child {
+                border-bottom: none;
             }
 
-            .about {
-                padding: 56px 0;
+            .how-steps {
+                grid-template-columns: 1fr;
             }
 
-            .resources {
+            .contributors-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .roles,
+            .how,
+            .about,
+            .community,
+            .contributors,
+            .sponsors,
+            .resources,
+            .cashpack {
                 padding: 56px 0;
             }
 
@@ -493,82 +1416,219 @@
 
     <div data-include="./components/header.html"></div>
 
-    <!-- HERO -->
+    <!-- ── HERO ──────────────────────────────────────────────────────── -->
     <section class="hero">
         <div class="container">
-            <div class="hero-kicker" data-i18n="hero.kicker">Reference Implementation</div>
+            <div class="hero-kicker" data-i18n="home.hero.kicker">Open Payment Infrastructure</div>
             <h1 class="hero-title">
-                <span data-i18n="hero.title_regular">Open standards for</span>
-                <strong data-i18n="hero.title_bold">digital payments.</strong>
+                <span data-i18n="home.hero.title_line1">The neutral standard</span>
+                <strong data-i18n="home.hero.title_line2">payments are built on.</strong>
             </h1>
-            <p class="hero-body" data-i18n="hero.body">
-                To build and steward open, neutral payment infrastructure that enhances interoperability between banks
-                and existing
-                financial systems, relying on cryptographic algorithms to enable user-centric, simpler and more
-                efficient payment flows.
+            <p class="hero-body" data-i18n="home.hero.body">
+                Fabric is an open, non-profit foundation governing the interoperability layer between banks, acquirers,
+                and digital payment systems — built on cryptographic standards, owned by no one.
             </p>
-            <div class="hero-badges">
-                <div class="hero-badge">
-                    <span class="hero-badge-value" data-i18n="hero.badge1_value">Live</span>
-                    <span class="hero-badge-label" data-i18n="hero.badge1_label">Test environment</span>
+            <div class="hero-actions">
+                <a href="./reference.html" class="btn-primary" data-i18n="home.hero.cta_primary">
+                    Explore the reference implementation →
+                </a>
+                <a href="./specifications.html" class="btn-ghost" data-i18n="home.hero.cta_secondary">
+                    Read the specification
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="hero-stat-value" data-i18n="home.hero.stat1_value">ISO&nbsp;20022</span>
+                    <span class="hero-stat-label" data-i18n="home.hero.stat1_label">Aligned standard</span>
                 </div>
-                <div class="hero-badge-sep"></div>
-                <div class="hero-badge">
-                    <span class="hero-badge-value" data-i18n="hero.badge2_value">Open</span>
-                    <span class="hero-badge-label" data-i18n="hero.badge2_label">Standard &amp; source</span>
+                <div class="hero-stat">
+                    <span class="hero-stat-value" data-i18n="home.hero.stat2_value">Open</span>
+                    <span class="hero-stat-label" data-i18n="home.hero.stat2_label">Spec &amp; source</span>
                 </div>
-                <div class="hero-badge-sep"></div>
-                <div class="hero-badge">
-                    <span class="hero-badge-value" data-i18n="hero.badge3_value">Free</span>
-                    <span class="hero-badge-label" data-i18n="hero.badge3_label">To use and integrate</span>
+                <div class="hero-stat">
+                    <span class="hero-stat-value" data-i18n="home.hero.stat3_value">Non-profit</span>
+                    <span class="hero-stat-label" data-i18n="home.hero.stat3_label">Governed foundation</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-value" data-i18n="home.hero.stat4_value">Free</span>
+                    <span class="hero-stat-label" data-i18n="home.hero.stat4_label">To use &amp; integrate</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ROLES SECTION -->
+    <!-- ── MISSION STRIP ─────────────────────────────────────────────── -->
+    <div class="mission-strip">
+        <div class="container">
+            <div class="mission-strip-inner">
+                <div class="mission-pillar">
+                    <div class="mission-pillar-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                            <path d="M2 17l10 5 10-5" />
+                            <path d="M2 12l10 5 10-5" />
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="mission-pillar-title" data-i18n="home.strip.p1_title">Interoperability first</div>
+                        <div class="mission-pillar-desc" data-i18n="home.strip.p1_desc">Any bank, any wallet, any
+                            acquirer — the standard works across all of them without proprietary lock-in.</div>
+                    </div>
+                </div>
+                <div class="mission-pillar">
+                    <div class="mission-pillar-icon">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="3" y="11" width="18" height="11" rx="2" />
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="mission-pillar-title" data-i18n="home.strip.p2_title">Cryptographic trust</div>
+                        <div class="mission-pillar-desc" data-i18n="home.strip.p2_desc">Every payment flow is verifiable
+                            end-to-end. No trust assumptions. No black boxes.</div>
+                    </div>
+                </div>
+                <div class="mission-pillar">
+                    <div class="mission-pillar-icon">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 8v4l3 3" />
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="mission-pillar-title" data-i18n="home.strip.p3_title">Built to last</div>
+                        <div class="mission-pillar-desc" data-i18n="home.strip.p3_desc">No venture capital, no exit, no
+                            pivot. The foundation exists solely to maintain the standard.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── ROLES SECTION ─────────────────────────────────────────────── -->
     <section class="roles">
         <div class="container">
             <div class="roles-header">
                 <div class="section-kicker" data-i18n="roles.kicker">Choose your path</div>
                 <h2 class="col-title">
                     <span data-i18n="roles.title_regular">Who are you </span><strong data-i18n="roles.title_bold">in
-                        this transaction?</strong>
+                        this ecosystem?</strong>
                 </h2>
-                <p class="col-body" style="max-width:560px;" data-i18n="roles.body">Pick the role that matches how you
-                    interact with payments. Each walkthrough shows the full experience from your side.</p>
+                <p class="col-body" style="max-width:600px;" data-i18n="roles.body">Fabric standards serve every
+                    participant in the payments landscape — not just the transaction endpoints. Find your role and see
+                    what the standards offer you.</p>
             </div>
-            <div class="roles-grid">
 
-                <a href="#" class="role-card">
+            <!-- Primary roles: 3-col -->
+            <div class="roles-grid" style="margin-bottom: 1px;">
+
+                <a href="./merchant.html" class="role-card">
                     <span class="role-num" data-i18n="roles.path1_num">Path 01</span>
                     <h3 class="role-title" data-i18n="roles.path1_title">Merchants</h3>
                     <p class="role-sub" data-i18n="roles.path1_sub">I run a business and want to accept payments</p>
-                    <ul class="role-list" data-i18n-list="roles.path1_list"></ul>
+                    <ul class="role-list">
+                        <li data-i18n="roles.path1_li1">Generate a Fabric payment request</li>
+                        <li data-i18n="roles.path1_li2">Present a QR code or link to a payer</li>
+                        <li data-i18n="roles.path1_li3">Receive confirmation without an intermediary</li>
+                    </ul>
                     <span class="role-cta">
                         <span data-i18n="roles.path1_cta">See the merchant walkthrough</span>
                         <span class="role-arrow">→</span>
                     </span>
                 </a>
 
-                <a href="#" class="role-card">
+                <a href="./payer.html" class="role-card">
                     <span class="role-num" data-i18n="roles.path2_num">Path 02</span>
                     <h3 class="role-title" data-i18n="roles.path2_title">Payers</h3>
                     <p class="role-sub" data-i18n="roles.path2_sub">I want to send a payment using open rails</p>
-                    <ul class="role-list" data-i18n-list="roles.path2_list"></ul>
+                    <ul class="role-list">
+                        <li data-i18n="roles.path2_li1">Scan or receive a Fabric payment request</li>
+                        <li data-i18n="roles.path2_li2">Authorise from your bank or wallet</li>
+                        <li data-i18n="roles.path2_li3">Cryptographic receipt issued on completion</li>
+                    </ul>
                     <span class="role-cta">
                         <span data-i18n="roles.path2_cta">See the payer walkthrough</span>
                         <span class="role-arrow">→</span>
                     </span>
                 </a>
 
-                <a href="#" class="role-card">
+                <a href="./fintech.html" class="role-card">
                     <span class="role-num" data-i18n="roles.path3_num">Path 03</span>
-                    <h3 class="role-title" data-i18n="roles.path3_title">Acquirers</h3>
-                    <p class="role-sub" data-i18n="roles.path3_sub">I process or settle payments on behalf of others</p>
-                    <ul class="role-list" data-i18n-list="roles.path3_list"></ul>
+                    <h3 class="role-title" data-i18n="roles.path3_title">Fintechs</h3>
+                    <p class="role-sub" data-i18n="roles.path3_sub">I build financial products on top of existing rails
+                    </p>
+                    <ul class="role-list">
+                        <li data-i18n="roles.path3_li1">Embed Fabric-native payment flows in your product</li>
+                        <li data-i18n="roles.path3_li2">Use open SDKs without proprietary licensing</li>
+                        <li data-i18n="roles.path3_li3">Interoperate across all Fabric-compatible institutions</li>
+                    </ul>
                     <span class="role-cta">
-                        <span data-i18n="roles.path3_cta">See the acquirer walkthrough</span>
+                        <span data-i18n="roles.path3_cta">See the fintech walkthrough</span>
+                        <span class="role-arrow">→</span>
+                    </span>
+                </a>
+
+            </div>
+
+            <!-- Secondary roles: 4-col compact -->
+            <div class="roles-grid roles-grid-secondary">
+
+                <a href="./correspondent-banks.html" class="role-card role-card-sm">
+                    <span class="role-num" data-i18n="roles.path4_num">Path 04</span>
+                    <h3 class="role-title" data-i18n="roles.path4_title">Correspondent Banks</h3>
+                    <p class="role-sub" data-i18n="roles.path4_sub">I settle obligations between institutions across
+                        borders</p>
+                    <ul class="role-list">
+                        <li data-i18n="roles.path4_li1">Validate cross-border payment proofs</li>
+                        <li data-i18n="roles.path4_li2">Integrate with ISO 20022 aligned message flows</li>
+                    </ul>
+                    <span class="role-cta">
+                        <span data-i18n="roles.path4_cta">Read the guide</span>
+                        <span class="role-arrow">→</span>
+                    </span>
+                </a>
+
+                <a href="./regulators.html" class="role-card role-card-sm">
+                    <span class="role-num" data-i18n="roles.path5_num">Path 05</span>
+                    <h3 class="role-title" data-i18n="roles.path5_title">Regulators</h3>
+                    <p class="role-sub" data-i18n="roles.path5_sub">I supervise payment systems and set compliance
+                        frameworks</p>
+                    <ul class="role-list">
+                        <li data-i18n="roles.path5_li1">Review the governance and audit trail model</li>
+                        <li data-i18n="roles.path5_li2">Understand compliance obligations per standard</li>
+                    </ul>
+                    <span class="role-cta">
+                        <span data-i18n="roles.path5_cta">Regulatory overview</span>
+                        <span class="role-arrow">→</span>
+                    </span>
+                </a>
+
+                <a href="./researchers.html" class="role-card role-card-sm">
+                    <span class="role-num" data-i18n="roles.path6_num">Path 06</span>
+                    <h3 class="role-title" data-i18n="roles.path6_title">Researchers</h3>
+                    <p class="role-sub" data-i18n="roles.path6_sub">I study payment systems, cryptography, or financial
+                        infrastructure</p>
+                    <ul class="role-list">
+                        <li data-i18n="roles.path6_li1">Access formal specifications and test vectors</li>
+                        <li data-i18n="roles.path6_li2">Cite and build on open standards</li>
+                    </ul>
+                    <span class="role-cta">
+                        <span data-i18n="roles.path6_cta">Research resources</span>
+                        <span class="role-arrow">→</span>
+                    </span>
+                </a>
+
+                <a href="./developers.html" class="role-card role-card-sm">
+                    <span class="role-num" data-i18n="roles.path7_num">Path 07</span>
+                    <h3 class="role-title" data-i18n="roles.path7_title">Developers</h3>
+                    <p class="role-sub" data-i18n="roles.path7_sub">I implement, integrate, or extend Fabric-based
+                        systems</p>
+                    <ul class="role-list">
+                        <li data-i18n="roles.path7_li1">Use the reference implementation as a base</li>
+                        <li data-i18n="roles.path7_li2">Run the test environment locally in minutes</li>
+                    </ul>
+                    <span class="role-cta">
+                        <span data-i18n="roles.path7_cta">Developer quickstart</span>
                         <span class="role-arrow">→</span>
                     </span>
                 </a>
@@ -577,25 +1637,199 @@
         </div>
     </section>
 
-    <!-- ABOUT SECTION -->
+    <!-- ── HOW IT WORKS: STABLECOIN STACK ───────────────────────────── -->
+    <section class="how">
+        <div class="container">
+            <div class="how-header">
+                <div>
+                    <div class="section-kicker" data-i18n="home.how.kicker">FPSF-SS-001 · Stablecoin Stack</div>
+                    <h2 class="col-title" style="margin-bottom:0;">
+                        <span data-i18n="home.how.title_regular">How a Stablecoin Stack payment </span><strong
+                            data-i18n="home.how.title_bold">actually works.</strong>
+                    </h2>
+                </div>
+                <p class="how-header-sub" data-i18n="home.how.sub">
+                    Four steps. No proprietary network in the middle. Every party can independently verify every step.
+                </p>
+            </div>
+            <div class="how-steps">
+                <div class="how-step">
+                    <div class="how-step-num">01</div>
+                    <div class="how-step-title" data-i18n="home.how.s1_title">Request creation</div>
+                    <div class="how-step-desc" data-i18n="home.how.s1_desc">The merchant generates a signed payment
+                        request object — a structured message specifying amount, currency, receiver identity, and
+                        expiry.</div>
+                    <span class="how-step-tag" data-i18n="home.how.s1_tag">Merchant-side</span>
+                </div>
+                <div class="how-step">
+                    <div class="how-step-num">02</div>
+                    <div class="how-step-title" data-i18n="home.how.s2_title">Payer authorisation</div>
+                    <div class="how-step-desc" data-i18n="home.how.s2_desc">The payer's bank or wallet receives the
+                        request, presents it to the user, and collects authorisation via the institution's own
+                        authentication flow.</div>
+                    <span class="how-step-tag" data-i18n="home.how.s2_tag">Bank or wallet</span>
+                </div>
+                <div class="how-step">
+                    <div class="how-step-num">03</div>
+                    <div class="how-step-title" data-i18n="home.how.s3_title">Cryptographic proof</div>
+                    <div class="how-step-desc" data-i18n="home.how.s3_desc">The authorising institution issues a signed
+                        payment proof — independently verifiable by the merchant, acquirer, or any auditor without
+                        calling home.</div>
+                    <span class="how-step-tag" data-i18n="home.how.s3_tag">Open verification</span>
+                </div>
+                <div class="how-step">
+                    <div class="how-step-num">04</div>
+                    <div class="how-step-title" data-i18n="home.how.s4_title">Settlement</div>
+                    <div class="how-step-desc" data-i18n="home.how.s4_desc">Settlement happens over existing interbank
+                        rails. Fabric governs the messaging layer — not the money movement. Banks keep their role.</div>
+                    <span class="how-step-tag" data-i18n="home.how.s4_tag">Existing rails</span>
+                </div>
+            </div>
+            <div style="margin-top: 20px; text-align: right;">
+                <a href="https://fabricpaymentstandards.org/specs/ssf/ssf-001/overview/payment-submission"
+                    style="font-size: 13px; font-weight: 500; color: var(--teal); text-decoration: none;"
+                    data-i18n="home.how.full_spec">Read the full SS-001 specification →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── CASHPACK SECTION ───────────────────────────────────────────── -->
+    <section class="cashpack">
+        <div class="container">
+            <div class="cashpack-grid">
+                <div class="cashpack-left">
+                    <div class="section-kicker" data-i18n="home.cashpack.kicker">FPSF-CPP-001 · CashPack</div>
+                    <h2 class="col-title">
+                        <span data-i18n="home.cashpack.title_regular">Digital cash that works like </span><strong
+                            data-i18n="home.cashpack.title_bold">physical cash.</strong>
+                    </h2>
+                    <div class="col-body">
+                        <p data-i18n="home.cashpack.body1">Every digital payment today exposes the sender, receiver,
+                            amount, and timestamp to the network — by design. CashPack changes that. It defines a
+                            signed, transferable digital instrument — the <strong>cash-pack</strong> — that passes
+                            between parties without each transfer being recorded by the Operator.</p>
+                        <p data-i18n="home.cashpack.body2">Structurally analogous to physical banknotes: the Operator
+                            sees who locked funds and who redeemed them. The intermediate chain is visible only to its
+                            participants — with cryptographic verification at every step and a tamper-evident audit
+                            trail available to authorised investigators.</p>
+                    </div>
+                    <div class="cashpack-highlights">
+                        <div class="cashpack-highlight">
+                            <span class="cashpack-highlight-label"
+                                data-i18n="home.cashpack.h1_label">Infrastructure-agnostic</span>
+                            <span class="cashpack-highlight-desc" data-i18n="home.cashpack.h1_desc">Works with core
+                                banking, tokenized deposits, permissioned ledgers, or public blockchains — the Operator
+                                chooses.</span>
+                        </div>
+                        <div class="cashpack-highlight">
+                            <span class="cashpack-highlight-label" data-i18n="home.cashpack.h2_label">Privacy with
+                                compliance</span>
+                            <span class="cashpack-highlight-desc" data-i18n="home.cashpack.h2_desc">Intermediate
+                                transfers stay private. Authorised investigators retain access to a tamper-evident audit
+                                trail.</span>
+                        </div>
+                        <div class="cashpack-highlight">
+                            <span class="cashpack-highlight-label" data-i18n="home.cashpack.h3_label">Bearer instrument
+                                model</span>
+                            <span class="cashpack-highlight-desc" data-i18n="home.cashpack.h3_desc">Generalises to
+                                vouchers, gift instruments, tokenized deposits, digital securities, and bearer
+                                bonds.</span>
+                        </div>
+                    </div>
+                    <div class="cashpack-actions">
+                        <a href="./specs/cashpack/overview/" class="btn-solid"
+                            data-i18n="home.cashpack.cta_primary">Read the CashPack overview</a>
+                        <a href="./specs/cashpack/SPEC" class="btn-outline" data-i18n="home.cashpack.cta_spec">Formal
+                            specification</a>
+                    </div>
+                </div>
+                <div class="cashpack-right">
+                    <div class="cashpack-flow">
+                        <div class="cashpack-flow-title" data-i18n="home.cashpack.flow_title">Cash-pack lifecycle</div>
+                        <div class="cashpack-flow-steps">
+                            <div class="cashpack-flow-step">
+                                <div class="cashpack-flow-step-dot cashpack-dot-lock"></div>
+                                <div>
+                                    <div class="cashpack-flow-step-title" data-i18n="home.cashpack.flow_s1_title">Lock
+                                        (identiy bound)
+                                    </div>
+                                    <div class="cashpack-flow-step-desc" data-i18n="home.cashpack.flow_s1_desc">
+                                        Principal asks the Operator to lock a specific amount. A signed cash-pack is
+                                        issued, addressed to the first recipient's public key.</div>
+                                </div>
+                            </div>
+                            <div class="cashpack-flow-connector"></div>
+                            <div class="cashpack-flow-step">
+                                <div class="cashpack-flow-step-dot cashpack-dot-transfer"></div>
+                                <div>
+                                    <div class="cashpack-flow-step-title" data-i18n="home.cashpack.flow_s2_title">
+                                        Invisible Transfer 1</div>
+                                    <div class="cashpack-flow-step-desc" data-i18n="home.cashpack.flow_s2_desc">All
+                                        intermediate hops are private.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cashpack-flow-connector"></div>
+                            <div class="cashpack-flow-step">
+                                <div class="cashpack-flow-step-dot cashpack-dot-transfer"></div>
+                                <div>
+                                    <div class="cashpack-flow-step-title" data-i18n="home.cashpack.flow_s4_title">
+                                        Invisible Transfer 1</div>
+                                    <div class="cashpack-flow-step-desc" data-i18n="home.cashpack.flow_s2_desc">All
+                                        intermediate hops are private.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cashpack-flow-connector"></div>
+                            <div class="cashpack-flow-step">
+                                <div class="cashpack-flow-step-dot cashpack-dot-transfer"></div>
+                                <div>
+                                    <div class="cashpack-flow-ellipsis-content">
+                                        ...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cashpack-flow-connector"></div>
+                            <div class="cashpack-flow-step">
+                                <div class="cashpack-flow-step-dot cashpack-dot-redeem"></div>
+                                <div>
+                                    <div class="cashpack-flow-step-title" data-i18n="home.cashpack.flow_s3_title">Redeem
+                                    </div>
+                                    <div class="cashpack-flow-step-desc" data-i18n="home.cashpack.flow_s3_desc">The
+                                        final holder presents the instrument to the Operator. Cryptographic chain is
+                                        verified, funds are released.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cashpack-flow-note" data-i18n="home.cashpack.flow_note">
+                            CPP-1.0 · DRAFT · Apache 2.0
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── ABOUT / PRINCIPLES ─────────────────────────────────────────── -->
     <section class="about">
         <div class="container">
             <div class="about-grid">
                 <div>
-                    <div class="section-kicker" data-i18n="about.kicker">About this</div>
+                    <div class="section-kicker" data-i18n="about.kicker">About the foundation</div>
                     <h2 class="col-title">
                         <span data-i18n="about.title_regular">Not a product. </span><strong
                             data-i18n="about.title_bold">Infrastructure.</strong>
                     </h2>
                     <div class="col-body">
-                        <p data-i18n="about.body1">This demonstration is maintained by the Fabric Payment Standards
-                            Foundation — a neutral, non-profit organisation that governs the open payment standard
-                            behind everything you see here.</p>
-                        <p data-i18n="about.body2">No company owns it. No vendor controls it. Anyone can integrate it,
-                            audit it, or build on top of it. That is the point.</p>
-                        <p data-i18n="about.body3">If you want to understand the technical specification, join as a
-                            member, contribute to the standard, or support the foundation's work, the links below will
-                            get you there.</p>
+                        <p data-i18n="about.body1">The Fabric Payment Standards Foundation is a neutral, non-profit
+                            organisation that governs the open payment messaging standard. It was created by its member
+                            institutions — not by a startup looking to own a network.</p>
+                        <p data-i18n="about.body2">No company owns the standard. No vendor controls it. The
+                            specification is public, the reference implementation is open source, and anyone can
+                            integrate, audit, or extend it.</p>
+                        <p data-i18n="about.body3">Governance decisions are made by the member council. The foundation's
+                            only mandate is to keep the standard open, stable, and interoperable — for as long as it
+                            takes.</p>
                     </div>
                 </div>
                 <div>
@@ -615,7 +1849,316 @@
         </div>
     </section>
 
-    <!-- RESOURCES SECTION -->
+    <!-- ── COMMUNITY ──────────────────────────────────────────────────── -->
+    <section class="community">
+        <div class="container">
+            <div class="community-header">
+                <div class="section-kicker" data-i18n="home.community.kicker">Join the effort</div>
+                <h2 class="col-title">
+                    <span data-i18n="home.community.title_regular">Open standards need </span><strong
+                        data-i18n="home.community.title_bold">open communities.</strong>
+                </h2>
+                <p class="col-body" style="max-width:560px;" data-i18n="home.community.body">
+                    Fabric is shaped by the people and institutions that use it. There are several ways to participate —
+                    from reading a draft to shaping the next version of the spec.
+                </p>
+            </div>
+            <div class="community-grid">
+
+                <a href="./discuss.html" class="community-card">
+                    <div class="community-card-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                        </svg>
+                    </div>
+                    <div class="community-card-title" data-i18n="home.community.c1_title">Discussion forum</div>
+                    <div class="community-card-desc" data-i18n="home.community.c1_desc">Ask questions about the spec,
+                        propose ideas, report ambiguities. A public space for implementation-level discussion with the
+                        broader community and core contributors.</div>
+                    <div class="community-card-link">
+                        <span data-i18n="home.community.c1_link">Visit the forum</span>
+                        <span class="community-card-link-arrow">→</span>
+                    </div>
+                </a>
+
+                <a href="./working-groups.html" class="community-card">
+                    <div class="community-card-icon">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="17" cy="21" r="1" />
+                            <circle cx="7" cy="21" r="1" />
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                        </svg>
+                    </div>
+                    <div class="community-card-title" data-i18n="home.community.c2_title">Working groups</div>
+                    <div class="community-card-desc" data-i18n="home.community.c2_desc">Structured groups that draft,
+                        review, and ratify changes to the specification. Open to any individual or institution. Working
+                        group meetings are public and recorded.</div>
+                    <div class="community-card-link">
+                        <span data-i18n="home.community.c2_link">See active groups</span>
+                        <span class="community-card-link-arrow">→</span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/fabric-payment-standards" class="community-card" target="_blank"
+                    rel="noopener">
+                    <div class="community-card-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                        </svg>
+                    </div>
+                    <div class="community-card-title" data-i18n="home.community.c3_title">GitHub</div>
+                    <div class="community-card-desc" data-i18n="home.community.c3_desc">The specification source,
+                        reference implementation, test vectors, and tooling — all in the open. File issues, submit pull
+                        requests, or simply follow along with development.</div>
+                    <div class="community-card-link">
+                        <span data-i18n="home.community.c3_link">Open on GitHub</span>
+                        <span class="community-card-link-arrow">→</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ── CONTRIBUTORS ───────────────────────────────────────────────── -->
+    <section class="contributors">
+        <div class="container">
+            <div class="contributors-header">
+                <div>
+                    <div class="section-kicker" data-i18n="home.contributors.kicker">Core contributors</div>
+                    <h2 class="col-title" data-i18n="home.contributors.title">
+                        <span>People who </span><strong>build the standard.</strong>
+                    </h2>
+                </div>
+                <a href="./contributors.html" data-i18n="home.contributors.view_all">View all contributors →</a>
+            </div>
+
+            <div class="contributors-grid">
+
+                <a href="#" class="contributor-card">
+                    <div class="contributor-avatar">MR</div>
+                    <div class="contributor-name">Maria Reyes</div>
+                    <div class="contributor-role" data-i18n="home.contributors.role_chair">Spec Chair</div>
+                    <div class="contributor-commits">142 commits</div>
+                </a>
+
+                <a href="#" class="contributor-card">
+                    <div class="contributor-avatar" style="background:#1a3b5c;">TN</div>
+                    <div class="contributor-name">Thomas Ng</div>
+                    <div class="contributor-role" data-i18n="home.contributors.role_crypto">Cryptography Lead</div>
+                    <div class="contributor-commits">98 commits</div>
+                </a>
+
+                <a href="#" class="contributor-card">
+                    <div class="contributor-avatar" style="background:#1f5555;">AK</div>
+                    <div class="contributor-name">Aisha Kamau</div>
+                    <div class="contributor-role" data-i18n="home.contributors.role_protocol">Protocol Design</div>
+                    <div class="contributor-commits">87 commits</div>
+                </a>
+
+                <a href="#" class="contributor-card">
+                    <div class="contributor-avatar" style="background:#2c1a4a;">LP</div>
+                    <div class="contributor-name">Lucas Perreira</div>
+                    <div class="contributor-role" data-i18n="home.contributors.role_ref">Reference Impl.</div>
+                    <div class="contributor-commits">76 commits</div>
+                </a>
+
+                <a href="#" class="contributor-card">
+                    <div class="contributor-avatar" style="background:#3b2200;">SK</div>
+                    <div class="contributor-name">Sara Kovač</div>
+                    <div class="contributor-role" data-i18n="home.contributors.role_compliance">Compliance WG</div>
+                    <div class="contributor-commits">61 commits</div>
+                </a>
+
+                <a href="#" class="contributor-card">
+                    <div class="contributor-avatar" style="background:#1a3322;">JO</div>
+                    <div class="contributor-name">James Osei</div>
+                    <div class="contributor-role" data-i18n="home.contributors.role_testing">Test Vectors</div>
+                    <div class="contributor-commits">54 commits</div>
+                </a>
+
+                <a href="#" class="contributor-card">
+                    <div class="contributor-avatar" style="background:#3b1a1a;">YL</div>
+                    <div class="contributor-name">Yuki Liang</div>
+                    <div class="contributor-role" data-i18n="home.contributors.role_docs">Documentation</div>
+                    <div class="contributor-commits">48 commits</div>
+                </a>
+
+                <a href="#" class="contributor-card">
+                    <div class="contributor-avatar" style="background:#1a2e3b;">FM</div>
+                    <div class="contributor-name">Fatoumata M.</div>
+                    <div class="contributor-role" data-i18n="home.contributors.role_sdk">SDK Tooling</div>
+                    <div class="contributor-commits">41 commits</div>
+                </a>
+
+                <a href="#" class="contributor-card">
+                    <div class="contributor-avatar" style="background:#2e2e1a;">PB</div>
+                    <div class="contributor-name">Pavel Bartoš</div>
+                    <div class="contributor-role" data-i18n="home.contributors.role_interop">Interop Testing</div>
+                    <div class="contributor-commits">37 commits</div>
+                </a>
+
+                <a href="#" class="contributor-card">
+                    <div class="contributor-avatar" style="background:#1f1a3b;">RH</div>
+                    <div class="contributor-name">Riya Hutchinson</div>
+                    <div class="contributor-role" data-i18n="home.contributors.role_security">Security Review</div>
+                    <div class="contributor-commits">31 commits</div>
+                </a>
+
+                <a href="#" class="contributor-card">
+                    <div class="contributor-avatar" style="background:#1a3b2b;">OA</div>
+                    <div class="contributor-name">Omar Al-Rashid</div>
+                    <div class="contributor-role" data-i18n="home.contributors.role_api">API Design</div>
+                    <div class="contributor-commits">28 commits</div>
+                </a>
+
+                <a href="./contributors.html" class="contributor-card"
+                    style="background: var(--light); justify-content: center; align-items: center; gap: 8px;">
+                    <div style="font-size: 13px; color: var(--teal); font-weight:500; text-align:center;"
+                        data-i18n="home.contributors.and_more">+ 34 more contributors</div>
+                    <div style="font-size: 12px; color: var(--gray); text-align:center;"
+                        data-i18n="home.contributors.view_list">View full list →</div>
+                </a>
+
+            </div>
+
+            <div class="contribute-banner">
+                <div class="contribute-banner-text">
+                    <h4 data-i18n="home.contributors.banner_title">Want to contribute?</h4>
+                    <p data-i18n="home.contributors.banner_desc">The standard is built in the open. Whether you're
+                        fixing a typo in the spec or proposing a new message type, contributions of all sizes are
+                        welcome.</p>
+                </div>
+                <div class="contribute-banner-actions">
+                    <a href="https://github.com/fabric-payment-standards" class="btn-outline" target="_blank"
+                        rel="noopener" data-i18n="home.contributors.github_btn">View on GitHub</a>
+                    <a href="./contribute.html" class="btn-solid" data-i18n="home.contributors.guide_btn">Contribution
+                        guide</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── SPONSORS ───────────────────────────────────────────────────── -->
+    <section class="sponsors">
+        <div class="container">
+            <div class="sponsors-header">
+                <div class="section-kicker" data-i18n="home.sponsors.kicker">Sponsors &amp; members</div>
+                <h2 class="col-title">
+                    <span data-i18n="home.sponsors.title_regular">Institutions that fund </span><strong
+                        data-i18n="home.sponsors.title_bold">open infrastructure.</strong>
+                </h2>
+                <p class="col-body" style="max-width: 580px;" data-i18n="home.sponsors.body">
+                    The foundation is funded entirely by its member institutions and sponsors — no advertising, no data
+                    monetisation, no external investors. Sponsorship is how open payment infrastructure stays
+                    independent.
+                </p>
+            </div>
+
+            <!-- Founding members -->
+            <div class="sponsors-tier">
+                <div class="sponsors-tier-label">
+                    <span class="sponsors-tier-dot founding"></span>
+                    <span data-i18n="home.sponsors.tier_founding">Founding Members</span>
+                </div>
+                <div class="sponsors-founding-grid">
+                    <a href="#" class="sponsor-card">
+                        <div class="sponsor-logo-placeholder">
+                            <span class="sponsor-logo-wordmark">Nordia<span class="teal">Bank</span></span>
+                        </div>
+                        <div class="sponsor-desc" data-i18n="home.sponsors.s1_desc">A leading European retail bank and
+                            co-author of the original Fabric messaging spec.</div>
+                        <span class="sponsor-badge" data-i18n="home.sponsors.badge_founding">Founding member since
+                            2021</span>
+                    </a>
+                    <a href="#" class="sponsor-card">
+                        <div class="sponsor-logo-placeholder">
+                            <span class="sponsor-logo-wordmark"><span class="teal">Aqua</span>Settle</span>
+                        </div>
+                        <div class="sponsor-desc" data-i18n="home.sponsors.s2_desc">A pan-regional acquirer processing
+                            millions of transactions on the Fabric reference rail daily.</div>
+                        <span class="sponsor-badge" data-i18n="home.sponsors.badge_founding">Founding member since
+                            2021</span>
+                    </a>
+                    <a href="#" class="sponsor-card">
+                        <div class="sponsor-logo-placeholder">
+                            <span class="sponsor-logo-wordmark">Meridian<span class="teal">FI</span></span>
+                        </div>
+                        <div class="sponsor-desc" data-i18n="home.sponsors.s3_desc">An open-banking infrastructure
+                            provider and contributor to the cryptographic proof layer.</div>
+                        <span class="sponsor-badge" data-i18n="home.sponsors.badge_founding">Founding member since
+                            2022</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Infrastructure sponsors -->
+            <div class="sponsors-tier">
+                <div class="sponsors-tier-label">
+                    <span class="sponsors-tier-dot infrastructure"></span>
+                    <span data-i18n="home.sponsors.tier_infra">Infrastructure Sponsors</span>
+                </div>
+                <div class="sponsors-infra-grid">
+                    <a href="#" class="sponsor-card-sm">
+                        <span class="sponsor-logo-sm">ClearPath<span class="teal">.</span></span>
+                        <span class="sponsor-desc-sm" data-i18n="home.sponsors.i1_desc">Settlement network
+                            integration</span>
+                    </a>
+                    <a href="#" class="sponsor-card-sm">
+                        <span class="sponsor-logo-sm"><span class="teal">Vault</span>Tek</span>
+                        <span class="sponsor-desc-sm" data-i18n="home.sponsors.i2_desc">HSM and key management
+                            tooling</span>
+                    </a>
+                    <a href="#" class="sponsor-card-sm">
+                        <span class="sponsor-logo-sm">Arca<span class="teal">Labs</span></span>
+                        <span class="sponsor-desc-sm" data-i18n="home.sponsors.i3_desc">Open-source SDK
+                            contributions</span>
+                    </a>
+                    <a href="#" class="sponsor-card-sm">
+                        <span class="sponsor-logo-sm">Finmesh<span class="teal">.</span></span>
+                        <span class="sponsor-desc-sm" data-i18n="home.sponsors.i4_desc">Test environment hosting</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Supporting sponsors -->
+            <div class="sponsors-tier">
+                <div class="sponsors-tier-label">
+                    <span class="sponsors-tier-dot supporting"></span>
+                    <span data-i18n="home.sponsors.tier_supporting">Supporting Sponsors</span>
+                </div>
+                <div class="sponsors-supporting-grid">
+                    <a href="#" class="sponsor-pill">Kestrel Payments</a>
+                    <a href="#" class="sponsor-pill">Bloc Financial</a>
+                    <a href="#" class="sponsor-pill">Pivo Nordic</a>
+                    <a href="#" class="sponsor-pill">OpenLedger GmbH</a>
+                    <a href="#" class="sponsor-pill">Remitly Labs</a>
+                    <a href="#" class="sponsor-pill">Nexum Capital</a>
+                    <a href="#" class="sponsor-pill">Strata PSP</a>
+                    <a href="#" class="sponsor-pill">Ember Finance</a>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="sponsors-cta">
+                <div class="sponsors-cta-text">
+                    <h4 data-i18n="home.sponsors.cta_title">Become a sponsor or member</h4>
+                    <p data-i18n="home.sponsors.cta_desc">Membership gives your organisation a seat at the governance
+                        table, early access to spec drafts, and attribution across foundation materials. Sponsorship
+                        starts at any level.</p>
+                </div>
+                <div style="display:flex; gap:12px; flex-shrink:0; flex-wrap:wrap;">
+                    <a href="./membership.html" class="btn-outline" data-i18n="home.sponsors.cta_membership">Membership
+                        info</a>
+                    <a href="./donate.html" class="btn-solid" data-i18n="home.sponsors.cta_donate">Support the
+                        foundation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── RESOURCES ──────────────────────────────────────────────────── -->
     <section class="resources">
         <div class="container">
             <div class="resources-header">
