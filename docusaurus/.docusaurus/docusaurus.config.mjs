@@ -5,7 +5,7 @@
  */
 export default {
   "title": "Fabric Payment Standards",
-  "tagline": "Neutral payment infrastructure that enhances interoperability between banks and existing financial systems, relying on cryptographic algorithms to enable user-centric, simpler and more efficient payment flows",
+  "tagline": "Neutral payment infrastructure for enhanced interoperability between banks and existing financial systems, relying on cryptographic algorithms to enable user-centric, simpler and more efficient payment flows",
   "favicon": "https://fabricpaymentstandards.org/img/logo-512x512.png",
   "future": {
     "v4": {

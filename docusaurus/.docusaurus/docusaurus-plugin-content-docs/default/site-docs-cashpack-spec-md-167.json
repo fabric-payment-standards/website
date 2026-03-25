@@ -28,7 +28,7 @@
     "permalink": "/specs/cashpack/specifications/cpp-001"
   },
   "next": {
-    "title": "— Stablecoin Stack",
-    "permalink": "/specs/ssf"
+    "title": "— Disposible Keys",
+    "permalink": "/specs/disposable-keys/SPEC"
   }
 }

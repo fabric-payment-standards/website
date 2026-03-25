@@ -9,16 +9,22 @@ export default [
   },
   {
     path: '/specs/',
-    component: ComponentCreator('/specs/', '254'),
+    component: ComponentCreator('/specs/', 'a6c'),
     routes: [
       {
         path: '/specs/',
-        component: ComponentCreator('/specs/', 'e7c'),
+        component: ComponentCreator('/specs/', '075'),
         routes: [
           {
             path: '/specs/',
-            component: ComponentCreator('/specs/', 'f23'),
+            component: ComponentCreator('/specs/', '659'),
             routes: [
+              {
+                path: '/specs/canonical-payment/SPEC',
+                component: ComponentCreator('/specs/canonical-payment/SPEC', '100'),
+                exact: true,
+                sidebar: "fpsfSidebar"
+              },
               {
                 path: '/specs/cashpack',
                 component: ComponentCreator('/specs/cashpack', '670'),
@@ -74,284 +80,290 @@ export default [
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf',
-                component: ComponentCreator('/specs/ssf', 'f79'),
+                path: '/specs/disposable-keys/SPEC',
+                component: ComponentCreator('/specs/disposable-keys/SPEC', 'f21'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-001',
-                component: ComponentCreator('/specs/ssf/ssf-001', '989'),
+                path: '/specs/stablecoin-stack',
+                component: ComponentCreator('/specs/stablecoin-stack', '7de'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-001/business-model/',
-                component: ComponentCreator('/specs/ssf/ssf-001/business-model/', 'a94'),
+                path: '/specs/stablecoin-stack/ss-001',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-001', 'cbf'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-001/core-concepts',
-                component: ComponentCreator('/specs/ssf/ssf-001/core-concepts', '072'),
+                path: '/specs/stablecoin-stack/ss-001/business-model/',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-001/business-model/', 'e1a'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-001/core-concepts/dual-signature-pattern',
-                component: ComponentCreator('/specs/ssf/ssf-001/core-concepts/dual-signature-pattern', '300'),
+                path: '/specs/stablecoin-stack/ss-001/core-concepts',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-001/core-concepts', 'ca4'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-001/core-concepts/fee-model',
-                component: ComponentCreator('/specs/ssf/ssf-001/core-concepts/fee-model', '41f'),
+                path: '/specs/stablecoin-stack/ss-001/core-concepts/dual-signature-pattern',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-001/core-concepts/dual-signature-pattern', 'dba'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-001/core-concepts/payment-flow',
-                component: ComponentCreator('/specs/ssf/ssf-001/core-concepts/payment-flow', '3bd'),
+                path: '/specs/stablecoin-stack/ss-001/core-concepts/fee-model',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-001/core-concepts/fee-model', '232'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-001/core-concepts/permit-based-payments',
-                component: ComponentCreator('/specs/ssf/ssf-001/core-concepts/permit-based-payments', 'dba'),
+                path: '/specs/stablecoin-stack/ss-001/core-concepts/payment-flow',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-001/core-concepts/payment-flow', '412'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-001/core-concepts/system-architecture',
-                component: ComponentCreator('/specs/ssf/ssf-001/core-concepts/system-architecture', '3c0'),
+                path: '/specs/stablecoin-stack/ss-001/core-concepts/permit-based-payments',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-001/core-concepts/permit-based-payments', '8a0'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-001/core-concepts/why-cryptographic-payments',
-                component: ComponentCreator('/specs/ssf/ssf-001/core-concepts/why-cryptographic-payments', 'ec4'),
+                path: '/specs/stablecoin-stack/ss-001/core-concepts/system-architecture',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-001/core-concepts/system-architecture', '154'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-001/governance',
-                component: ComponentCreator('/specs/ssf/ssf-001/governance', '93f'),
+                path: '/specs/stablecoin-stack/ss-001/core-concepts/why-cryptographic-payments',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-001/core-concepts/why-cryptographic-payments', 'cbc'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-001/governance/changelog',
-                component: ComponentCreator('/specs/ssf/ssf-001/governance/changelog', 'ecf'),
+                path: '/specs/stablecoin-stack/ss-001/governance',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-001/governance', '611'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-001/governance/versioning-policy',
-                component: ComponentCreator('/specs/ssf/ssf-001/governance/versioning-policy', 'f1f'),
+                path: '/specs/stablecoin-stack/ss-001/governance/changelog',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-001/governance/changelog', '000'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-001/guides',
-                component: ComponentCreator('/specs/ssf/ssf-001/guides', 'd18'),
+                path: '/specs/stablecoin-stack/ss-001/governance/versioning-policy',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-001/governance/versioning-policy', '1d4'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-001/guides/buy-acquiring-pack',
-                component: ComponentCreator('/specs/ssf/ssf-001/guides/buy-acquiring-pack', 'f8b'),
+                path: '/specs/stablecoin-stack/ss-001/guides',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-001/guides', '011'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-001/guides/integrate-settlement-contract',
-                component: ComponentCreator('/specs/ssf/ssf-001/guides/integrate-settlement-contract', '602'),
+                path: '/specs/stablecoin-stack/ss-001/guides/buy-acquiring-pack',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-001/guides/buy-acquiring-pack', 'bc8'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-001/guides/payment-flow-walkthrough',
-                component: ComponentCreator('/specs/ssf/ssf-001/guides/payment-flow-walkthrough', 'd72'),
+                path: '/specs/stablecoin-stack/ss-001/guides/integrate-settlement-contract',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-001/guides/integrate-settlement-contract', '443'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-001/guides/submit-a-payment',
-                component: ComponentCreator('/specs/ssf/ssf-001/guides/submit-a-payment', 'f51'),
+                path: '/specs/stablecoin-stack/ss-001/guides/payment-flow-walkthrough',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-001/guides/payment-flow-walkthrough', 'd19'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-001/overview',
-                component: ComponentCreator('/specs/ssf/ssf-001/overview', 'aec'),
+                path: '/specs/stablecoin-stack/ss-001/guides/submit-a-payment',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-001/guides/submit-a-payment', '529'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-001/overview/introduction',
-                component: ComponentCreator('/specs/ssf/ssf-001/overview/introduction', 'c85'),
+                path: '/specs/stablecoin-stack/ss-001/overview',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-001/overview', 'bc1'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-001/overview/payment-submission',
-                component: ComponentCreator('/specs/ssf/ssf-001/overview/payment-submission', 'e01'),
+                path: '/specs/stablecoin-stack/ss-001/overview/introduction',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-001/overview/introduction', '1ed'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-001/overview/settlement-contract',
-                component: ComponentCreator('/specs/ssf/ssf-001/overview/settlement-contract', 'f2f'),
+                path: '/specs/stablecoin-stack/ss-001/overview/payment-submission',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-001/overview/payment-submission', 'a30'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-001/reference',
-                component: ComponentCreator('/specs/ssf/ssf-001/reference', '640'),
+                path: '/specs/stablecoin-stack/ss-001/overview/settlement-contract',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-001/overview/settlement-contract', '220'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-001/reference/component-index',
-                component: ComponentCreator('/specs/ssf/ssf-001/reference/component-index', '00a'),
+                path: '/specs/stablecoin-stack/ss-001/reference',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-001/reference', 'a3f'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-001/reference/contract-interface',
-                component: ComponentCreator('/specs/ssf/ssf-001/reference/contract-interface', '7b9'),
+                path: '/specs/stablecoin-stack/ss-001/reference/component-index',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-001/reference/component-index', '34c'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-001/reference/glossary',
-                component: ComponentCreator('/specs/ssf/ssf-001/reference/glossary', '691'),
+                path: '/specs/stablecoin-stack/ss-001/reference/contract-interface',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-001/reference/contract-interface', '909'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-001/reference/normative-references',
-                component: ComponentCreator('/specs/ssf/ssf-001/reference/normative-references', '1c1'),
+                path: '/specs/stablecoin-stack/ss-001/reference/glossary',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-001/reference/glossary', '4db'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-001/reference/payload-fields',
-                component: ComponentCreator('/specs/ssf/ssf-001/reference/payload-fields', '773'),
+                path: '/specs/stablecoin-stack/ss-001/reference/normative-references',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-001/reference/normative-references', 'b09'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-001/SPEC',
-                component: ComponentCreator('/specs/ssf/ssf-001/SPEC', 'd67'),
+                path: '/specs/stablecoin-stack/ss-001/reference/payload-fields',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-001/reference/payload-fields', '96b'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-002',
-                component: ComponentCreator('/specs/ssf/ssf-002', '95d'),
+                path: '/specs/stablecoin-stack/ss-001/SPEC',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-001/SPEC', '9e6'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-002/core-concepts',
-                component: ComponentCreator('/specs/ssf/ssf-002/core-concepts', '2b3'),
+                path: '/specs/stablecoin-stack/ss-002',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-002', '19c'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-002/core-concepts/connection-model',
-                component: ComponentCreator('/specs/ssf/ssf-002/core-concepts/connection-model', 'f38'),
+                path: '/specs/stablecoin-stack/ss-002/core-concepts',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-002/core-concepts', 'b9e'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-002/core-concepts/message-authentication',
-                component: ComponentCreator('/specs/ssf/ssf-002/core-concepts/message-authentication', 'f92'),
+                path: '/specs/stablecoin-stack/ss-002/core-concepts/connection-model',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-002/core-concepts/connection-model', '77e'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-002/core-concepts/subscription-model',
-                component: ComponentCreator('/specs/ssf/ssf-002/core-concepts/subscription-model', 'b60'),
+                path: '/specs/stablecoin-stack/ss-002/core-concepts/message-authentication',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-002/core-concepts/message-authentication', '7d1'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-002/governance',
-                component: ComponentCreator('/specs/ssf/ssf-002/governance', 'bd8'),
+                path: '/specs/stablecoin-stack/ss-002/core-concepts/subscription-model',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-002/core-concepts/subscription-model', 'd40'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-002/governance/changelog',
-                component: ComponentCreator('/specs/ssf/ssf-002/governance/changelog', 'd8e'),
+                path: '/specs/stablecoin-stack/ss-002/governance',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-002/governance', '978'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-002/guides',
-                component: ComponentCreator('/specs/ssf/ssf-002/guides', '5ec'),
+                path: '/specs/stablecoin-stack/ss-002/governance/changelog',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-002/governance/changelog', 'c67'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-002/guides/connect-and-authenticate',
-                component: ComponentCreator('/specs/ssf/ssf-002/guides/connect-and-authenticate', 'dbe'),
+                path: '/specs/stablecoin-stack/ss-002/guides',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-002/guides', '561'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-002/guides/submit-a-payment',
-                component: ComponentCreator('/specs/ssf/ssf-002/guides/submit-a-payment', '871'),
+                path: '/specs/stablecoin-stack/ss-002/guides/connect-and-authenticate',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-002/guides/connect-and-authenticate', '200'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-002/guides/subscribe-to-updates',
-                component: ComponentCreator('/specs/ssf/ssf-002/guides/subscribe-to-updates', '63d'),
+                path: '/specs/stablecoin-stack/ss-002/guides/submit-a-payment',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-002/guides/submit-a-payment', '634'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-002/overview',
-                component: ComponentCreator('/specs/ssf/ssf-002/overview', '9b7'),
+                path: '/specs/stablecoin-stack/ss-002/guides/subscribe-to-updates',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-002/guides/subscribe-to-updates', 'f3e'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-002/overview/gateway-role',
-                component: ComponentCreator('/specs/ssf/ssf-002/overview/gateway-role', 'e61'),
+                path: '/specs/stablecoin-stack/ss-002/overview',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-002/overview', '1e3'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-002/overview/introduction',
-                component: ComponentCreator('/specs/ssf/ssf-002/overview/introduction', '8b8'),
+                path: '/specs/stablecoin-stack/ss-002/overview/gateway-role',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-002/overview/gateway-role', '059'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-002/reference/error-codes',
-                component: ComponentCreator('/specs/ssf/ssf-002/reference/error-codes', '2a2'),
+                path: '/specs/stablecoin-stack/ss-002/overview/introduction',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-002/overview/introduction', 'a1a'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-002/reference/glossary',
-                component: ComponentCreator('/specs/ssf/ssf-002/reference/glossary', '153'),
+                path: '/specs/stablecoin-stack/ss-002/reference/error-codes',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-002/reference/error-codes', '895'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-002/reference/message-type-index',
-                component: ComponentCreator('/specs/ssf/ssf-002/reference/message-type-index', 'e5e'),
+                path: '/specs/stablecoin-stack/ss-002/reference/glossary',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-002/reference/glossary', '458'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               },
               {
-                path: '/specs/ssf/ssf-002/SPEC',
-                component: ComponentCreator('/specs/ssf/ssf-002/SPEC', 'bc8'),
+                path: '/specs/stablecoin-stack/ss-002/reference/message-type-index',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-002/reference/message-type-index', '479'),
+                exact: true,
+                sidebar: "fpsfSidebar"
+              },
+              {
+                path: '/specs/stablecoin-stack/ss-002/SPEC',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-002/SPEC', 'a15'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               }
