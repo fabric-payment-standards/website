@@ -89,7 +89,7 @@ const config: Config = {
 
       logo: {
         alt: "Fabric Payment Standards logo",
-        src: 'img/icon-blue-bg.png',
+        src: 'https://fabricpaymentstandards.org/img/logo-512x512.png',
         width: 80
       },
       style: 'dark',

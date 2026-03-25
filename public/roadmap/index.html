@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="page.title">Roadmap — Fabric Payment Standards</title>
+    <link rel="icon" href="../img/logo-512x512.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+
+    <div data-include="../components/header.html"></div>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-kicker">Roadmap</div>
+            <h1 class="hero-title">Where we're<strong>headed</strong></h1>
+            <p class="hero-body">A transparent view of the Foundation's specification pipeline — what is stable, what is
+                in active development, and what is planned for future working group cycles.</p>
+        </div>
+    </section>
+
+    <!-- MAIN -->
+    <main class="main">
+        <div class="container">
+
+            <div class="main-grid">
+                <div>
+                    <div class="section-kicker">Specification Status</div>
+                    <h2 class="col-title">Current &amp;<strong> upcoming work</strong></h2>
+                    <div class="col-body">
+                        <p>The roadmap reflects the Foundation's active specification tracks and their current maturity.
+                            Status designations follow a defined lifecycle: <em>stable</em> specifications are suitable
+                            for production implementations; <em>draft</em> specifications are open for comment but
+                            subject to change; <em>planned</em> items are scoped but not yet in active drafting.</p>
+                        <p>Roadmap priorities are set by the Technical Committee in consultation with Working Groups and
+                            the broader membership. Community members may influence prioritisation through the RFC
+                            process.</p>
+                    </div>
+
+                    <!-- Timeline -->
+                    <div class="roadmap-timeline">
+
+                        <div class="timeline-phase">
+                            <div class="phase-label phase-label--stable">Stable</div>
+                            <div class="timeline-items">
+                                <div class="timeline-item">
+                                    <div class="ti-marker ti-marker--stable"></div>
+                                    <div class="ti-body">
+                                        <div class="ti-head">
+                                            <span class="ti-name">CPD-1.0 — Canonical Payment Descriptor</span>
+                                            <span class="ti-badge ti-badge--stable">Stable</span>
+                                        </div>
+                                        <p class="ti-desc">Defines the canonical wire format for payment intent
+                                            representation. Foundation layer for all higher-level protocols.</p>
+                                        <a href="/specs/canonical-payment/SPEC" class="ti-link">View specification →</a>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="ti-marker ti-marker--stable"></div>
+                                    <div class="ti-body">
+                                        <div class="ti-head">
+                                            <span class="ti-name">CPP-1.0 — CashPack Protocol</span>
+                                            <span class="ti-badge ti-badge--stable">Stable</span>
+                                        </div>
+                                        <p class="ti-desc">End-to-end payment packaging protocol built on CPD-1.0.
+                                            Covers encoding, routing hints, and merchant-facing business models.</p>
+                                        <a href="/specs/cashpack" class="ti-link">View specification →</a>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="ti-marker ti-marker--stable"></div>
+                                    <div class="ti-body">
+                                        <div class="ti-head">
+                                            <span class="ti-name">MPC-1.0 — Disposable Keys</span>
+                                            <span class="ti-badge ti-badge--stable">Stable</span>
+                                        </div>
+                                        <p class="ti-desc">Multi-party computation specification for single-use signing
+                                            key derivation. Reduces custodial risk in delegated payment flows.</p>
+                                        <a href="/specs/disposable-keys/SPEC" class="ti-link">View specification →</a>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="ti-marker ti-marker--stable"></div>
+                                    <div class="ti-body">
+                                        <div class="ti-head">
+                                            <span class="ti-name">SSF-001 — Stablecoin Stack</span>
+                                            <span class="ti-badge ti-badge--stable">Stable</span>
+                                        </div>
+                                        <p class="ti-desc">Architecture and core concepts for stablecoin-based
+                                            settlement. Defines issuance, redemption, and transfer interfaces.</p>
+                                        <a href="/specs/stablecoin-stack" class="ti-link">View specification →</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-phase">
+                            <div class="phase-label phase-label--draft">In Draft</div>
+                            <div class="timeline-items">
+                                <div class="timeline-item">
+                                    <div class="ti-marker ti-marker--draft"></div>
+                                    <div class="ti-body">
+                                        <div class="ti-head">
+                                            <span class="ti-name">SSF-002 — Wallet-Gateway Interface</span>
+                                            <span class="ti-badge ti-badge--draft">Draft</span>
+                                        </div>
+                                        <p class="ti-desc">Defines the standard interface between end-user wallet
+                                            software and gateway infrastructure. Open for community comment.</p>
+                                        <a href="/specs/stablecoin-stack/ss-002/spec" class="ti-link">View draft →</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-phase">
+                            <div class="phase-label phase-label--planned">Planned</div>
+                            <div class="timeline-items">
+                                <div class="timeline-item">
+                                    <div class="ti-marker ti-marker--planned"></div>
+                                    <div class="ti-body">
+                                        <div class="ti-head">
+                                            <span class="ti-name">SSF-003 — Compliance &amp; Screening Interface</span>
+                                            <span class="ti-badge ti-badge--planned">Planned</span>
+                                        </div>
+                                        <p class="ti-desc">Standard interface for pluggable AML/CFT screening modules,
+                                            enabling compliance without embedding vendor-specific logic into the core
+                                            stack.</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="ti-marker ti-marker--planned"></div>
+                                    <div class="ti-body">
+                                        <div class="ti-head">
+                                            <span class="ti-name">SSF-004 — Cross-Chain Bridge Protocol</span>
+                                            <span class="ti-badge ti-badge--planned">Planned</span>
+                                        </div>
+                                        <p class="ti-desc">Defines atomic swap and bridge message formats for
+                                            interoperability between heterogeneous ledger environments.</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="ti-marker ti-marker--planned"></div>
+                                    <div class="ti-body">
+                                        <div class="ti-head">
+                                            <span class="ti-name">SSF-005 — Custody &amp; Delegation Model</span>
+                                            <span class="ti-badge ti-badge--planned">Planned</span>
+                                        </div>
+                                        <p class="ti-desc">Formalises delegation chains, co-signing arrangements, and
+                                            custody transfer protocols for institutional deployments.</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="ti-marker ti-marker--planned"></div>
+                                    <div class="ti-body">
+                                        <div class="ti-head">
+                                            <span class="ti-name">SSF-006–009</span>
+                                            <span class="ti-badge ti-badge--planned">Planned</span>
+                                        </div>
+                                        <p class="ti-desc">Further tracks under scoping by the Stablecoin Stack Working
+                                            Group. Scope and prioritisation subject to community RFC process.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="roadmap-sidebar">
+                    <div class="give-card">
+                        <div class="give-card-head">
+                            <h3>Status Legend</h3>
+                            <p>Specification lifecycle stages</p>
+                        </div>
+                        <div class="give-card-body" style="gap:8px;">
+                            <div class="legend-row">
+                                <span class="ti-badge ti-badge--stable">Stable</span>
+                                <span class="legend-desc">Production-ready. Suitable for conformant
+                                    implementations.</span>
+                            </div>
+                            <div class="legend-row">
+                                <span class="ti-badge ti-badge--draft">Draft</span>
+                                <span class="legend-desc">Open for community comment. Subject to revision.</span>
+                            </div>
+                            <div class="legend-row">
+                                <span class="ti-badge ti-badge--planned">Planned</span>
+                                <span class="legend-desc">Scoped and approved for a future working group cycle.</span>
+                            </div>
+                            <div class="give-divider"><span>influence the roadmap</span></div>
+                            <a href="/community/rfcs/" class="give-btn primary">
+                                <span class="give-btn-icon">📄</span>
+                                <span class="give-btn-text">
+                                    <span class="gbt">Submit an RFC</span>
+                                    <span class="gbs">Propose new work items</span>
+                                </span>
+                                <span class="arrow">→</span>
+                            </a>
+                            <a href="/community/working-groups/" class="give-btn">
+                                <span class="give-btn-icon">👥</span>
+                                <span class="give-btn-text">
+                                    <span class="gbt">Join a Working Group</span>
+                                    <span class="gbs">Shape priorities directly</span>
+                                </span>
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="give-card" style="margin-top:0;">
+                        <div class="give-card-head">
+                            <h3>All Specifications</h3>
+                            <p>Browse the full spec corpus</p>
+                        </div>
+                        <div class="give-card-body" style="gap:8px;">
+                            <a href="/specs/cashpack" class="give-btn">
+                                <span class="give-btn-icon"
+                                    style="font-size:10px; width:18px; height:18px; background:#378ADD; border-radius:50%; display:flex; align-items:center; justify-content:center;"></span>
+                                <span class="give-btn-text"><span class="gbt">CashPack Protocol</span></span>
+                                <span class="arrow">→</span>
+                            </a>
+                            <a href="/specs/stablecoin-stack" class="give-btn">
+                                <span class="give-btn-icon"
+                                    style="font-size:10px; width:18px; height:18px; background:#639922; border-radius:50%; display:flex; align-items:center; justify-content:center;"></span>
+                                <span class="give-btn-text"><span class="gbt">Stablecoin Stack</span></span>
+                                <span class="arrow">→</span>
+                            </a>
+                            <a href="/specs" class="give-btn">
+                                <span class="give-btn-icon">📚</span>
+                                <span class="give-btn-text"><span class="gbt">View all specifications</span></span>
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+        </div>
+    </main>
+
+    <div data-include="../components/footer.html"></div>
+
+    <style>
+        .roadmap-sidebar {
+            position: sticky;
+            top: 88px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        /* Timeline */
+        .roadmap-timeline {
+            margin-top: 52px;
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+        }
+
+        .timeline-phase {}
+
+        .phase-label {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.09em;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 3px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .phase-label--stable {
+            background: rgba(99, 153, 34, 0.1);
+            color: #4a7a10;
+            border: 1px solid rgba(99, 153, 34, 0.25);
+        }
+
+        .phase-label--draft {
+            background: rgba(55, 138, 221, 0.1);
+            color: #1a5fa0;
+            border: 1px solid rgba(55, 138, 221, 0.25);
+        }
+
+        .phase-label--planned {
+            background: rgba(107, 114, 128, 0.1);
+            color: var(--gray);
+            border: 1px solid var(--border);
+        }
+
+        .timeline-items {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            border-left: 2px solid var(--border);
+            margin-left: 8px;
+            padding-left: 0;
+        }
+
+        .timeline-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 0 0 28px 28px;
+            position: relative;
+        }
+
+        .timeline-item:last-child {
+            padding-bottom: 0;
+        }
+
+        .ti-marker {
+            position: absolute;
+            left: -7px;
+            top: 4px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 2px solid var(--white);
+            flex-shrink: 0;
+        }
+
+        .ti-marker--stable {
+            background: #639922;
+        }
+
+        .ti-marker--draft {
+            background: #378ADD;
+        }
+
+        .ti-marker--planned {
+            background: var(--border);
+            border-color: var(--border);
+            outline: 2px solid var(--border);
+        }
+
+        .ti-body {
+            flex: 1;
+        }
+
+        .ti-head {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 6px;
+        }
+
+        .ti-name {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--blue);
+            letter-spacing: -0.01em;
+        }
+
+        .ti-badge {
+            font-size: 10px;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            border-radius: 3px;
+            padding: 2px 7px;
+            white-space: nowrap;
+        }
+
+        .ti-badge--stable {
+            background: rgba(99, 153, 34, 0.1);
+            color: #4a7a10;
+            border: 1px solid rgba(99, 153, 34, 0.25);
+        }
+
+        .ti-badge--draft {
+            background: rgba(55, 138, 221, 0.1);
+            color: #1a5fa0;
+            border: 1px solid rgba(55, 138, 221, 0.25);
+        }
+
+        .ti-badge--planned {
+            background: rgba(107, 114, 128, 0.08);
+            color: var(--gray);
+            border: 1px solid var(--border);
+        }
+
+        .ti-desc {
+            font-size: 13px;
+            color: var(--sub);
+            line-height: 1.65;
+            margin-bottom: 8px;
+        }
+
+        .ti-link {
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--teal);
+            text-decoration: none;
+            transition: opacity 0.15s;
+        }
+
+        .ti-link:hover {
+            opacity: 0.75;
+        }
+
+        /* Legend */
+        .legend-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 6px 0;
+        }
+
+        .legend-desc {
+            font-size: 12px;
+            color: var(--gray);
+            line-height: 1.5;
+            padding-top: 1px;
+        }
+
+        @media (max-width: 960px) {
+            .roadmap-sidebar {
+                position: static;
+            }
+        }
+    </style>
+
+    <script src="../i18n.js"></script>
+    <script src="../script.js"></script>
+</body>
+
+</html>

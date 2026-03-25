@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="page.title">Members — Fabric Payment Standards</title>
+    <link rel="icon" href="../img/logo-512x512.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="icon" href="img/logo-512x512.png">
+</head>
+
+<body>
+
+    <div data-include="../../components/header.html"></div>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-kicker">Membership</div>
+            <h1 class="hero-title">Member<strong>Organisations</strong></h1>
+            <p class="hero-body">Institutional membership supports the Foundation's long-term independence and grants
+                organisations a formal voice in the specification and governance process.</p>
+        </div>
+    </section>
+
+    <!-- MAIN -->
+    <main class="main">
+        <div class="container">
+
+            <div class="main-grid">
+                <div>
+                    <div class="section-kicker">Membership Programme</div>
+                    <h2 class="col-title">Sustaining<strong>open standards</strong></h2>
+                    <div class="col-body">
+                        <p>The Fabric Payment Standards Foundation is an independent, non-profit body. Institutional
+                            membership provides the financial foundation that allows the Foundation to operate without
+                            dependence on any single sponsor, maintain neutral governance, and sustain the working group
+                            infrastructure that produces and refines specifications.</p>
+                        <p>Member organisations receive representation on advisory bodies, early access to draft
+                            specifications, and the ability to nominate candidates for Working Group chairs and the
+                            Technical Committee.</p>
+                        <p>The membership programme and member directory are managed through the dedicated members
+                            portal. The public member listing will be maintained here as an ongoing record.</p>
+                    </div>
+
+                    <ul class="funds-list" style="margin-top:48px;">
+                        <li>
+                            <span class="fi">🥇</span>
+                            <span>
+                                <span class="ft">Founding Member</span>
+                                <span class="fd">Reserved for organisations that joined during the Foundation's
+                                    formation period. Includes a permanent seat on the Steering Committee.</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="fi">🥈</span>
+                            <span>
+                                <span class="ft">Principal Member</span>
+                                <span class="fd">Full voting rights in Technical Committee elections and Working Group
+                                    formation. Priority access to conformance testing programmes.</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="fi">🥉</span>
+                            <span>
+                                <span class="ft">Associate Member</span>
+                                <span class="fd">Observer status in governance bodies with the right to submit comments
+                                    on all active RFCs and draft specifications.</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="fi">🎓</span>
+                            <span>
+                                <span class="ft">Academic & Non-Profit Member</span>
+                                <span class="fd">Concessionary tier for universities, standards bodies, and non-profit
+                                    research institutions. Full observer rights.</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="give-card">
+                    <div class="give-card-head">
+                        <h3>Become a Member</h3>
+                        <p>Support open payment infrastructure</p>
+                    </div>
+                    <div class="give-card-body">
+                        <a href="https://members.fabricpaymentstandards.org/" class="give-btn primary">
+                            <span class="give-btn-icon">🏛</span>
+                            <span class="give-btn-text">
+                                <span class="gbt">Members Portal</span>
+                                <span class="gbs">Apply for institutional membership</span>
+                            </span>
+                            <span class="arrow">→</span>
+                        </a>
+                        <div class="give-divider"><span>or learn more</span></div>
+                        <a href="../governance/" class="give-btn">
+                            <span class="give-btn-icon">⚖</span>
+                            <span class="give-btn-text">
+                                <span class="gbt">Governance Structure</span>
+                                <span class="gbs">How member bodies participate</span>
+                            </span>
+                            <span class="arrow">→</span>
+                        </a>
+                        <a href="../working-groups/" class="give-btn">
+                            <span class="give-btn-icon">👥</span>
+                            <span class="give-btn-text">
+                                <span class="gbt">Working Groups</span>
+                                <span class="gbs">Technical bodies open to members</span>
+                            </span>
+                            <span class="arrow">→</span>
+                        </a>
+                        <p class="give-note">Membership enquiries may also be directed to the Foundation via the contact
+                            form on the About page.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="coming-soon-notice" style="margin-top:60px;">
+                <div class="csn-inner">
+                    <span class="csn-icon">🔔</span>
+                    <div>
+                        <strong>Public member directory coming soon.</strong>
+                        <p>Once the membership programme is formally launched, a public directory of member
+                            organisations — with their membership tier and Working Group affiliations — will be
+                            maintained on this page.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div data-include="../../components/footer.html"></div>
+
+    <style>
+        .coming-soon-notice {
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .csn-inner {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 24px 28px;
+            background: var(--light);
+        }
+
+        .csn-icon {
+            font-size: 22px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .csn-inner strong {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--blue);
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .csn-inner p {
+            font-size: 13px;
+            color: var(--gray);
+            line-height: 1.6;
+        }
+    </style>
+
+    <script src="../../i18n.js"></script>
+    <script src="../../script.js"></script>
+</body>
+
+</html>
