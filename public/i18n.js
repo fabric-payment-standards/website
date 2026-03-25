@@ -59,11 +59,19 @@ class I18n {
   async loadTranslations() {
     try {
       const page = this.getCurrentPage();
-      const filePath = `i18n/${page}/${this.currentLang}.json`;
-      const response = await fetch(filePath);
-      if (!response.ok) throw new Error(`Translation file not found: ${filePath}`);
-      this.translations = await response.json();
-      console.log(`Loaded translations for ${this.currentLang} (${page})`);
+
+      // Load common and page-specific translations in parallel
+      const [commonRes, pageRes] = await Promise.all([
+        fetch(`i18n/commons/${this.currentLang}.json`),
+        fetch(`i18n/${page}/${this.currentLang}.json`)
+      ]);
+
+      const common = commonRes.ok ? await commonRes.json() : {};
+      const pageSpecific = pageRes.ok ? await pageRes.json() : {};
+
+      // Page-specific keys win over common keys if there's overlap
+      this.translations = { ...common, ...pageSpecific };
+
     } catch (error) {
       console.warn("Failed to load translations:", error.message);
       this.translations = {};
