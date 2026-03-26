@@ -58,9 +58,8 @@ async function sendTelegramMessage(botToken, chatId, contact) {
 export default {
     async fetch(request, env) {
         const recaptchaKeys = {
-            "gleams.io": env.GLEAMS_RECAPTCHA_SECRET,
             "fabricpaymentstandards.org": env.FPSF_RECAPTCHA_SECRET,
-            // "zerofff.io": env.ZEROFFF_RECAPTCHA_SECRET,
+            // "anothersite.tld": env.ANOTHER_SITE_RECAPTCHA_SECRET,
         }
         if (request.method === "OPTIONS") {
             return new Response(null, {
