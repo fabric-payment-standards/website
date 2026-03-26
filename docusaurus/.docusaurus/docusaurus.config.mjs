@@ -70,6 +70,10 @@ export default {
         "blog": false,
         "theme": {
           "customCss": "./src/css/custom.css"
+        },
+        "gtag": {
+          "trackingID": "G-NGMRJQJ1P2",
+          "anonymizeIP": true
         }
       }
     ]

@@ -2,6 +2,14 @@
 <html lang="en">
 
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NGMRJQJ1P2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-NGMRJQJ1P2');
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title data-i18n="page.title">Contact — Fabric Payment Standards</title>
@@ -12,6 +20,8 @@
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="../styles.css" />
+    <!-- Google tag (gtag.js) -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lc9e5ksAAAAANMr5gNCuYL8oE6rbs5LC_eyC2fw"></script>
 </head>
 
 <body>
@@ -39,22 +49,42 @@
                     <div class="section-kicker">Send a Message</div>
                     <h2 class="col-title" style="margin-bottom:32px;">How can we<strong>help you?</strong></h2>
 
-                    <form class="contact-form" id="contact-form">
+                    <form class="contact-form" id="contact-form" onsubmit="handleSubmit(event)">
+
+                        <!-- Hidden fields -->
+                        <input type="hidden" name="form_id" value="fabricpaymentstandards.org">
+                        <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+
                         <div class="form-row">
                             <div class="field-group">
                                 <label for="cf-name">Name</label>
                                 <input type="text" id="cf-name" name="name" placeholder="Your name" required />
                             </div>
+
+                            <div class="field-group">
+                                <label for="cf-phone">Phone Number</label>
+                                <input type="text" id="cf-phone" name="phone_number" placeholder="Phone Number"
+                                    required />
+                            </div>
+
+                            <div class="field-group">
+                                <label for="cf-email">Email</label>
+                                <input type="email" id="cf-email" name="email" placeholder="you@organisation.org"
+                                    required />
+                            </div>
+
                             <div class="field-group">
                                 <label for="cf-org">Organisation</label>
-                                <input type="text" id="cf-org" name="organisation" placeholder="Your organisation" />
+                                <input type="text" id="cf-org" name="company_name" placeholder="Your organisation" />
+                            </div>
+
+                            <div class="field-group">
+                                <label for="cf-org-country">Org. Country</label>
+                                <input type="text" id="cf-org-country" name="country_name"
+                                    placeholder="Your organisation's country" />
                             </div>
                         </div>
-                        <div class="field-group">
-                            <label for="cf-email">Email</label>
-                            <input type="email" id="cf-email" name="email" placeholder="you@organisation.org"
-                                required />
-                        </div>
+
                         <div class="field-group">
                             <label for="cf-subject">Topic</label>
                             <select id="cf-subject" name="subject">
@@ -69,12 +99,15 @@
                                 <option value="other">Other</option>
                             </select>
                         </div>
+
                         <div class="field-group">
                             <label for="cf-message">Message</label>
                             <textarea id="cf-message" name="message" placeholder="Describe your enquiry…" rows="6"
                                 required></textarea>
                         </div>
+
                         <button type="submit" class="submit-btn">Send Message</button>
+                        <div id="form-status"></div>
                     </form>
                 </div>
 
@@ -95,7 +128,7 @@
                                 </span>
                                 <span class="arrow">→</span>
                             </a>
-                            <a href="/community/" class="give-btn">
+                            <a href="/community" class="give-btn">
                                 <span class="give-btn-icon">💬</span>
                                 <span class="give-btn-text">
                                     <span class="gbt">Community Hub</span>
@@ -103,7 +136,7 @@
                                 </span>
                                 <span class="arrow">→</span>
                             </a>
-                            <a href="/community/rfcs/" class="give-btn">
+                            <a href="/community/rfcs" class="give-btn">
                                 <span class="give-btn-icon">📄</span>
                                 <span class="give-btn-text">
                                     <span class="gbt">Open an RFC</span>
@@ -112,7 +145,7 @@
                                 <span class="arrow">→</span>
                             </a>
                             <div class="give-divider"><span>support the foundation</span></div>
-                            <a href="/donate/" class="give-btn primary">
+                            <a href="/donate" class="give-btn primary">
                                 <span class="give-btn-icon">♥</span>
                                 <span class="give-btn-text">
                                     <span class="gbt">Donate</span>
@@ -230,6 +263,83 @@
 
     <script src="../i18n.js"></script>
     <script src="../script.js"></script>
+    <script>
+        (
+            function () {
+                window.handleSubmit = function (e) {
+                    e.preventDefault();
+
+                    const form = e.target;
+                    const formStatus = document.getElementById("form-status");
+
+                    async function submitFormAsync(formData) {
+                        try {
+                            const res = await fetch("https://contact-form.fabricpaymentstandards.org", {
+                                method: "POST",
+                                body: formData,
+                            });
+
+                            if (!res.ok) {
+                                throw new Error(`Server returned ${res.status}`);
+                            }
+
+                            const text = await res.text();
+                            return { ok: true, text };
+                        } catch (err) {
+                            return { ok: false, error: err.message };
+                        }
+                    }
+
+                    const name = form.name.value.trim();
+                    const email = form.email.value.trim();
+                    const message = form.message.value.trim();
+                    const subject = form.subject.value;
+
+                    if (!name || !email || !message) return;
+
+                    formStatus.textContent = 'Submitting...';
+                    grecaptcha.ready(function () {
+                        grecaptcha.execute(
+                            '6Lc9e5ksAAAAANMr5gNCuYL8oE6rbs5LC_eyC2fw',
+                            { action: 'submit' })
+                            .then(async function (token) {
+
+                                // Inject captcha token
+                                form.querySelector('#g-recaptcha-response').value = token;
+
+                                // Build FormData manually to override message
+                                const formData = new FormData(form);
+
+                                // Inject subject into message
+                                let finalMessage = message;
+                                if (subject) {
+                                    finalMessage = `[Topic: ${subject}]\n\n${message}`;
+                                }
+
+                                formData.set("message", finalMessage);
+
+                                formStatus.textContent = 'Sending...';
+
+                                const result = await submitFormAsync(formData);
+
+                                if (result.ok) {
+                                    formStatus.textContent = 'Message sent successfully!';
+                                    form.reset();
+                                } else {
+                                    formStatus.textContent = `Error sending message: ${result.error}`;
+                                }
+                            })
+                            .catch(() => {
+                                formStatus.textContent = 'Captcha failed. Please try again.';
+                            });
+                    });
+
+                    return false;
+                };
+                console.log("Loaded...");
+                console.log("GRecaptcha present? ", grecaptcha ? "Yes" : "No")
+            })()
+    </script>
 </body>
 
 </html>
