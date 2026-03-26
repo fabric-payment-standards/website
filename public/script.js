@@ -1,8 +1,8 @@
 function toggleDropdown(id) {
-    const li = document.getElementById(id);
-    const isOpen = li.classList.contains('open');
-    document.querySelectorAll('.nav-links li').forEach(l => l.classList.remove('open'));
-    if (!isOpen) li.classList.add('open');
+  const li = document.getElementById(id);
+  const isOpen = li.classList.contains('open');
+  document.querySelectorAll('.nav-links li').forEach(l => l.classList.remove('open'));
+  if (!isOpen) li.classList.add('open');
 }
 
 async function renderIncludes() {
@@ -89,12 +89,12 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 
-    //  HEADER SCRIPTS  
-    document.addEventListener('click', function (e) {
-        if (!e.target.closest('.nav-links li')) {
-            document.querySelectorAll('.nav-links li').forEach(l => l.classList.remove('open'));
-        }
-    });
+  //  HEADER SCRIPTS  
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('.nav-links li')) {
+      document.querySelectorAll('.nav-links li').forEach(l => l.classList.remove('open'));
+    }
+  });
 
   // Active nav link on scroll
   const sections = document.querySelectorAll("section[id]");
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     sections.forEach(section => {
       if (scrollPosition >= section.offsetTop &&
-          scrollPosition < section.offsetTop + section.clientHeight) {
+        scrollPosition < section.offsetTop + section.clientHeight) {
         current = section.getAttribute("id");
       }
     });
@@ -135,19 +135,19 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Form handling
-  document.addEventListener("submit", (e) => {
-    if (e.target?.id === "newsletter-form") {
-      e.preventDefault();
-      const email = e.target.querySelector('input[type="email"]').value;
-      alert(`Institutional updates will be sent to: ${email}`);
-      e.target.reset();
-    }
-    if (e.target?.id === "contact-form") {
-      e.preventDefault();
-      alert("Thank you for your inquiry. Our institutional team will contact you shortly.");
-      e.target.reset();
-    }
-  });
+  // document.addEventListener("submit", (e) => {
+  //   if (e.target?.id === "newsletter-form") {
+  //     e.preventDefault();
+  //     const email = e.target.querySelector('input[type="email"]').value;
+  //     alert(`Institutional updates will be sent to: ${email}`);
+  //     e.target.reset();
+  //   }
+  //   if (e.target?.id === "contact-form") {
+  //     e.preventDefault();
+  //     alert("Thank you for your inquiry. Our institutional team will contact you shortly.");
+  //     e.target.reset();
+  //   }
+  // });
 });
 
 /**
