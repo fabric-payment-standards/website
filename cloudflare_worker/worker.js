@@ -64,7 +64,7 @@ export default {
         if (request.method === "OPTIONS") {
             return new Response(null, {
                 headers: {
-                    "Access-Control-Allow-Origin": "https://gleams.io",
+                    "Access-Control-Allow-Origin": "fabricpaymentstandards.org",
                     "Access-Control-Allow-Methods": "POST, OPTIONS",
                     "Access-Control-Allow-Headers": "Content-Type",
                 },
