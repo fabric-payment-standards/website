@@ -1,7 +1,7 @@
 {
   "id": "cashpack/business-model/business-model",
-  "title": "CashPack Business Models",
-  "description": "Revenue models, commercial applications, and deployment strategies for Operators building on the CashPack Protocol (CPP-1.0).",
+  "title": "CashPack Protocol — Business Models",
+  "description": "Layer licensed financial institutions, payment service providers, fintech ventures, and institutional entrepreneurs evaluating CashPack as a commercial foundation.",
   "source": "@site/docs/cashpack/business-model/business-model.md",
   "sourceDirName": "cashpack/business-model",
   "slug": "/cashpack/business-model/",
@@ -12,8 +12,17 @@
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "title": "CashPack Business Models",
-    "description": "Revenue models, commercial applications, and deployment strategies for Operators building on the CashPack Protocol (CPP-1.0)."
+    "spec_id": "FPSF-CPP-001",
+    "title": "CashPack Protocol — Business Models",
+    "family": "CashPack Protocol",
+    "layer": "Business Model",
+    "version": "1.0.0",
+    "status": "Draft",
+    "date": "2026-03-25T00:00:00.000Z",
+    "author": "Adalton Reis <reis@fabricpaymentstandards.org>",
+    "organization": "Fabric Payment Standards Foundation",
+    "contact": "specs@fabricpaymentstandards.org",
+    "license": "Apache-2.0"
   },
   "sidebar": "fpsfSidebar",
   "previous": {

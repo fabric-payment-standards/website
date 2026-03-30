@@ -6,18 +6,42 @@
     },
     "config": "5e9f5e1a"
   },
-  "/specs/-a6c": {
+  "/specs/-936": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "aba21aa0"
     }
   },
-  "/specs/-075": {
+  "/specs/-706": {
     "__comp": "a7bd4aaa",
     "__props": "8ec50cce"
   },
-  "/specs/-659": {
+  "/specs/-0a7": {
     "__comp": "a94703ab"
+  },
+  "/specs/canonical-payment-6c4": {
+    "__comp": "14eb3368",
+    "__props": "7efbde62"
+  },
+  "/specs/canonical-payment/core-concepts-e80": {
+    "__comp": "17896441",
+    "content": "37b9d261"
+  },
+  "/specs/canonical-payment/governance-31c": {
+    "__comp": "17896441",
+    "content": "c94c2f00"
+  },
+  "/specs/canonical-payment/guides-2eb": {
+    "__comp": "17896441",
+    "content": "05baf5a8"
+  },
+  "/specs/canonical-payment/overview-82a": {
+    "__comp": "17896441",
+    "content": "085611e3"
+  },
+  "/specs/canonical-payment/reference-a8e": {
+    "__comp": "17896441",
+    "content": "2bc970f8"
   },
   "/specs/canonical-payment/SPEC-100": {
     "__comp": "17896441",
@@ -55,9 +79,29 @@
     "__comp": "17896441",
     "content": "1671ea58"
   },
-  "/specs/cashpack/specifications/cpp-001-5a9": {
+  "/specs/disposable-keys-d42": {
+    "__comp": "14eb3368",
+    "__props": "65f532a9"
+  },
+  "/specs/disposable-keys/core-concepts-fb8": {
     "__comp": "17896441",
-    "content": "7a032a60"
+    "content": "6a44caa3"
+  },
+  "/specs/disposable-keys/governance-aa3": {
+    "__comp": "17896441",
+    "content": "1e8fb824"
+  },
+  "/specs/disposable-keys/guides-815": {
+    "__comp": "17896441",
+    "content": "68b04865"
+  },
+  "/specs/disposable-keys/overview-7f1": {
+    "__comp": "17896441",
+    "content": "4497a96b"
+  },
+  "/specs/disposable-keys/reference-779": {
+    "__comp": "17896441",
+    "content": "03d00efe"
   },
   "/specs/disposable-keys/SPEC-f21": {
     "__comp": "17896441",
@@ -71,109 +115,29 @@
     "__comp": "14eb3368",
     "__props": "f07a6201"
   },
-  "/specs/stablecoin-stack/ss-001/business-model/-e1a": {
+  "/specs/stablecoin-stack/ss-001/business-model-25f": {
     "__comp": "17896441",
-    "content": "45416340"
+    "content": "0d885a7d"
   },
-  "/specs/stablecoin-stack/ss-001/core-concepts-ca4": {
-    "__comp": "14eb3368",
-    "__props": "e2315690"
-  },
-  "/specs/stablecoin-stack/ss-001/core-concepts/dual-signature-pattern-dba": {
+  "/specs/stablecoin-stack/ss-001/core-concepts-a1a": {
     "__comp": "17896441",
-    "content": "d7bdc3d7"
+    "content": "6ea0bf0c"
   },
-  "/specs/stablecoin-stack/ss-001/core-concepts/fee-model-232": {
+  "/specs/stablecoin-stack/ss-001/governance-c56": {
     "__comp": "17896441",
-    "content": "b19858c7"
+    "content": "82b19da5"
   },
-  "/specs/stablecoin-stack/ss-001/core-concepts/payment-flow-412": {
+  "/specs/stablecoin-stack/ss-001/guides-e35": {
     "__comp": "17896441",
-    "content": "22a1d90d"
+    "content": "7f7a49ac"
   },
-  "/specs/stablecoin-stack/ss-001/core-concepts/permit-based-payments-8a0": {
+  "/specs/stablecoin-stack/ss-001/overview-937": {
     "__comp": "17896441",
-    "content": "33fbf432"
+    "content": "13c6ecd0"
   },
-  "/specs/stablecoin-stack/ss-001/core-concepts/system-architecture-154": {
+  "/specs/stablecoin-stack/ss-001/reference-a06": {
     "__comp": "17896441",
-    "content": "315cf265"
-  },
-  "/specs/stablecoin-stack/ss-001/core-concepts/why-cryptographic-payments-cbc": {
-    "__comp": "17896441",
-    "content": "77db30d7"
-  },
-  "/specs/stablecoin-stack/ss-001/governance-611": {
-    "__comp": "14eb3368",
-    "__props": "02c9e16b"
-  },
-  "/specs/stablecoin-stack/ss-001/governance/changelog-000": {
-    "__comp": "17896441",
-    "content": "38351a45"
-  },
-  "/specs/stablecoin-stack/ss-001/governance/versioning-policy-1d4": {
-    "__comp": "17896441",
-    "content": "ad849ddc"
-  },
-  "/specs/stablecoin-stack/ss-001/guides-011": {
-    "__comp": "14eb3368",
-    "__props": "141a6793"
-  },
-  "/specs/stablecoin-stack/ss-001/guides/buy-acquiring-pack-bc8": {
-    "__comp": "17896441",
-    "content": "ac1f3769"
-  },
-  "/specs/stablecoin-stack/ss-001/guides/integrate-settlement-contract-443": {
-    "__comp": "17896441",
-    "content": "e3584bc8"
-  },
-  "/specs/stablecoin-stack/ss-001/guides/payment-flow-walkthrough-d19": {
-    "__comp": "17896441",
-    "content": "09bea05d"
-  },
-  "/specs/stablecoin-stack/ss-001/guides/submit-a-payment-529": {
-    "__comp": "17896441",
-    "content": "0a70be23"
-  },
-  "/specs/stablecoin-stack/ss-001/overview-bc1": {
-    "__comp": "14eb3368",
-    "__props": "e7b0a8ce"
-  },
-  "/specs/stablecoin-stack/ss-001/overview/introduction-1ed": {
-    "__comp": "17896441",
-    "content": "95a434b5"
-  },
-  "/specs/stablecoin-stack/ss-001/overview/payment-submission-a30": {
-    "__comp": "17896441",
-    "content": "a1d5450f"
-  },
-  "/specs/stablecoin-stack/ss-001/overview/settlement-contract-220": {
-    "__comp": "17896441",
-    "content": "56446af0"
-  },
-  "/specs/stablecoin-stack/ss-001/reference-a3f": {
-    "__comp": "14eb3368",
-    "__props": "85fbc26d"
-  },
-  "/specs/stablecoin-stack/ss-001/reference/component-index-34c": {
-    "__comp": "17896441",
-    "content": "081fbb9a"
-  },
-  "/specs/stablecoin-stack/ss-001/reference/contract-interface-909": {
-    "__comp": "17896441",
-    "content": "e7e3ba39"
-  },
-  "/specs/stablecoin-stack/ss-001/reference/glossary-4db": {
-    "__comp": "17896441",
-    "content": "f7ac1183"
-  },
-  "/specs/stablecoin-stack/ss-001/reference/normative-references-b09": {
-    "__comp": "17896441",
-    "content": "fc48bc73"
-  },
-  "/specs/stablecoin-stack/ss-001/reference/payload-fields-96b": {
-    "__comp": "17896441",
-    "content": "b49a850b"
+    "content": "293488af"
   },
   "/specs/stablecoin-stack/ss-001/SPEC-9e6": {
     "__comp": "17896441",
@@ -183,69 +147,25 @@
     "__comp": "14eb3368",
     "__props": "beb33f07"
   },
-  "/specs/stablecoin-stack/ss-002/core-concepts-b9e": {
-    "__comp": "14eb3368",
-    "__props": "1246cbcf"
-  },
-  "/specs/stablecoin-stack/ss-002/core-concepts/connection-model-77e": {
+  "/specs/stablecoin-stack/ss-002/core-concepts-130": {
     "__comp": "17896441",
-    "content": "e6f835ac"
+    "content": "dc2d08c4"
   },
-  "/specs/stablecoin-stack/ss-002/core-concepts/message-authentication-7d1": {
+  "/specs/stablecoin-stack/ss-002/governance-2cd": {
     "__comp": "17896441",
-    "content": "2c95f4fa"
+    "content": "8d50c2ea"
   },
-  "/specs/stablecoin-stack/ss-002/core-concepts/subscription-model-d40": {
+  "/specs/stablecoin-stack/ss-002/guides-be4": {
     "__comp": "17896441",
-    "content": "e08bd9d3"
+    "content": "bb49bc1a"
   },
-  "/specs/stablecoin-stack/ss-002/governance-978": {
-    "__comp": "14eb3368",
-    "__props": "a8625a5a"
-  },
-  "/specs/stablecoin-stack/ss-002/governance/changelog-c67": {
+  "/specs/stablecoin-stack/ss-002/overview-b17": {
     "__comp": "17896441",
-    "content": "e8f20176"
+    "content": "6e0fa67f"
   },
-  "/specs/stablecoin-stack/ss-002/guides-561": {
-    "__comp": "14eb3368",
-    "__props": "ba858d50"
-  },
-  "/specs/stablecoin-stack/ss-002/guides/connect-and-authenticate-200": {
+  "/specs/stablecoin-stack/ss-002/reference-801": {
     "__comp": "17896441",
-    "content": "8a76f74e"
-  },
-  "/specs/stablecoin-stack/ss-002/guides/submit-a-payment-634": {
-    "__comp": "17896441",
-    "content": "412357a2"
-  },
-  "/specs/stablecoin-stack/ss-002/guides/subscribe-to-updates-f3e": {
-    "__comp": "17896441",
-    "content": "b0b842f3"
-  },
-  "/specs/stablecoin-stack/ss-002/overview-1e3": {
-    "__comp": "14eb3368",
-    "__props": "d14a6966"
-  },
-  "/specs/stablecoin-stack/ss-002/overview/gateway-role-059": {
-    "__comp": "17896441",
-    "content": "0bc42ed5"
-  },
-  "/specs/stablecoin-stack/ss-002/overview/introduction-a1a": {
-    "__comp": "17896441",
-    "content": "b0cfe1a5"
-  },
-  "/specs/stablecoin-stack/ss-002/reference/error-codes-895": {
-    "__comp": "17896441",
-    "content": "101e7d6d"
-  },
-  "/specs/stablecoin-stack/ss-002/reference/glossary-458": {
-    "__comp": "17896441",
-    "content": "ba0ab344"
-  },
-  "/specs/stablecoin-stack/ss-002/reference/message-type-index-479": {
-    "__comp": "17896441",
-    "content": "f3ca0ddb"
+    "content": "4d04c5bf"
   },
   "/specs/stablecoin-stack/ss-002/SPEC-a15": {
     "__comp": "17896441",

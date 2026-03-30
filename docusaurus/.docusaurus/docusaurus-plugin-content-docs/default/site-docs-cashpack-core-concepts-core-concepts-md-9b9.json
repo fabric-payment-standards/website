@@ -1,7 +1,7 @@
 {
   "id": "cashpack/core-concepts/core-concepts",
-  "title": "Core Concepts",
-  "description": "The mental models and key ideas underlying the CashPack Protocol — bearer instruments, the trust model, chain integrity, and privacy through disposable keys.",
+  "title": "CashPack Protocol — Core Concepts",
+  "description": "Layer technical evaluators, architects, product teams",
   "source": "@site/docs/cashpack/core-concepts/core-concepts.md",
   "sourceDirName": "cashpack/core-concepts",
   "slug": "/cashpack/core-concepts/",
@@ -12,8 +12,17 @@
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "title": "Core Concepts",
-    "description": "The mental models and key ideas underlying the CashPack Protocol — bearer instruments, the trust model, chain integrity, and privacy through disposable keys."
+    "spec_id": "FPSF-CPP-001",
+    "title": "CashPack Protocol — Core Concepts",
+    "family": "CashPack Protocol",
+    "layer": "Core Concepts",
+    "version": "1.0.0",
+    "status": "Draft",
+    "date": "2026-03-25T00:00:00.000Z",
+    "author": "Adalton Reis <reis@fabricpaymentstandards.org>",
+    "organization": "Fabric Payment Standards Foundation",
+    "contact": "specs@fabricpaymentstandards.org",
+    "license": "Apache-2.0"
   },
   "sidebar": "fpsfSidebar",
   "previous": {

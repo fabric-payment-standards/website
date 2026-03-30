@@ -1,7 +1,7 @@
 {
   "id": "cashpack/overview/overview",
-  "title": "Overview",
-  "description": "What the CashPack Protocol is, why it exists, and what problems it solves.",
+  "title": "CashPack Protocol — Overview",
+  "description": "Layer executives, regulators, institutional evaluators",
   "source": "@site/docs/cashpack/overview/overview.md",
   "sourceDirName": "cashpack/overview",
   "slug": "/cashpack/overview/",
@@ -12,8 +12,17 @@
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "title": "Overview",
-    "description": "What the CashPack Protocol is, why it exists, and what problems it solves."
+    "spec_id": "FPSF-CPP-001",
+    "title": "CashPack Protocol — Overview",
+    "family": "CashPack Protocol",
+    "layer": "Overview",
+    "version": "1.0.0",
+    "status": "Draft",
+    "date": "2026-03-25T00:00:00.000Z",
+    "author": "Adalton Reis <reis@fabricpaymentstandards.org>",
+    "organization": "Fabric Payment Standards Foundation",
+    "contact": "specs@fabricpaymentstandards.org",
+    "license": "Apache-2.0"
   },
   "sidebar": "fpsfSidebar",
   "previous": {

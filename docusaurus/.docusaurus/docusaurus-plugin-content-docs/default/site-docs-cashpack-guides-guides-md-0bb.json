@@ -1,7 +1,7 @@
 {
   "id": "cashpack/guides/guides",
-  "title": "Guides",
-  "description": "Practical worked flows for issuance, renewal, redemption, and privacy best practices using the CashPack Protocol.",
+  "title": "CashPack Protocol — Guides",
+  "description": "Layer developers, integration teams, product implementors",
   "source": "@site/docs/cashpack/guides/guides.md",
   "sourceDirName": "cashpack/guides",
   "slug": "/cashpack/guides/",
@@ -12,8 +12,17 @@
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "title": "Guides",
-    "description": "Practical worked flows for issuance, renewal, redemption, and privacy best practices using the CashPack Protocol."
+    "spec_id": "FPSF-CPP-001",
+    "title": "CashPack Protocol — Guides",
+    "family": "CashPack Protocol",
+    "layer": "Guides",
+    "version": "1.0.0",
+    "status": "Draft",
+    "date": "2026-03-25T00:00:00.000Z",
+    "author": "Adalton Reis <reis@fabricpaymentstandards.org>",
+    "organization": "Fabric Payment Standards Foundation",
+    "contact": "specs@fabricpaymentstandards.org",
+    "license": "Apache-2.0"
   },
   "sidebar": "fpsfSidebar",
   "previous": {
