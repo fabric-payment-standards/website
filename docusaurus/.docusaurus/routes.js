@@ -9,15 +9,15 @@ export default [
   },
   {
     path: '/specs/',
-    component: ComponentCreator('/specs/', '936'),
+    component: ComponentCreator('/specs/', '3f7'),
     routes: [
       {
         path: '/specs/',
-        component: ComponentCreator('/specs/', '706'),
+        component: ComponentCreator('/specs/', 'c4c'),
         routes: [
           {
             path: '/specs/',
-            component: ComponentCreator('/specs/', '0a7'),
+            component: ComponentCreator('/specs/', '1da'),
             routes: [
               {
                 path: '/specs/canonical-payment',
@@ -244,6 +244,18 @@ export default [
               {
                 path: '/specs/stablecoin-stack/ss-002/SPEC',
                 component: ComponentCreator('/specs/stablecoin-stack/ss-002/SPEC', 'a15'),
+                exact: true,
+                sidebar: "fpsfSidebar"
+              },
+              {
+                path: '/specs/stablecoin-stack/ss-003',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-003', 'd6c'),
+                exact: true,
+                sidebar: "fpsfSidebar"
+              },
+              {
+                path: '/specs/stablecoin-stack/ss-003/SPEC',
+                component: ComponentCreator('/specs/stablecoin-stack/ss-003/SPEC', '72d'),
                 exact: true,
                 sidebar: "fpsfSidebar"
               }

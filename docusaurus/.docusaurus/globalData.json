@@ -171,6 +171,11 @@
               "sidebar": "fpsfSidebar"
             },
             {
+              "id": "stablecoin-stack/ss-003/SPEC",
+              "path": "/specs/stablecoin-stack/ss-003/SPEC",
+              "sidebar": "fpsfSidebar"
+            },
+            {
               "id": "/canonical-payment",
               "path": "/specs/canonical-payment",
               "sidebar": "fpsfSidebar"
@@ -198,6 +203,11 @@
             {
               "id": "/stablecoin-stack/ss-002",
               "path": "/specs/stablecoin-stack/ss-002",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "/stablecoin-stack/ss-003",
+              "path": "/specs/stablecoin-stack/ss-003",
               "sidebar": "fpsfSidebar"
             }
           ],

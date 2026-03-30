@@ -6,17 +6,17 @@
     },
     "config": "5e9f5e1a"
   },
-  "/specs/-936": {
+  "/specs/-3f7": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "aba21aa0"
     }
   },
-  "/specs/-706": {
+  "/specs/-c4c": {
     "__comp": "a7bd4aaa",
     "__props": "8ec50cce"
   },
-  "/specs/-0a7": {
+  "/specs/-1da": {
     "__comp": "a94703ab"
   },
   "/specs/canonical-payment-6c4": {
@@ -170,5 +170,13 @@
   "/specs/stablecoin-stack/ss-002/SPEC-a15": {
     "__comp": "17896441",
     "content": "df55611d"
+  },
+  "/specs/stablecoin-stack/ss-003-d6c": {
+    "__comp": "14eb3368",
+    "__props": "27238aab"
+  },
+  "/specs/stablecoin-stack/ss-003/SPEC-72d": {
+    "__comp": "17896441",
+    "content": "842aad2e"
   }
 }
