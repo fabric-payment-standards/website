@@ -11,6 +11,31 @@
           "mainDocId": "canonical-payment/SPEC",
           "docs": [
             {
+              "id": "canonical-payment/core-concepts",
+              "path": "/specs/canonical-payment/core-concepts",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "canonical-payment/governance",
+              "path": "/specs/canonical-payment/governance",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "canonical-payment/guides",
+              "path": "/specs/canonical-payment/guides",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "canonical-payment/overview",
+              "path": "/specs/canonical-payment/overview",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "canonical-payment/reference",
+              "path": "/specs/canonical-payment/reference",
+              "sidebar": "fpsfSidebar"
+            },
+            {
               "id": "canonical-payment/SPEC",
               "path": "/specs/canonical-payment/SPEC",
               "sidebar": "fpsfSidebar"
@@ -51,8 +76,28 @@
               "sidebar": "fpsfSidebar"
             },
             {
-              "id": "cashpack/specifications/cpp-001",
-              "path": "/specs/cashpack/specifications/cpp-001",
+              "id": "disposable-keys/core-concepts",
+              "path": "/specs/disposable-keys/core-concepts",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "disposable-keys/governance",
+              "path": "/specs/disposable-keys/governance",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "disposable-keys/guides",
+              "path": "/specs/disposable-keys/guides",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "disposable-keys/overview",
+              "path": "/specs/disposable-keys/overview",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "disposable-keys/reference",
+              "path": "/specs/disposable-keys/reference",
               "sidebar": "fpsfSidebar"
             },
             {
@@ -61,108 +106,33 @@
               "sidebar": "fpsfSidebar"
             },
             {
-              "id": "stablecoin-stack/ss-001/business-model/business-model",
-              "path": "/specs/stablecoin-stack/ss-001/business-model/",
+              "id": "stablecoin-stack/ss-001/business-model",
+              "path": "/specs/stablecoin-stack/ss-001/business-model",
               "sidebar": "fpsfSidebar"
             },
             {
-              "id": "stablecoin-stack/ss-001/core-concepts/dual-signature-pattern",
-              "path": "/specs/stablecoin-stack/ss-001/core-concepts/dual-signature-pattern",
+              "id": "stablecoin-stack/ss-001/core-concepts",
+              "path": "/specs/stablecoin-stack/ss-001/core-concepts",
               "sidebar": "fpsfSidebar"
             },
             {
-              "id": "stablecoin-stack/ss-001/core-concepts/fee-model",
-              "path": "/specs/stablecoin-stack/ss-001/core-concepts/fee-model",
+              "id": "stablecoin-stack/ss-001/governance",
+              "path": "/specs/stablecoin-stack/ss-001/governance",
               "sidebar": "fpsfSidebar"
             },
             {
-              "id": "stablecoin-stack/ss-001/core-concepts/payment-flow",
-              "path": "/specs/stablecoin-stack/ss-001/core-concepts/payment-flow",
+              "id": "stablecoin-stack/ss-001/guides",
+              "path": "/specs/stablecoin-stack/ss-001/guides",
               "sidebar": "fpsfSidebar"
             },
             {
-              "id": "stablecoin-stack/ss-001/core-concepts/permit-based-payments",
-              "path": "/specs/stablecoin-stack/ss-001/core-concepts/permit-based-payments",
+              "id": "stablecoin-stack/ss-001/overview",
+              "path": "/specs/stablecoin-stack/ss-001/overview",
               "sidebar": "fpsfSidebar"
             },
             {
-              "id": "stablecoin-stack/ss-001/core-concepts/system-architecture",
-              "path": "/specs/stablecoin-stack/ss-001/core-concepts/system-architecture",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "stablecoin-stack/ss-001/core-concepts/why-cryptographic-payments",
-              "path": "/specs/stablecoin-stack/ss-001/core-concepts/why-cryptographic-payments",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "stablecoin-stack/ss-001/governance/changelog",
-              "path": "/specs/stablecoin-stack/ss-001/governance/changelog",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "stablecoin-stack/ss-001/governance/versioning-policy",
-              "path": "/specs/stablecoin-stack/ss-001/governance/versioning-policy",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "stablecoin-stack/ss-001/guides/buy-acquiring-pack",
-              "path": "/specs/stablecoin-stack/ss-001/guides/buy-acquiring-pack",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "stablecoin-stack/ss-001/guides/integrate-settlement-contract",
-              "path": "/specs/stablecoin-stack/ss-001/guides/integrate-settlement-contract",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "stablecoin-stack/ss-001/guides/payment-flow-walkthrough",
-              "path": "/specs/stablecoin-stack/ss-001/guides/payment-flow-walkthrough",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "stablecoin-stack/ss-001/guides/submit-a-payment",
-              "path": "/specs/stablecoin-stack/ss-001/guides/submit-a-payment",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "stablecoin-stack/ss-001/overview/introduction",
-              "path": "/specs/stablecoin-stack/ss-001/overview/introduction",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "stablecoin-stack/ss-001/overview/payment-submission",
-              "path": "/specs/stablecoin-stack/ss-001/overview/payment-submission",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "stablecoin-stack/ss-001/overview/settlement-contract",
-              "path": "/specs/stablecoin-stack/ss-001/overview/settlement-contract",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "stablecoin-stack/ss-001/reference/component-index",
-              "path": "/specs/stablecoin-stack/ss-001/reference/component-index",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "stablecoin-stack/ss-001/reference/contract-interface",
-              "path": "/specs/stablecoin-stack/ss-001/reference/contract-interface",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "stablecoin-stack/ss-001/reference/glossary",
-              "path": "/specs/stablecoin-stack/ss-001/reference/glossary",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "stablecoin-stack/ss-001/reference/normative-references",
-              "path": "/specs/stablecoin-stack/ss-001/reference/normative-references",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "stablecoin-stack/ss-001/reference/payload-fields",
-              "path": "/specs/stablecoin-stack/ss-001/reference/payload-fields",
+              "id": "stablecoin-stack/ss-001/reference",
+              "path": "/specs/stablecoin-stack/ss-001/reference",
               "sidebar": "fpsfSidebar"
             },
             {
@@ -171,63 +141,28 @@
               "sidebar": "fpsfSidebar"
             },
             {
-              "id": "stablecoin-stack/ss-002/core-concepts/connection-model",
-              "path": "/specs/stablecoin-stack/ss-002/core-concepts/connection-model",
+              "id": "stablecoin-stack/ss-002/core-concepts",
+              "path": "/specs/stablecoin-stack/ss-002/core-concepts",
               "sidebar": "fpsfSidebar"
             },
             {
-              "id": "stablecoin-stack/ss-002/core-concepts/message-authentication",
-              "path": "/specs/stablecoin-stack/ss-002/core-concepts/message-authentication",
+              "id": "stablecoin-stack/ss-002/governance",
+              "path": "/specs/stablecoin-stack/ss-002/governance",
               "sidebar": "fpsfSidebar"
             },
             {
-              "id": "stablecoin-stack/ss-002/core-concepts/subscription-model",
-              "path": "/specs/stablecoin-stack/ss-002/core-concepts/subscription-model",
+              "id": "stablecoin-stack/ss-002/guides",
+              "path": "/specs/stablecoin-stack/ss-002/guides",
               "sidebar": "fpsfSidebar"
             },
             {
-              "id": "stablecoin-stack/ss-002/governance/changelog",
-              "path": "/specs/stablecoin-stack/ss-002/governance/changelog",
+              "id": "stablecoin-stack/ss-002/overview",
+              "path": "/specs/stablecoin-stack/ss-002/overview",
               "sidebar": "fpsfSidebar"
             },
             {
-              "id": "stablecoin-stack/ss-002/guides/connect-and-authenticate",
-              "path": "/specs/stablecoin-stack/ss-002/guides/connect-and-authenticate",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "stablecoin-stack/ss-002/guides/submit-a-payment",
-              "path": "/specs/stablecoin-stack/ss-002/guides/submit-a-payment",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "stablecoin-stack/ss-002/guides/subscribe-to-updates",
-              "path": "/specs/stablecoin-stack/ss-002/guides/subscribe-to-updates",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "stablecoin-stack/ss-002/overview/gateway-role",
-              "path": "/specs/stablecoin-stack/ss-002/overview/gateway-role",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "stablecoin-stack/ss-002/overview/introduction",
-              "path": "/specs/stablecoin-stack/ss-002/overview/introduction",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "stablecoin-stack/ss-002/reference/error-codes",
-              "path": "/specs/stablecoin-stack/ss-002/reference/error-codes",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "stablecoin-stack/ss-002/reference/glossary",
-              "path": "/specs/stablecoin-stack/ss-002/reference/glossary",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "stablecoin-stack/ss-002/reference/message-type-index",
-              "path": "/specs/stablecoin-stack/ss-002/reference/message-type-index",
+              "id": "stablecoin-stack/ss-002/reference",
+              "path": "/specs/stablecoin-stack/ss-002/reference",
               "sidebar": "fpsfSidebar"
             },
             {
@@ -236,8 +171,23 @@
               "sidebar": "fpsfSidebar"
             },
             {
+              "id": "stablecoin-stack/ss-003/SPEC",
+              "path": "/specs/stablecoin-stack/ss-003/SPEC",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "/canonical-payment",
+              "path": "/specs/canonical-payment",
+              "sidebar": "fpsfSidebar"
+            },
+            {
               "id": "/cashpack",
               "path": "/specs/cashpack",
+              "sidebar": "fpsfSidebar"
+            },
+            {
+              "id": "/disposable-keys",
+              "path": "/specs/disposable-keys",
               "sidebar": "fpsfSidebar"
             },
             {
@@ -251,53 +201,13 @@
               "sidebar": "fpsfSidebar"
             },
             {
-              "id": "/stablecoin-stack/ss-001/overview",
-              "path": "/specs/stablecoin-stack/ss-001/overview",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "/stablecoin-stack/ss-001/core-concepts",
-              "path": "/specs/stablecoin-stack/ss-001/core-concepts",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "/stablecoin-stack/ss-001/reference",
-              "path": "/specs/stablecoin-stack/ss-001/reference",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "/stablecoin-stack/ss-001/guides",
-              "path": "/specs/stablecoin-stack/ss-001/guides",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "/stablecoin-stack/ss-001/governance",
-              "path": "/specs/stablecoin-stack/ss-001/governance",
-              "sidebar": "fpsfSidebar"
-            },
-            {
               "id": "/stablecoin-stack/ss-002",
               "path": "/specs/stablecoin-stack/ss-002",
               "sidebar": "fpsfSidebar"
             },
             {
-              "id": "/stablecoin-stack/ss-002/overview",
-              "path": "/specs/stablecoin-stack/ss-002/overview",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "/stablecoin-stack/ss-002/core-concepts",
-              "path": "/specs/stablecoin-stack/ss-002/core-concepts",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "/stablecoin-stack/ss-002/guides",
-              "path": "/specs/stablecoin-stack/ss-002/guides",
-              "sidebar": "fpsfSidebar"
-            },
-            {
-              "id": "/stablecoin-stack/ss-002/governance",
-              "path": "/specs/stablecoin-stack/ss-002/governance",
+              "id": "/stablecoin-stack/ss-003",
+              "path": "/specs/stablecoin-stack/ss-003",
               "sidebar": "fpsfSidebar"
             }
           ],
@@ -305,7 +215,7 @@
           "sidebars": {
             "fpsfSidebar": {
               "link": {
-                "path": "/specs/canonical-payment/SPEC",
+                "path": "/specs/canonical-payment",
                 "label": "— Canonical Payment"
               }
             }

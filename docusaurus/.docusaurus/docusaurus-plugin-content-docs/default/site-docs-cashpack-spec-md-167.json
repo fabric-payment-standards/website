@@ -1,7 +1,7 @@
 {
   "id": "cashpack/SPEC",
-  "title": "Formal Specification",
-  "description": "The normative CashPack Protocol specification — CPP-1.0. Data structures, cryptographic requirements, and protocol obligations.",
+  "title": "CashPack Protocol",
+  "description": "Document Metadata",
   "source": "@site/docs/cashpack/SPEC.md",
   "sourceDirName": "cashpack",
   "slug": "/cashpack/SPEC",
@@ -12,24 +12,25 @@
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "document": "cashpack/SPEC.md",
-    "title": "Formal Specification",
-    "description": "The normative CashPack Protocol specification — CPP-1.0. Data structures, cryptographic requirements, and protocol obligations.",
+    "spec_id": "FPSF-CPP-001",
+    "title": "CashPack Protocol",
+    "family": "CashPack Protocol",
+    "layer": "Formal Specification",
     "version": "1.0.0",
     "status": "Draft",
-    "date": "2026-03-04T00:00:00.000Z",
+    "date": "2026-03-25T00:00:00.000Z",
     "author": "Adalton Reis <reis@fabricpaymentstandards.org>",
-    "contact": "contact@fabricpaymentstandards.org",
     "organization": "Fabric Payment Standards Foundation",
-    "license": "Apache License 2.0"
+    "contact": "specs@fabricpaymentstandards.org",
+    "license": "Apache-2.0"
   },
   "sidebar": "fpsfSidebar",
   "previous": {
-    "title": "cpp-001 Spec",
-    "permalink": "/specs/cashpack/specifications/cpp-001"
+    "title": "Governance",
+    "permalink": "/specs/cashpack/governance/"
   },
   "next": {
     "title": "— Disposible Keys",
-    "permalink": "/specs/disposable-keys/SPEC"
+    "permalink": "/specs/disposable-keys"
   }
 }

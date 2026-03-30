@@ -1,0 +1,36 @@
+{
+  "id": "cashpack/reference/reference",
+  "title": "CashPack Protocol — Reference",
+  "description": "Layer developers (daily reference)",
+  "source": "@site/docs/cashpack/reference/reference.md",
+  "sourceDirName": "cashpack/reference",
+  "slug": "/cashpack/reference/",
+  "permalink": "/specs/cashpack/reference/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/orgs/fabric-payment-standards/docs/cashpack/reference/reference.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "spec_id": "FPSF-CPP-001",
+    "title": "CashPack Protocol — Reference",
+    "family": "CashPack Protocol",
+    "layer": "Reference",
+    "version": "1.0.0",
+    "status": "Draft",
+    "date": "2026-03-25T00:00:00.000Z",
+    "author": "Adalton Reis <reis@fabricpaymentstandards.org>",
+    "organization": "Fabric Payment Standards Foundation",
+    "contact": "specs@fabricpaymentstandards.org",
+    "license": "Apache-2.0"
+  },
+  "sidebar": "fpsfSidebar",
+  "previous": {
+    "title": "Core Concepts",
+    "permalink": "/specs/cashpack/core-concepts/"
+  },
+  "next": {
+    "title": "Guides",
+    "permalink": "/specs/cashpack/guides/"
+  }
+}

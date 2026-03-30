@@ -1,7 +1,7 @@
 {
   "id": "cashpack/governance/governance",
-  "title": "Governance",
-  "description": "Operator eligibility, compliance obligations, amount limits, identity requirements, and risk controls for CashPack Protocol deployments.",
+  "title": "CashPack Protocol — Governance",
+  "description": "Layer compliance officers, legal teams, regulators, risk managers",
   "source": "@site/docs/cashpack/governance/governance.md",
   "sourceDirName": "cashpack/governance",
   "slug": "/cashpack/governance/",
@@ -12,8 +12,17 @@
   "tags": [],
   "version": "current",
   "frontMatter": {
-    "title": "Governance",
-    "description": "Operator eligibility, compliance obligations, amount limits, identity requirements, and risk controls for CashPack Protocol deployments."
+    "spec_id": "FPSF-CPP-001",
+    "title": "CashPack Protocol — Governance",
+    "family": "CashPack Protocol",
+    "layer": "Governance",
+    "version": "1.0.0",
+    "status": "Draft",
+    "date": "2026-03-25T00:00:00.000Z",
+    "author": "Adalton Reis <reis@fabricpaymentstandards.org>",
+    "organization": "Fabric Payment Standards Foundation",
+    "contact": "specs@fabricpaymentstandards.org",
+    "license": "Apache-2.0"
   },
   "sidebar": "fpsfSidebar",
   "previous": {
@@ -21,7 +30,7 @@
     "permalink": "/specs/cashpack/business-model/"
   },
   "next": {
-    "title": "cpp-001 Spec",
-    "permalink": "/specs/cashpack/specifications/cpp-001"
+    "title": "CashPack Protocol",
+    "permalink": "/specs/cashpack/SPEC"
   }
 }

@@ -1,0 +1,36 @@
+{
+  "id": "cashpack/overview/overview",
+  "title": "CashPack Protocol — Overview",
+  "description": "Layer executives, regulators, institutional evaluators",
+  "source": "@site/docs/cashpack/overview/overview.md",
+  "sourceDirName": "cashpack/overview",
+  "slug": "/cashpack/overview/",
+  "permalink": "/specs/cashpack/overview/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/orgs/fabric-payment-standards/docs/cashpack/overview/overview.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "spec_id": "FPSF-CPP-001",
+    "title": "CashPack Protocol — Overview",
+    "family": "CashPack Protocol",
+    "layer": "Overview",
+    "version": "1.0.0",
+    "status": "Draft",
+    "date": "2026-03-25T00:00:00.000Z",
+    "author": "Adalton Reis <reis@fabricpaymentstandards.org>",
+    "organization": "Fabric Payment Standards Foundation",
+    "contact": "specs@fabricpaymentstandards.org",
+    "license": "Apache-2.0"
+  },
+  "sidebar": "fpsfSidebar",
+  "previous": {
+    "title": "— Cash-Pack",
+    "permalink": "/specs/cashpack"
+  },
+  "next": {
+    "title": "Core Concepts",
+    "permalink": "/specs/cashpack/core-concepts/"
+  }
+}

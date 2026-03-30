@@ -39,7 +39,21 @@ rm -rf build
 
 echo "Cleaning docs folder..."
 rm -rf docs/*
-mkdir -p docs/{"$SS_SPEC_SLUG/ss-001","$SS_SPEC_SLUG/ss-002","$CASHPACK_SPEC_SLUG","$MPC_SPEC_SLUG","$CANONICAL_PAYMENT_SLUG"}
+
+ALL_SLUG_DIR=(
+  "$SS_SPEC_SLUG/ss-001"
+  "$SS_SPEC_SLUG/ss-002"
+  "$SS_SPEC_SLUG/ss-003"
+  "$CASHPACK_SPEC_SLUG"
+  "$MPC_SPEC_SLUG"
+  "$CANONICAL_PAYMENT_SLUG"
+)
+
+for folder in "${ALL_SLUG_DIR[@]}"; do
+  mkdir -p "docs/$folder"
+done;
+
+#mkdir -p "docs/{"$SS_SPEC_SLUG/ss-001","$SS_SPEC_SLUG/ss-002","$CASHPACK_SPEC_SLUG","$MPC_SPEC_SLUG","$CANONICAL_PAYMENT_SLUG"}
 
 echo "Copying specs..."
 #Cash-pack
@@ -49,6 +63,7 @@ cp -r "$CASHPACK_SPEC_FOLDER/_category_.json" docs/"$CASHPACK_SPEC_SLUG"/
 #Satblecoi Stack
 cp -r "$SS_SPEC_FOLDER/ss-001/spec"/* docs/"$SS_SPEC_SLUG"/ss-001/
 cp -r "$SS_SPEC_FOLDER/ss-002/spec"/* docs/"$SS_SPEC_SLUG"/ss-002/
+cp -r "$SS_SPEC_FOLDER/ss-003/spec"/* docs/"$SS_SPEC_SLUG"/ss-003/
 cp -r "$SS_SPEC_FOLDER/_category_.json" docs/"$SS_SPEC_SLUG"/
 
 #Disposable-keys

@@ -88,7 +88,7 @@ export default function Home(): JSX.Element {
 
           <Link
             className="button button--primary button--lg"
-            to="/stablecoin-stack/ss-001/overview/introduction"
+            to="/stablecoin-stack/ss-001/overview"
             style={{ width: '100%', maxWidth: '280px' }}
           >
             Stablecoin Stack
